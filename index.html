@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de"> 
+  <head>
+    <title>Pr&uuml;fungssimulator LPIC</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="pruefung/default.css"></link>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"></link>
+    <script language="JavaScript">
+      function Browsererkennung() {
+        if (navigator.appName == "Microsoft Internet Explorer") {
+          alert("Leider funktioniert dieses Programm nicht mit dem Internet Explorer.\n\n Bitte verwenden Sie einen anderen Browser.");
+        }
+      }
+    </script>
+  </head>
+  <body class="hintergrund" onload="javascript:Browsererkennung()">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+    <div id="Hauptauswahl" align="center" class="layout_basis" style="visibility:visible;">
+      <div id="hauptauswahl" class="layout_box rahmen_dick hintergrund_box" align="center">
+        <div class="schrift g14 dick hintergrund_box" align="center" style="height:70px;">
+          Pr&uuml;fungssimulator zur Vorbereitung auf die<br>
+          Linux Professional Institute Certification (LPIC)
+        </div>
+        <div id="menue" class="rahmen_dick hintergrund_blau layout_hauptmenue g12 dick" align="center">
+          Bitte treffen Sie Ihre Auswahl:<br /><br /><br /><br /><br /><br />
+          <input type="button" onclick="javascript:location.href='pruefung/lpic1.html'" class="menuebutton" id="zu_lpic1" value="Prüfung LPIC 117-101 beginnen"><br />
+          <input type="button" onclick="javascript:location.href='pruefung/lpic2.html'" class="menuebutton" id="zu_lpic2" value="Prüfung LPIC 117-102 beginnen"><br />
+           <input type="button" onclick="javascript:location.href='pruefung/anleitung.html'" class="menuebutton" id="hilfe" value="Bedienungsanleitung"><br>
+          <input type="button" onclick="javascript:location.href='pruefung/ueber.html'" class="menuebutton" id="ueber" value="Über dieses Programm"><br>
+          <input type="button" onclick="javascript:location.href='pruefung/unterschied.html'" class="menuebutton" id="unterschied" value="Unterschied zur Originalprüfung"><br>
+        </div>
+        <p align="center" class="g8">
+          OnEducate Portable - Exam-Simulator Browserapplication in JavaScript<br />
+          Software is published under the terms of General Public License Version 2
+        </p>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </body>
+<html>

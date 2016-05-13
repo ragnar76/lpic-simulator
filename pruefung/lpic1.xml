@@ -1,0 +1,1961 @@
+<rootnode>
+	<aufgabenanzahl>120</aufgabenanzahl>
+	
+	
+	<fragetitel>Frage 1</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 1 im Buch.
+	</erklaerung>
+	<fragetext>Sie versuchen mit dem Kommando netstat -an herauszubekommen, welche Ports ein Computer abhört. Leider bekommen Sie als Ergebnis eine lange unübersichtliche Auflistung.
+ Welches der folgenden Kommandos wird die gewünschten Informationen übersichtlich darstellen?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 1' richtig='nein'> netstat -an &amp;&amp; grep LISTEN</antwort>
+	<antwort zuFrage='Frage 1' richtig='ja'> netstat -an | grep LISTEN</antwort>
+	<antwort zuFrage='Frage 1' richtig='nein'> netstat -an = grep LISTEN</antwort>
+	<antwort zuFrage='Frage 1' richtig='nein'> grep LISTEN |netstat -an</antwort>
+	<antwort zuFrage='Frage 1' richtig='nein'> grep netstat -l</antwort>
+	
+	
+	<fragetitel>Frage 2</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 2 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen herausfinden, welche Verzeichnisse und Dateien eines Webservers besonders oft besucht werden. Zu diesem Zweck wollen Sie zunächst die Logdatei des Webservers so filtern, dass Sie eine entsprechende Dateiliste erhalten, die nur noch die Verzeichnis und Dateinamen enthält.
+ Welches der folgenden Kommandos löst diese Aufgabe?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 2' richtig='nein'> cut -f 7 /var/log/apache2/access.log > dateiliste</antwort>
+	<antwort zuFrage='Frage 2' richtig='nein'> cut -d " " /var/log/apache2/access.log > dateiliste</antwort>
+	<antwort zuFrage='Frage 2' richtig='ja'> cut -d " " -f 7 /var/log/apache2/access.log > dateiliste</antwort>
+	<antwort zuFrage='Frage 2' richtig='nein'> tail /var/log/apache2/access.log</antwort>
+	<antwort zuFrage='Frage 2' richtig='nein'> cat /var/log/apache2/access.log</antwort>
+	
+	
+	<fragetitel>Frage 3</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 3 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen die Version des laufenden Kernels ermitteln. Mit welchem Kommando erhalten Sie ausschließlich diese Information?
+
+	</fragetext>
+	<antwort zuFrage='Frage 3' richtig='nein'> uname -a</antwort>
+	<antwort zuFrage='Frage 3' richtig='ja'> uname -r</antwort>
+	<antwort zuFrage='Frage 3' richtig='nein'> ver -l</antwort>
+	<antwort zuFrage='Frage 3' richtig='nein'> version -k</antwort>
+	
+	
+	<fragetitel>Frage 4</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 4 im Buch.
+	</erklaerung>
+	<fragetext>Nach der Integration eines neuen Moduls in den laufenden Kernel wollen Sie überprüfen, ob der Kernel das Modul auch geladen hat.
+ Welche der folgenden Kommandos können sie dafür verwenden? (Wählen Sie zwei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 4' richtig='ja'> cat /proc/modules</antwort>
+	<antwort zuFrage='Frage 4' richtig='nein'> insmod</antwort>
+	<antwort zuFrage='Frage 4' richtig='nein'> rmmod</antwort>
+	<antwort zuFrage='Frage 4' richtig='ja'> lsmod</antwort>
+	
+	
+	<fragetitel>Frage 5</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 5 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen dem Autor des Kernelmoduls 8139too eine E-Mail senden.
+ Welches Kommando ist geeignet, an Informationen über den zuständigen Programmierer zu kommen?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 5' richtig='ja'> modinfo -a 8139too</antwort>
+	<antwort zuFrage='Frage 5' richtig='nein'> insmod 8139</antwort>
+	<antwort zuFrage='Frage 5' richtig='nein'> lsmod</antwort>
+	<antwort zuFrage='Frage 5' richtig='nein'> modprobe</antwort>
+	
+	
+	<fragetitel>Frage 6</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 6 im Buch.
+	</erklaerung>
+	<fragetext>Welches Programm ist geeignet, Module des laufenden Kernels zu entladen? Geben Sie nur das Programm ohne Optionen an!
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 6' richtig='ja'>rmmod</antwort>
+	<antwort zuFrage='Frage 6' richtig='ja'>modprobe</antwort>
+	
+	
+	<fragetitel>Frage 7</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 7 im Buch.
+	</erklaerung>
+	<fragetext>Sie beabsichtigen, ein Modul in den laufenden Kernel zu installieren. Leider wissen Sie nicht, ob das zu installierende Modul von anderen Modulen abhängt.
+ Welches Kommando löst bei der Installation von Modulen die Abhängigkeiten automatisch auf?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 7' richtig='nein'> insmod –auto</antwort>
+	<antwort zuFrage='Frage 7' richtig='nein'> autoinsmod</antwort>
+	<antwort zuFrage='Frage 7' richtig='nein'> depmod</antwort>
+	<antwort zuFrage='Frage 7' richtig='ja'> modprobe</antwort>
+	
+	
+	<fragetitel>Frage 8</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 8 im Buch.
+	</erklaerung>
+	<fragetext>Sie beabsichtigen, ein Modul aus dem laufenden Kernel zu entfernen. Mit welchen Programmen können Sie diese Aufgabe durchführen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 8' richtig='nein'> rpm</antwort>
+	<antwort zuFrage='Frage 8' richtig='nein'> insmod</antwort>
+	<antwort zuFrage='Frage 8' richtig='ja'> modprobe</antwort>
+	<antwort zuFrage='Frage 8' richtig='ja'> rmmod</antwort>
+	
+	
+	<fragetitel>Frage 9</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 9 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen dafür sorgen, dass der Kernel einem speziellen Hardwaregerät, einen bestimmten IRQ und einen DMA-Kanal zuordnet.
+ Welche Konfigurationsdateien kommen hierfür in Frage? (Wählen Sie zwei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 9' richtig='nein'> /proc/irq</antwort>
+	<antwort zuFrage='Frage 9' richtig='ja'> modules.conf</antwort>
+	<antwort zuFrage='Frage 9' richtig='ja'> modprobe.conf</antwort>
+	<antwort zuFrage='Frage 9' richtig='nein'> modules.dep</antwort>
+	
+	
+	<fragetitel>Frage 10</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 10 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen die Datei modules.dep neu erzeugen. Mit welchem Kommando können Sie diese Aufgabe durchführen?
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 10' richtig='ja'>depmod</antwort>
+	
+	
+	<fragetitel>Frage 11</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 11 im Buch.
+	</erklaerung>
+	<fragetext>Sie erwägen die Erstellung einer neuen modules.dep unter Verwendung von depmod. Vorher möchten Sie aber wissen, wie depmod die Datei modules.dep konfigurieren würde.
+ Welches Kommando werden Sie ausführen?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 11' richtig='ja'> depmod -n</antwort>
+	<antwort zuFrage='Frage 11' richtig='nein'> depmod -A</antwort>
+	<antwort zuFrage='Frage 11' richtig='nein'> depmod -b</antwort>
+	<antwort zuFrage='Frage 11' richtig='nein'> modprobe-n</antwort>
+	
+	
+	<fragetitel>Frage 12</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 12 im Buch.
+	</erklaerung>
+	<fragetext>Sie möchten in das Verzeichnis wechseln, in dem sich wahrscheinlich die Quellen des laufenden Kernels befinden. Wo werden Sie am wahrscheinlichsten fündig?
+
+	</fragetext>
+	<antwort zuFrage='Frage 12' richtig='nein'> /boot</antwort>
+	<antwort zuFrage='Frage 12' richtig='nein'> /etc/kernelsources</antwort>
+	<antwort zuFrage='Frage 12' richtig='ja'> /usr/src/linux</antwort>
+	<antwort zuFrage='Frage 12' richtig='nein'> /lib/modules</antwort>
+	<antwort zuFrage='Frage 12' richtig='nein'> /proc/modules</antwort>
+	
+	
+	<fragetitel>Frage 13</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 13 im Buch.
+	</erklaerung>
+	<fragetext>Sie beabsichtigen auf einer IDE-Festplatte, die als Master am sekundären IDE-Kanal eines Computers angeschlossen ist, eine zweite primäre Partition anzulegen.
+ Welche Gerätedatei wird diese Partition wohl hinterher verwenden?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 13' richtig='nein'> /dev/sdb2</antwort>
+	<antwort zuFrage='Frage 13' richtig='nein'> /dev/hdd2</antwort>
+	<antwort zuFrage='Frage 13' richtig='nein'> /dev/hda1</antwort>
+	<antwort zuFrage='Frage 13' richtig='ja'> /dev/hdc2</antwort>
+	<antwort zuFrage='Frage 13' richtig='nein'> /dev/sda3</antwort>
+	
+	
+	<fragetitel>Frage 14</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 14 im Buch.
+	</erklaerung>
+	<fragetext>Geben Sie die erste logische Partition einer SCSI-Festplatte unter der Annahme an, dass die zu verwendende erweiterte Partition /dev/sde2 ist.
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 14' richtig='ja'>/dev/sde5</antwort>
+	
+	
+	<fragetitel>Frage 15</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 15 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen ermitteln, welche Interrupts (IRQ) in einem System durch welche Geräte belegt sind.
+ Welche Kommandos können Sie ausführen, um die benötigten Informationen zu erhalten? (Wählen Sie zwei Antworten aus!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 15' richtig='nein'> less /proc/irq</antwort>
+	<antwort zuFrage='Frage 15' richtig='nein'> cat /lib/modules/</antwort>
+	<antwort zuFrage='Frage 15' richtig='nein'> cat /proc/modules</antwort>
+	<antwort zuFrage='Frage 15' richtig='ja'> procinfo</antwort>
+	<antwort zuFrage='Frage 15' richtig='ja'> cat /proc/interrupts</antwort>
+	
+	
+	<fragetitel>Frage 16</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 16 im Buch.
+	</erklaerung>
+	<fragetext>Sie benötigen eine Liste der SCSI-Geräte, die an einem Computer angeschlossen sind. Leider steht auf dem System das Kommando scsiinfo nicht zur Verfügung und Sie haben aufgrund einer Internetstörung auch keine Möglichkeit es kurzfristig zu installieren. Mit welchem Kommando erhalten Sie dennoch die benötigte Aufstellung?
+
+	</fragetext>
+	<antwort zuFrage='Frage 16' richtig='nein'> cat /lib/modules/</antwort>
+	<antwort zuFrage='Frage 16' richtig='nein'> cat /etc/fstab</antwort>
+	<antwort zuFrage='Frage 16' richtig='nein'> cat /etc/mtab</antwort>
+	<antwort zuFrage='Frage 16' richtig='nein'> fdisk -l</antwort>
+	<antwort zuFrage='Frage 16' richtig='ja'> cat /proc/scsi/scsi</antwort>
+	
+	
+	<fragetitel>Frage 17</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 17 im Buch.
+	</erklaerung>
+	<fragetext>Sie benötigen eine möglichst genaue Aufstellung über die in einem Computer verwendeten PCI-Geräte.
+ Welches ist das beste Kommando für eine exakte Ausgabe?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 17' richtig='nein'> lspci</antwort>
+	<antwort zuFrage='Frage 17' richtig='nein'> pciinfo</antwort>
+	<antwort zuFrage='Frage 17' richtig='nein'> ps</antwort>
+	<antwort zuFrage='Frage 17' richtig='nein'> rpm</antwort>
+	<antwort zuFrage='Frage 17' richtig='ja'> lspci -vvv</antwort>
+	
+	
+	<fragetitel>Frage 18</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 18 im Buch.
+	</erklaerung>
+	<fragetext>Sie benötigen eine Auflistung der in einem Gerät verwendeten USB-Busse und aller angeschlossener USB-Geräte.
+ Welches Kommando können Sie verwenden, um die benötigten Informationen zu erhalten?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 18' richtig='ja'> lsusb -v</antwort>
+	<antwort zuFrage='Frage 18' richtig='nein'> lspci</antwort>
+	<antwort zuFrage='Frage 18' richtig='nein'> ps aux</antwort>
+	<antwort zuFrage='Frage 18' richtig='nein'> top</antwort>
+	
+	
+	<fragetitel>Frage 19</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 19 im Buch.
+	</erklaerung>
+	<fragetext>Welcher der folgenden Treiber (Kernelmodule) unterstützt die Verwendung von USB 2.0 Geräten?
+
+	</fragetext>
+	<antwort zuFrage='Frage 19' richtig='nein'> usb-uhci.o</antwort>
+	<antwort zuFrage='Frage 19' richtig='nein'> usb-ohci.o</antwort>
+	<antwort zuFrage='Frage 19' richtig='ja'> usb-ehci.o</antwort>
+	<antwort zuFrage='Frage 19' richtig='nein'> usb_storage.o</antwort>
+	
+	
+	<fragetitel>Frage 20</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 20 im Buch.
+	</erklaerung>
+	<fragetext>Einer Ihrer Benutzer beschwert sich, dass er zwar USB Memory Sticks aber keine USB-Maus und USB-Tastatur an seinem System verwenden kann.
+ Welches Modul werden Sie dem Kernel des Computers hinzufügen müssen?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 20' richtig='nein'> usb-uhci.o</antwort>
+	<antwort zuFrage='Frage 20' richtig='nein'> usb-ohci.o</antwort>
+	<antwort zuFrage='Frage 20' richtig='nein'> usb-ehci.o</antwort>
+	<antwort zuFrage='Frage 20' richtig='ja'> hid.o</antwort>
+	<antwort zuFrage='Frage 20' richtig='nein'> usb_storage.o</antwort>
+	
+	
+	<fragetitel>Frage 21</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 21 im Buch.
+	</erklaerung>
+	<fragetext>Welche der folgenden sind Dämonen, die für die automatische Konfiguration von USB-Geräten verwendet werden?
+
+	</fragetext>
+	<antwort zuFrage='Frage 21' richtig='ja'> usbmgr</antwort>
+	<antwort zuFrage='Frage 21' richtig='nein'> bind</antwort>
+	<antwort zuFrage='Frage 21' richtig='ja'> hotplug</antwort>
+	<antwort zuFrage='Frage 21' richtig='nein'> ehci.o</antwort>
+	<antwort zuFrage='Frage 21' richtig='nein'> uhci.o</antwort>
+	
+	
+	<fragetitel>Frage 22</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 22 im Buch.
+	</erklaerung>
+	<fragetext>Welches der folgenden Verzeichnisse enthält die Gerätedateien eines Linux Systems?
+
+	</fragetext>
+	<antwort zuFrage='Frage 22' richtig='nein'> /etc</antwort>
+	<antwort zuFrage='Frage 22' richtig='nein'> /proc</antwort>
+	<antwort zuFrage='Frage 22' richtig='nein'> /home</antwort>
+	<antwort zuFrage='Frage 22' richtig='nein'> /usr</antwort>
+	<antwort zuFrage='Frage 22' richtig='ja'> /dev</antwort>
+	
+	
+	<fragetitel>Frage 23</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 23 im Buch.
+	</erklaerung>
+	<fragetext>Welche Komponente ist bei neueren Linux-Versionen für die Verwaltung des Geräteverzeichnis /dev zuständig?
+
+	</fragetext>
+	<antwort zuFrage='Frage 23' richtig='nein'> hald</antwort>
+	<antwort zuFrage='Frage 23' richtig='ja'> udev</antwort>
+	<antwort zuFrage='Frage 23' richtig='nein'> dbus</antwort>
+	<antwort zuFrage='Frage 23' richtig='nein'> sshd</antwort>
+	<antwort zuFrage='Frage 23' richtig='nein'> init</antwort>
+	
+	
+	<fragetitel>Frage 24</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 24 im Buch.
+	</erklaerung>
+	<fragetext>Sie möchten sich ansehen, welche USB-Geräte mit einem Computer verbunden sind.
+ Welches Kommando werden Sie verwenden? (Nennen Sie nur das Kommando ohne Optionen!)
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 24' richtig='ja'>lsusb</antwort>
+	
+	
+	<fragetitel>Frage 25</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 25 im Buch.
+	</erklaerung>
+	<fragetext>Wo befindet sich auf einer Festplatte die Partitionstabelle?
+
+	</fragetext>
+	<antwort zuFrage='Frage 25' richtig='nein'> am Anfang des Bootsektors</antwort>
+	<antwort zuFrage='Frage 25' richtig='ja'> am Ende des MBR</antwort>
+	<antwort zuFrage='Frage 25' richtig='nein'> im BIOS</antwort>
+	<antwort zuFrage='Frage 25' richtig='nein'> in den ersten 512 Byte des Bootloaders</antwort>
+	<antwort zuFrage='Frage 25' richtig='nein'> im letzten Sektor der Festplatte</antwort>
+	
+	
+	<fragetitel>Frage 26</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 26 im Buch.
+	</erklaerung>
+	<fragetext>Bei welchen der folgenden Komponenten handelt es sich um einen Bootloader?
+
+	</fragetext>
+	<antwort zuFrage='Frage 26' richtig='nein'> MBR</antwort>
+	<antwort zuFrage='Frage 26' richtig='ja'> grub</antwort>
+	<antwort zuFrage='Frage 26' richtig='nein'> mkfs</antwort>
+	<antwort zuFrage='Frage 26' richtig='ja'> lilo</antwort>
+	<antwort zuFrage='Frage 26' richtig='nein'> fdisk</antwort>
+	
+	
+	<fragetitel>Frage 27</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 27 im Buch.
+	</erklaerung>
+	<fragetext>Eine an ein System angeschlossene USB-Festplatte weist häufig Lesefehler auf. Das Ergebnis sind lange Wartezeiten beim Zugriff auf Dateien. Sie müssen herausfinden, ob es kernelbezogene Meldungen zu diesem Problem gibt.
+ Welche Möglichkeiten stehen Ihnen zur Verfügung? (Wählen Sie zwei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 27' richtig='ja'> Geben Sie dmesg ein und suchen Sie nach Fehlern bezüglich USB und Dateisystem.</antwort>
+	<antwort zuFrage='Frage 27' richtig='nein'> Sichern Sie die Festplatte und führen Sie eine Neuformatierung durch. Stellen Sie die Daten anschließend wieder her.</antwort>
+	<antwort zuFrage='Frage 27' richtig='nein'> Durchsuchen Sie /proc/sys/kernel nach Fehlermeldungen.</antwort>
+	<antwort zuFrage='Frage 27' richtig='nein'> Durchsuchen Sie /var/log/kernel nach Fehlermeldungen.</antwort>
+	<antwort zuFrage='Frage 27' richtig='ja'> Suchen Sie nach kernel in der Datei /var/log/messages</antwort>
+	
+	
+	<fragetitel>Frage 28</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 28 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen verhindern, dass während Sie Wartungsarbeiten durchführen, irgendein Benutzer eine Verbindung zu einem System aufbaut. Mit welchem Kommando können Sie die Verbindungen blockieren?
+
+	</fragetext>
+	<antwort zuFrage='Frage 28' richtig='nein'> iptables -t filter -L</antwort>
+	<antwort zuFrage='Frage 28' richtig='nein'> ifconfig eth1 down</antwort>
+	<antwort zuFrage='Frage 28' richtig='nein'> logout</antwort>
+	<antwort zuFrage='Frage 28' richtig='ja'> init 1</antwort>
+	<antwort zuFrage='Frage 28' richtig='nein'> init 6</antwort>
+	
+	
+	<fragetitel>Frage 29</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 29 im Buch.
+	</erklaerung>
+	<fragetext>Wie heißt der Vater aller Prozesse und welche PID (Process ID) verwendet er?
+
+	</fragetext>
+	<antwort zuFrage='Frage 29' richtig='nein'> init mit PID 100</antwort>
+	<antwort zuFrage='Frage 29' richtig='nein'> initd mit PID 100</antwort>
+	<antwort zuFrage='Frage 29' richtig='ja'> init mit PID 1</antwort>
+	<antwort zuFrage='Frage 29' richtig='nein'> initd mit PID 0</antwort>
+	
+	
+	<fragetitel>Frage 30</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 30 im Buch.
+	</erklaerung>
+	<fragetext>Sie haben Änderungen an der Konfigurationsdatei /etc/inittab eines Cent OS Computers vorgenommen. Sie stellen fest, dass sich diese Änderungen nicht wie gewünscht auswirken.
+ Welches Kommando werden Sie eingeben, damit die Änderungen auch ohne einen Neustart des Systems greifen?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 30' richtig='ja'> telinit q</antwort>
+	<antwort zuFrage='Frage 30' richtig='nein'> init q</antwort>
+	<antwort zuFrage='Frage 30' richtig='nein'> logout – anschließend neu anmelden</antwort>
+	<antwort zuFrage='Frage 30' richtig='nein'> init 6</antwort>
+	<antwort zuFrage='Frage 30' richtig='nein'> shutdown -r now</antwort>
+	
+	
+	<fragetitel>Frage 31</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 31 im Buch.
+	</erklaerung>
+	<fragetext>Wählen Sie aus den folgende Verzeichnissen zwei aus, in denen sich üblicherweise init-Skripte befinden!
+
+	</fragetext>
+	<antwort zuFrage='Frage 31' richtig='nein'> /etc/inittab</antwort>
+	<antwort zuFrage='Frage 31' richtig='ja'> /etc/init.d</antwort>
+	<antwort zuFrage='Frage 31' richtig='nein'> /proc</antwort>
+	<antwort zuFrage='Frage 31' richtig='nein'> /lib</antwort>
+	<antwort zuFrage='Frage 31' richtig='ja'> /etc/rc.d</antwort>
+	
+	
+	<fragetitel>Frage 32</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 32 im Buch.
+	</erklaerung>
+	<fragetext>Welches der folgenden Kommandos führt ohne Benachrichtigung der angemeldeten Benutzer zu einem Neustart des Systems?
+
+	</fragetext>
+	<antwort zuFrage='Frage 32' richtig='nein'> shutdown -r now</antwort>
+	<antwort zuFrage='Frage 32' richtig='nein'> init 0</antwort>
+	<antwort zuFrage='Frage 32' richtig='nein'> halt</antwort>
+	<antwort zuFrage='Frage 32' richtig='nein'> poweroff</antwort>
+	<antwort zuFrage='Frage 32' richtig='ja'> init 6</antwort>
+	
+	
+	<fragetitel>Frage 33</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 33 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen einen Server nach der Installation eines neuen Kernels neu starten. Damit der Neustart nicht unnötig die Erreichbarkeit des Servers verzögert, müssen Sie verhindern, dass während des Neustarts eine Routineprüfung der Dateisysteme stattfindet.
+ Welches Kommando werden Sie für den Neustart verwenden?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 33' richtig='nein'> shutdown -rk now</antwort>
+	<antwort zuFrage='Frage 33' richtig='nein'> shutdown -rF now</antwort>
+	<antwort zuFrage='Frage 33' richtig='nein'> init 0</antwort>
+	<antwort zuFrage='Frage 33' richtig='nein'> init 6</antwort>
+	<antwort zuFrage='Frage 33' richtig='ja'> shutdown -rf now</antwort>
+	
+	
+	<fragetitel>Frage 34</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 34 im Buch.
+	</erklaerung>
+	<fragetext>Sie haben Kernelmeldungen bezüglich des Dateisystems erhalten, die auf einen Fehler schließen lassen. Da es sich hierbei um die Systemfestplatte handelt, ist eine Überprüfung mittels fsck im laufenden Betrieb nicht möglich. Sie wollen das System sofort neu starten und eine Dateisystemüberprüfung währendes Systemstarts erzwingen. Geben Sie ein geeignetes Kommando ein!
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 34' richtig='ja'>shutdown -rF now</antwort>
+	<antwort zuFrage='Frage 34' richtig='ja'>shutdown -r -F now</antwort>
+	
+	<fragetitel>Frage 35</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 35 im Buch.
+	</erklaerung>
+	<fragetext>Sie haben auf einem System ein neues Programm installiert. Das Programm lag als tar-Ball vor. Weil das neue Programm Bibliotheken verwendet, die vorher auf ihrem System nicht vorhanden waren, müssen diese nun registriert werden.
+ Welches Kommando können Sie hierfür verwenden?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 35' richtig='ja'> ldconfig</antwort>
+	<antwort zuFrage='Frage 35' richtig='nein'> ldd</antwort>
+	<antwort zuFrage='Frage 35' richtig='nein'> ld.so.conf</antwort>
+	<antwort zuFrage='Frage 35' richtig='nein'> /lib/modules</antwort>
+	<antwort zuFrage='Frage 35' richtig='nein'> tar -xvzf</antwort>
+	
+	
+	<fragetitel>Frage 36</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 36 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen herausbekommen, von welchen Bibliotheken (Librarys) die Shell bash abhängt.
+ Welches Kommando wird Ihnen hier helfen?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 36' richtig='nein'> ldconfig /bin/bash</antwort>
+	<antwort zuFrage='Frage 36' richtig='nein'> ldd /var/bash</antwort>
+	<antwort zuFrage='Frage 36' richtig='nein'> cat ld.so.conf</antwort>
+	<antwort zuFrage='Frage 36' richtig='ja'> ldd /bin/bash</antwort>
+	<antwort zuFrage='Frage 36' richtig='nein'> cat ld.so.cache</antwort>
+	
+	
+	<fragetitel>Frage 37</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 37 im Buch.
+	</erklaerung>
+	<fragetext>Sie beabsichtigen, ein Debian Paket zu deinstallieren. Die zum Programm gehörenden Konfigurationsdateien sollen ebenfalls entfernt werden. Wie beginnen Sie das Kommando zur Deinstallation?
+
+	</fragetext>
+	<antwort zuFrage='Frage 37' richtig='nein'> dpkg -r</antwort>
+	<antwort zuFrage='Frage 37' richtig='ja'> dpkg --purge</antwort>
+	<antwort zuFrage='Frage 37' richtig='nein'> dpkg -e</antwort>
+	<antwort zuFrage='Frage 37' richtig='nein'> rpm -e</antwort>
+	<antwort zuFrage='Frage 37' richtig='nein'> apt-get install</antwort>
+	
+	
+	<fragetitel>Frage 38</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 38 im Buch.
+	</erklaerung>
+	<fragetext>Sie beabsichtigen, auf einem Debian basierten System über die Kommandozeile ein Programmpaket aus dem Internet herunter zu laden und zu installieren.
+ Welches Programm können Sie verwenden?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 38' richtig='nein'> dpkg</antwort>
+	<antwort zuFrage='Frage 38' richtig='nein'> alien</antwort>
+	<antwort zuFrage='Frage 38' richtig='ja'> apt-get</antwort>
+	<antwort zuFrage='Frage 38' richtig='nein'> yum</antwort>
+	<antwort zuFrage='Frage 38' richtig='nein'> Synaptik-Paketverwaltung</antwort>
+	
+	
+	<fragetitel>Frage 39</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 39 im Buch.
+	</erklaerung>
+	<fragetext>Vor der Installation eines neuen Programms auf einem Debian System wollen Sie die Liste der verfügbaren Programme aktualisieren.
+ Welches Kommando werden Sie verwenden?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 39' richtig='ja'> apt-get update</antwort>
+	<antwort zuFrage='Frage 39' richtig='nein'> apt-get upgrade</antwort>
+	<antwort zuFrage='Frage 39' richtig='nein'> yum upgrade</antwort>
+	<antwort zuFrage='Frage 39' richtig='nein'> yum update</antwort>
+	<antwort zuFrage='Frage 39' richtig='nein'> apt-get reconfigure</antwort>
+	
+	
+	<fragetitel>Frage 40</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 40 im Buch.
+	</erklaerung>
+	<fragetext>Sie beabsichtigen auf einem System, das auf Debian basiert, alle installierten Programme zu aktualisieren. Der Vorgang sollte möglichst automatisiert ablaufen und benötigte Dateien automatisch aus dem Internet herunter geladen werden.
+ Welches Kommando können Sie verwenden?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 40' richtig='nein'> apt-get update</antwort>
+	<antwort zuFrage='Frage 40' richtig='ja'> apt-get upgrade</antwort>
+	<antwort zuFrage='Frage 40' richtig='nein'> yum upgrade</antwort>
+	<antwort zuFrage='Frage 40' richtig='nein'> yum update</antwort>
+	<antwort zuFrage='Frage 40' richtig='nein'> apt-get reconfigure</antwort>
+	
+	
+	<fragetitel>Frage 41</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 41 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen das nicht mehr benötigte Paket dhcp3-server von einem Computer deinstallieren. Die Konfigurationsdateien des DHCP-Servers dürfen nicht entfernt werden.
+ Welche der folgenden Kommandos führen hier zum Ziel? (Wählen Sie zwei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 41' richtig='ja'> apt-get remove dhcp3-server</antwort>
+	<antwort zuFrage='Frage 41' richtig='ja'> aptitude remove dhcp3-server</antwort>
+	<antwort zuFrage='Frage 41' richtig='nein'> dpkg –purge dhcp3-server</antwort>
+	<antwort zuFrage='Frage 41' richtig='nein'> rpm -ihv dhcp3-server</antwort>
+	<antwort zuFrage='Frage 41' richtig='nein'> rpm -Uhv dhcp3-server</antwort>
+	
+	
+	<fragetitel>Frage 42</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 42 im Buch.
+	</erklaerung>
+	<fragetext>Sie planen die Installation mehrerer Programme auf einem Debian-System. Auf das System haben Sie lediglich Fernzugriff über SSH ohne X11-Tunnel, wollen aber dennoch eine Menü geführte Installation durchführen.
+ Welche Programme können Sie hierfür verwenden? (Wählen Sie zwei Möglichkeiten aus!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 42' richtig='nein'> apt-get</antwort>
+	<antwort zuFrage='Frage 42' richtig='nein'> dpkg -i</antwort>
+	<antwort zuFrage='Frage 42' richtig='ja'> aptitude</antwort>
+	<antwort zuFrage='Frage 42' richtig='nein'> synaptic</antwort>
+	<antwort zuFrage='Frage 42' richtig='ja'> dselect</antwort>
+	
+	
+	<fragetitel>Frage 43</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 43 im Buch.
+	</erklaerung>
+	<fragetext>Sie planen die Installation eines Programms, das lediglich als rpm-Paket vorliegt, auf einem Ubuntu-System.
+ Welches Hilfsmittel können Sie verwenden, um das rpm-Paket in ein dpkg-Paket zu konvertieren?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 43' richtig='nein'> rpm</antwort>
+	<antwort zuFrage='Frage 43' richtig='nein'> dpkg</antwort>
+	<antwort zuFrage='Frage 43' richtig='nein'> aptitude</antwort>
+	<antwort zuFrage='Frage 43' richtig='nein'> apt-cache</antwort>
+	<antwort zuFrage='Frage 43' richtig='ja'> alien</antwort>
+	
+	
+	<fragetitel>Frage 44</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 44 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen ein Programm auf einem Fedora-System installieren. Sie vermuten aufgrund der Größe des Pakets, dass die Installation lange dauern kann. Deshalb wollen Sie während der Installation über den Fortschritt informiert werden.
+ Welches Kommando werden Sie dem Paketnamen voranstellen?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 44' richtig='nein'> yum search</antwort>
+	<antwort zuFrage='Frage 44' richtig='nein'> rpm -U</antwort>
+	<antwort zuFrage='Frage 44' richtig='ja'> rpm -ihv</antwort>
+	<antwort zuFrage='Frage 44' richtig='nein'> dpkg -i</antwort>
+	<antwort zuFrage='Frage 44' richtig='nein'> apt-get install</antwort>
+	
+	
+	<fragetitel>Frage 45</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 45 im Buch.
+	</erklaerung>
+	<fragetext>Sie beabsichtigen auf einem Red Hat basierten System eine Liste aller über das Paketmanagement installierten Pakete zu erstellen.
+ Welches Kommando könnte hier nützlich sein?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 45' richtig='nein'> rpm -qR</antwort>
+	<antwort zuFrage='Frage 45' richtig='nein'> rpm -ql</antwort>
+	<antwort zuFrage='Frage 45' richtig='nein'> rpm -V</antwort>
+	<antwort zuFrage='Frage 45' richtig='ja'> rpm -qa</antwort>
+	<antwort zuFrage='Frage 45' richtig='nein'> rpm -Uhv</antwort>
+	
+	
+	<fragetitel>Frage 46</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 46 im Buch.
+	</erklaerung>
+	<fragetext>In welchem Verzeichnis befinden sich üblicherweise die Dateien mit Verweisen auf Quellen für rpm-Pakete, die yum verwendet?
+
+	</fragetext>
+	<antwort zuFrage='Frage 46' richtig='nein'> /etc/yum.conf</antwort>
+	<antwort zuFrage='Frage 46' richtig='nein'> /etc/apt/sources.list</antwort>
+	<antwort zuFrage='Frage 46' richtig='nein'> /var/cache/yum</antwort>
+	<antwort zuFrage='Frage 46' richtig='nein'> /etc/apt/apt.conf</antwort>
+	<antwort zuFrage='Frage 46' richtig='ja'> /etc/yum.repos.d</antwort>
+	
+	
+	<fragetitel>Frage 47</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 47 im Buch.
+	</erklaerung>
+	<fragetext>Sie konfigurieren ein Gerät, auf dem sich eine angepasste Linux-Version befindet. Der Prompt des Gerätes zeigt ihnen den aktuellen Pfad nicht an. Sie müssen den aktuellen Pfad ermitteln.
+ Welches Kommando werden Sie eingeben?
+&lt;br /> 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 47' richtig='ja'>pwd</antwort>
+	
+	
+	<fragetitel>Frage 48</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 48 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen ermitteln, welche Umgebungsvariablen in Ihrer aktuellen Sitzung gerade gültig sind. Mit welchem Kommando können Sie diese Information abfragen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 48' richtig='nein'> ls /var</antwort>
+	<antwort zuFrage='Frage 48' richtig='nein'> echo $var</antwort>
+	<antwort zuFrage='Frage 48' richtig='ja'> env</antwort>
+	<antwort zuFrage='Frage 48' richtig='nein'> set</antwort>
+	<antwort zuFrage='Frage 48' richtig='nein'> cat /proc/var</antwort>
+	
+	
+	<fragetitel>Frage 49</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 49 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen ermitteln, welche Shellvariablen in Ihrer aktuellen Shell gerade gültig sind. Mit welchem Kommando können Sie diese Information abfragen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 49' richtig='nein'> ls /var</antwort>
+	<antwort zuFrage='Frage 49' richtig='nein'> echo $var</antwort>
+	<antwort zuFrage='Frage 49' richtig='nein'> env</antwort>
+	<antwort zuFrage='Frage 49' richtig='ja'> set</antwort>
+	<antwort zuFrage='Frage 49' richtig='nein'> cat /proc/var</antwort>
+	
+	
+	<fragetitel>Frage 50</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 50 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen einem Server eine Shellvariable hinzufügen. Diese Variable soll für alle Benutzer in jeder neu geöffneten Shell gültig sein, darf aber keine Neuanmeldung der Benutzer erfordern. In welcher der folgenden  Konfigurationsdateien können Sie die neue Variable eintragen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 50' richtig='ja'> bashrc</antwort>
+	<antwort zuFrage='Frage 50' richtig='nein'> .profile</antwort>
+	<antwort zuFrage='Frage 50' richtig='nein'> .bashrc</antwort>
+	<antwort zuFrage='Frage 50' richtig='nein'> .bash_logout</antwort>
+	<antwort zuFrage='Frage 50' richtig='nein'> .bash_profile</antwort>
+	
+	
+	<fragetitel>Frage 51</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 51 im Buch.
+	</erklaerung>
+	<fragetext>Ein Benutzer hätte gerne einen Systemprompt, der sich von dem der anderen Benutzer unterscheidet. Er würde die Konfiguration auch selbst vornehmen, weiß aber nicht welche Konfigurationsdatei er bearbeiten muss.
+ Welche Konfigurationsdatei soll der Benutzer ändern?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 51' richtig='nein'> /etc/bashrc</antwort>
+	<antwort zuFrage='Frage 51' richtig='ja'> ~/.bashrc</antwort>
+	<antwort zuFrage='Frage 51' richtig='nein'> ~/.bash_logout</antwort>
+	<antwort zuFrage='Frage 51' richtig='nein'> /etc/profile</antwort>
+	<antwort zuFrage='Frage 51' richtig='nein'> ~/.bash_history</antwort>
+		
+	
+	<fragetitel>Frage 52</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 52 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen der Variablen meaning_of_life den Wert 42 zuordnen. Diese Zuordnung darf nur in der aktuellen Shell und nicht in Subshells definiert sein.
+ Welche Kommandos können Sie verwenden? (Wählen Sie zwei Antworten aus!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 52' richtig='nein'> export meaning_of_life</antwort>
+	<antwort zuFrage='Frage 52' richtig='ja'> meaning_of_life=42</antwort>
+	<antwort zuFrage='Frage 52' richtig='nein'> set meaning_of_life=42</antwort>
+	<antwort zuFrage='Frage 52' richtig='ja'> let meaning_of_life=42</antwort>
+	<antwort zuFrage='Frage 52' richtig='nein'> export meaning_of_life=42</antwort>
+	
+	
+	<fragetitel>Frage 53</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 53 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen den Errorlevel des zuletzt ausgeführten Programms ermitteln.
+ Welches der folgenden Kommandos gibt Ihnen den Errorlevel aus?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 53' richtig='nein'> echo $PS1</antwort>
+	<antwort zuFrage='Frage 53' richtig='nein'> cat $?</antwort>
+	<antwort zuFrage='Frage 53' richtig='nein'> pwd</antwort>
+	<antwort zuFrage='Frage 53' richtig='ja'> echo $?</antwort>
+	<antwort zuFrage='Frage 53' richtig='nein'> echo $!</antwort>
+	
+	
+	<fragetitel>Frage 54</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 54 im Buch.
+	</erklaerung>
+	<fragetext>Mit welchem Kommando können Sie eine gesetzte Variable mit der Bezeichnung A wieder löschen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 54' richtig='nein'> reset A</antwort>
+	<antwort zuFrage='Frage 54' richtig='nein'> A = 0</antwort>
+	<antwort zuFrage='Frage 54' richtig='ja'> unset A</antwort>
+	<antwort zuFrage='Frage 54' richtig='nein'> let A =</antwort>
+	<antwort zuFrage='Frage 54' richtig='nein'> export A</antwort>
+	
+	
+	<fragetitel>Frage 55</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 55 im Buch.
+	</erklaerung>
+	<fragetext>Für eine Programminstallation muss die Variable http_proxy eines Systems auf den Wert http://192.168.0.1:3128 gesetzt werden. Geben Sie das Kommando ein, das die Variable setzt und gleich für Subshells verfügbar macht!
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 55' richtig='ja'>export http_proxy=http://192.168.0.1:3128</antwort>
+	
+	
+	<fragetitel>Frage 56</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 56 im Buch.
+	</erklaerung>
+	<fragetext>Sie haben auf einem Terminal mehrere Kommandos eingegeben. Sie müssen die Eingabe der Kommandos noch einmal prüfen.
+ Welchen Befehl können Sie eingeben, um eine Liste der zuletzt verwendeten Kommandos zu bekommen?
+&lt;br /> 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 56' richtig='ja'>history</antwort>
+	
+	
+	<fragetitel>Frage 57</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 57 im Buch.
+	</erklaerung>
+	<fragetext>Um zu überprüfen, wie viele Benutzer, die sich in einem bestimmten Netzwerksegment befinden, auf einen speziellen Serverdienst zugreifen, haben Sie folgendes Kommando verwendet:&lt;br />
+ netstat -an|grep "192.168.55"|grep ":3128"|wc -l&lt;br />
+ Nach etwa einer halben Stunde müssen Sie dieselbe Prüfung noch einmal durchführen. Sie wollen aber nicht das komplette Kommando noch einmal eingeben.
+&lt;br /> Welche Möglichkeiten stehen Ihnen zur Verfügung? (Wählen Sie drei Antworten aus!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 57' richtig='ja'> Cursor „nach oben“ + Eingabetaste</antwort>
+	<antwort zuFrage='Frage 57' richtig='nein'> !?</antwort>
+	<antwort zuFrage='Frage 57' richtig='ja'> !!</antwort>
+	<antwort zuFrage='Frage 57' richtig='ja'> !net</antwort>
+	<antwort zuFrage='Frage 57' richtig='nein'> history</antwort>
+	
+	
+	<fragetitel>Frage 58</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 58 im Buch.
+	</erklaerung>
+	<fragetext>Sie haben mehrere Versionen desselben Programms auf einem Computer installiert. Sie müssen nun ermitteln, welches dieser Programme startet, wenn Sie den entsprechenden Befehl ohne die Angabe eines Pfades eingeben.
+ Welches Kommando wird ihnen ausschließlich diese Information liefern?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 58' richtig='ja'> which</antwort>
+	<antwort zuFrage='Frage 58' richtig='nein'> whereis</antwort>
+	<antwort zuFrage='Frage 58' richtig='nein'> whois</antwort>
+	<antwort zuFrage='Frage 58' richtig='nein'> whatis</antwort>
+	<antwort zuFrage='Frage 58' richtig='nein'> apropos</antwort>
+	
+	
+	<fragetitel>Frage 59</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 59 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen sich über den Aufbau der Datei /etc/crontab informieren. Wenn Sie allerdings das Kommando man crontab eingeben, erhalten Sie nur Informationen über das Programm crontab und nicht über die Datei. Wie müssen Sie das Kommando anpassen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 59' richtig='nein'> man 1 crontab</antwort>
+	<antwort zuFrage='Frage 59' richtig='nein'> whatis crontab</antwort>
+	<antwort zuFrage='Frage 59' richtig='nein'> which crontab</antwort>
+	<antwort zuFrage='Frage 59' richtig='nein'> man 8 crontab</antwort>
+	<antwort zuFrage='Frage 59' richtig='ja'> man 5 crontab</antwort>
+	
+	
+	<fragetitel>Frage 60</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 60 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen wissen, in welchen Verzeichnissen eines Computers sich die Manpages befinden. Mit welchem Kommando können Sie diese Information am einfachsten bekommen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 60' richtig='nein'> echo $MANPATH</antwort>
+	<antwort zuFrage='Frage 60' richtig='ja'> manpath</antwort>
+	<antwort zuFrage='Frage 60' richtig='nein'> manpath -c</antwort>
+	<antwort zuFrage='Frage 60' richtig='nein'> man man</antwort>
+	<antwort zuFrage='Frage 60' richtig='nein'> whereis man</antwort>
+	
+	
+	<fragetitel>Frage 61</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 61 im Buch.
+	</erklaerung>
+	<fragetext>Sie beabsichtigen zwei Textdateien, die jeweils Listen enthalten, in einer dritten Datei zusammenzufassen. Die Namen der Dateien sind liste1 und liste2. Mit welchem Kommando können Sie die beiden Dateien in liste3 überführen ohne in liste3 bereits vorhandene Daten zu überschreiben? Die beiden ursprünglichen Listen sollen in der Zieldatei untereinander erscheinen!
+
+	</fragetext>
+	<antwort zuFrage='Frage 61' richtig='nein'> paste liste1 liste2 >> liste3</antwort>
+	<antwort zuFrage='Frage 61' richtig='nein'> join liste1 liste2 > liste3</antwort>
+	<antwort zuFrage='Frage 61' richtig='nein'> cat liste1 liste2 >liste3</antwort>
+	<antwort zuFrage='Frage 61' richtig='nein'> cat liste1 liste2 | liste3</antwort>
+	<antwort zuFrage='Frage 61' richtig='ja'> cat liste1 liste2 >> liste3</antwort>
+	
+	
+	<fragetitel>Frage 62</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 62 im Buch.
+	</erklaerung>
+	<fragetext>Um zu überprüfen, von welchen IP-Adressen aus auf einen Webserver zugegriffen wird, wollen Sie zunächst aus der Datei access.log die erste Spalte (da befinden sich die Quelladressen) in eine neue Datei überführen. Die neue Datei soll die Bezeichnung ip.txt tragen.
+ Welches Kommando können Sie verwenden?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 62' richtig='nein'> head -n 20 access.log</antwort>
+	<antwort zuFrage='Frage 62' richtig='ja'> cut -d " " -f1 access.log > ip.txt</antwort>
+	<antwort zuFrage='Frage 62' richtig='nein'> tail access.log > ip.txt</antwort>
+	<antwort zuFrage='Frage 62' richtig='nein'> od access.log >> ip.txt</antwort>
+	<antwort zuFrage='Frage 62' richtig='nein'> fmt access.log >> ip.txt</antwort>
+	
+	
+	<fragetitel>Frage 63</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 63 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen alle Tabstops einer Datei in eine entsprechende Anzahl Leerzeichen (spaces) umwandeln.
+ Welches Programm können Sie für die Umwandlung verwenden?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 63' richtig='ja'> expand</antwort>
+	<antwort zuFrage='Frage 63' richtig='nein'> unexpand</antwort>
+	<antwort zuFrage='Frage 63' richtig='nein'> head</antwort>
+	<antwort zuFrage='Frage 63' richtig='nein'> pr</antwort>
+	<antwort zuFrage='Frage 63' richtig='nein'> cat</antwort>
+	
+	
+	<fragetitel>Frage 64</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 64 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen die Shebangzeilen mehrerer Skripten nacheinander betrachten, um sich einen schnellen Überblick zu verschaffen, in welcher Umgebung diese Skripten ausgeführt werden müssen.
+ Welche Kommandos würden bei Übergabe des jeweiligen Dateinamen nur die erste Zeile einer Datei anzeigen? (Wählen Sie zwei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 64' richtig='nein'> head</antwort>
+	<antwort zuFrage='Frage 64' richtig='nein'> tail -1</antwort>
+	<antwort zuFrage='Frage 64' richtig='ja'> head -n1</antwort>
+	<antwort zuFrage='Frage 64' richtig='ja'> head -1</antwort>
+	<antwort zuFrage='Frage 64' richtig='nein'> tail -n1</antwort>
+	
+	
+	<fragetitel>Frage 65</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 65 im Buch.
+	</erklaerung>
+	<fragetext>Es liegt ihnen eine Logdatei eines Programms vor. Um die Analyse zu vereinfachen, wollen Sie die Datei umsortieren, so dass die neuesten Einträge, die momentan am Ende er Logdatei zu finden sind, anschließend oben in der Logdatei stehen.
+ Welches Programm würden Sie für diese Aufgabe verwenden?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 65' richtig='nein'> expand</antwort>
+	<antwort zuFrage='Frage 65' richtig='nein'> tail</antwort>
+	<antwort zuFrage='Frage 65' richtig='nein'> cat</antwort>
+	<antwort zuFrage='Frage 65' richtig='ja'> tac</antwort>
+	<antwort zuFrage='Frage 65' richtig='nein'> head</antwort>
+		
+	
+	<fragetitel>Frage 66</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 66 im Buch.
+	</erklaerung>
+	<fragetext>Sie beabsichtigen, die Zeilen einer Textdatei zu nummerieren.
+ Welches Programm können Sie hierfür verwenden?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 66' richtig='nein'> ln</antwort>
+	<antwort zuFrage='Frage 66' richtig='nein'> pr</antwort>
+	<antwort zuFrage='Frage 66' richtig='ja'> nl</antwort>
+	<antwort zuFrage='Frage 66' richtig='nein'> fmt</antwort>
+	<antwort zuFrage='Frage 66' richtig='nein'> wc</antwort>
+	
+	
+	<fragetitel>Frage 67</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 67 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen die letzten 40 Zeilen der Datei syslog ansehen. Sie haben bereits in das Verzeichnis /var/log gewechselt.
+ Welches Kommando werden Sie verwenden, um ausschließlich die letzten 40 Zeilen auf dem Bildschirm auszugeben?
+&lt;br /> 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 67' richtig='ja'>tail -n 40 syslog</antwort>
+	<antwort zuFrage='Frage 67' richtig='ja'>tail -n40 syslog</antwort>
+	<antwort zuFrage='Frage 67' richtig='ja'>tail -40 syslog</antwort>
+	<fragetitel>Frage 68</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 68 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen alle Leerzeichen (spaces) einer Datei in eine entsprechende Anzahl Tabstops umwandeln.
+ Welches Programm können Sie für die Umwandlung verwenden?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 68' richtig='nein'> expand</antwort>
+	<antwort zuFrage='Frage 68' richtig='ja'> unexpand</antwort>
+	<antwort zuFrage='Frage 68' richtig='nein'> head</antwort>
+	<antwort zuFrage='Frage 68' richtig='nein'> pr</antwort>
+	<antwort zuFrage='Frage 68' richtig='nein'> cat</antwort>
+	
+	
+	<fragetitel>Frage 69</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 69 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen eine Datei mit einer Größe von ca. 110 MB per E-Mail versenden. Der Provider des Empfängers akzeptiert keine Nachrichten, die mehr als 10 Millionen Zeichen beinhalten. Sie müssen die Datei teilen.
+ Welches Programm können Sie für die Aufteilung verwenden? (Geben Sie nur das Programm ohne Optionen und Parameter an!)
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 69' richtig='ja'>split</antwort>
+	
+	
+	<fragetitel>Frage 70</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 70 im Buch.
+	</erklaerung>
+	<fragetext>Nachdem Sie die Zeilen einer Logdatei mittels sort sortiert haben, fällt ihnen auf, dass viele Einträge in der Logdatei mehrfach vorhanden sind. Einige Einträge sind mehr als 50 mal vorhanden, was das Lesen der Logdatei erheblich erschwert.
+ Welches Kommando (ohne Optionen und Parameter) können Sie verwenden, um die Duplikate zu entfernen?
+&lt;br /> 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 70' richtig='ja'>uniq</antwort>
+	
+	
+	<fragetitel>Frage 71</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 71 im Buch.
+	</erklaerung>
+	<fragetext>Sie lassen sich in Ihrem Benutzerverzeichnis eine Dateiliste anzeigen, indem Sie das Kommando ls -l verwenden. Da einige Dateien sehr groß sind, ist die Ausgabe unübersichtlich. Die Dateigrößen werden ohne Tausendertrennzeichen in Byte angezeigt. Wie können Sie die Ausgabe in eine für Menschen gut lesbare Form bringen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 71' richtig='nein'> ls -li</antwort>
+	<antwort zuFrage='Frage 71' richtig='nein'> ls -la</antwort>
+	<antwort zuFrage='Frage 71' richtig='ja'> ls -lh</antwort>
+	<antwort zuFrage='Frage 71' richtig='nein'> ls -lc</antwort>
+	<antwort zuFrage='Frage 71' richtig='nein'> ls -lS</antwort>
+	
+	
+	<fragetitel>Frage 72</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 72 im Buch.
+	</erklaerung>
+	<fragetext>Mit welchen beiden der folgenden Kommandos können Sie von einer beliebigen Stelle des Verzeichnisbaums in Ihr Heimatverzeichnis wechseln?
+
+	</fragetext>
+	<antwort zuFrage='Frage 72' richtig='ja'> cd ~</antwort>
+	<antwort zuFrage='Frage 72' richtig='nein'> cd ..</antwort>
+	<antwort zuFrage='Frage 72' richtig='nein'> cd /</antwort>
+	<antwort zuFrage='Frage 72' richtig='ja'> cd</antwort>
+	<antwort zuFrage='Frage 72' richtig='nein'> cd /home</antwort>
+	
+	
+	<fragetitel>Frage 73</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 73 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen eine größere Menge Dateien kopieren, die unterschiedlichen Benutzern gehören. Es muss sichergestellt werden, dass die kopierten Dateien dieselben Berechtigungen erhalten wie die ursprünglichen Dateien.
+ Welche Option sollten Sie für den cp Befehl verwenden?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 73' richtig='nein'> -f</antwort>
+	<antwort zuFrage='Frage 73' richtig='nein'> -i</antwort>
+	<antwort zuFrage='Frage 73' richtig='nein'> -R</antwort>
+	<antwort zuFrage='Frage 73' richtig='ja'> -p</antwort>
+	<antwort zuFrage='Frage 73' richtig='nein'> -u</antwort>
+	
+	
+	<fragetitel>Frage 74</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 74 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen das Verzeichnis /daten/archiv/1980/bilder erstellen. Bisher ist nicht einmal das Verzeichnis /daten vorhanden. Sie wollen das Verzeichnis mit einem einzigen Befehl erstellen.
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 74' richtig='ja'>mkdir -p /daten/archiv/1980/bilder </antwort>
+	<antwort zuFrage='Frage 74' richtig='ja'>mkdir --parents /daten/archiv/1980/bilder</antwort>
+	<antwort zuFrage='Frage 74' richtig='ja'>mkdir /daten/archiv/1980/bilder -p</antwort>
+	<antwort zuFrage='Frage 74' richtig='ja'>mkdir /daten/archiv/1980/bilder --parents</antwort>
+	
+	<fragetitel>Frage 75</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 75 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen alle pdf-Dateien, die ein User namens Willi in seinem Heimatverzeichnis abgespeichert hat, finden. Es sollen keine Dokumente anderer Benutzer angezeigt werden.
+ Welches Kommando können Sie verwenden?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 75' richtig='ja'> find /home/willi -name *.pdf</antwort>
+	<antwort zuFrage='Frage 75' richtig='nein'> find /home/willi *.pdf</antwort>
+	<antwort zuFrage='Frage 75' richtig='nein'> locate *.pdf</antwort>
+	<antwort zuFrage='Frage 75' richtig='nein'> search /home/willi *.pdf</antwort>
+	<antwort zuFrage='Frage 75' richtig='nein'> find /home/willi -name ?.pdf</antwort>
+		
+	
+	<fragetitel>Frage 76</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 76 im Buch.
+	</erklaerung>
+	<fragetext>Ein Kollege hat Ihnen eine Datei mit dem Namen programm.tar.gz per E-Mail geschickt. Sie müssen die Datei auspacken, um das enthaltene Programm ausführen zu können.
+ Welches Kommando werden Sie ausführen?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 76' richtig='nein'> tar -xvfz programm.tar.gz</antwort>
+	<antwort zuFrage='Frage 76' richtig='nein'> tar -t programm.tar.gz</antwort>
+	<antwort zuFrage='Frage 76' richtig='nein'> tar --list programm.tar.gz</antwort>
+	<antwort zuFrage='Frage 76' richtig='nein'> rmp -ihv programm.tar.gz</antwort>
+	<antwort zuFrage='Frage 76' richtig='ja'> tar -xvzf programm.tar.gz</antwort>
+	
+	
+	<fragetitel>Frage 77</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 77 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen eine bestimmte Datei aus einem Backup wiederherstellen. Weil Sie nicht wissen, in welchem Archiv sich die fragliche Datei befindet, wollen Sie zunächst nur den Inhalt der Archive einsehen.
+ Welche beiden Kommandos können Sie hier verwenden?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 77' richtig='nein'> tar -xvfz</antwort>
+	<antwort zuFrage='Frage 77' richtig='ja'> tar -t</antwort>
+	<antwort zuFrage='Frage 77' richtig='nein'> tar -r</antwort>
+	<antwort zuFrage='Frage 77' richtig='nein'> tar -c</antwort>
+	<antwort zuFrage='Frage 77' richtig='ja'> tar --list</antwort>
+	
+	
+	<fragetitel>Frage 78</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 78 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen eine Datei mit der Bezeichnung files.gz dekomprimieren.
+ Welche beiden Kommandos können Sie verwenden?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 78' richtig='ja'> gzip -d files.gz</antwort>
+	<antwort zuFrage='Frage 78' richtig='nein'> gzip -t files.gz</antwort>
+	<antwort zuFrage='Frage 78' richtig='nein'> gzip -u files.gz</antwort>
+	<antwort zuFrage='Frage 78' richtig='nein'> gzip files.gz</antwort>
+	<antwort zuFrage='Frage 78' richtig='ja'> gunzip files.gz</antwort>
+	
+	
+	<fragetitel>Frage 79</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 79 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen eine Datei mit der Bezeichnung files.bz2 dekomprimieren. Geben Sie ein geeignetes Programm (ohne Optionen oder Parameter) an, das diese Aufgabe erfüllt.
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 79' richtig='ja'>bzip2</antwort>
+	<antwort zuFrage='Frage 79' richtig='ja'>bunzip2</antwort>	
+	<antwort zuFrage='Frage 79' richtig='ja'>bzcat</antwort>
+	
+	<fragetitel>Frage 80</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 80 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen auf einem System alle pdf-Dokumente finden, die sich in Benutzerverzeichnissen befinden und diese in einer Verzeichnisstruktur unterhalb von /pdfbackup sichern.
+ Welches der folgenden Kommandos wir diese Aufgabe erfüllen?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 80' richtig='nein'> tar -cf /pdfbackup/pdfs.tar /home/*</antwort>
+	<antwort zuFrage='Frage 80' richtig='ja'> find /home -name *.pdf | cpio -pd /pdfbackup</antwort>
+	<antwort zuFrage='Frage 80' richtig='nein'> find /home -name *.pdf | cpio -o /pdfbackup</antwort>
+	<antwort zuFrage='Frage 80' richtig='nein'> find /home -file *.pdf | cpio -pd /pdfbackup</antwort>
+	<antwort zuFrage='Frage 80' richtig='nein'> cp /home/*.pdf /pdfbackup</antwort>
+	
+	
+	<fragetitel>Frage 81</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 81 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen den kompletten Inhalt einer Festplatte inklusive MBR auf eine andere Festplatte sichern. Die Quellfestplatte ist am primären IDE-Controller als Master angeschlossen. Die Zielfestplatte ist am sekundären IDE-Controller als Slave des CD-Rom angeschlossen.
+ Welches Kommando werden Sie eingeben? (Verwenden Sie keine Optionen, die nicht unbedingt erforderlich sind!)
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 81' richtig='ja'>dd if=/dev/hda of=/dev/hdd</antwort>
+	
+	
+	<fragetitel>Frage 82</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 82 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen den Masterbootrecord (MBR) einer Festplatte sichern. Die Festplatte ist als Master am primären IDE-Kanal eines Computers angeschlossen.
+ Welches der folgenden Kommandos können Sie verwenden, wenn die Sicherungsdatei mbr.backup sein soll?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 82' richtig='ja'> dd if=/dev/hda of=mbr.backup ibs=512 count=1</antwort>
+	<antwort zuFrage='Frage 82' richtig='nein'> dd of=/dev/hda if=mbr.backup ibs=512 count=1</antwort>
+	<antwort zuFrage='Frage 82' richtig='nein'> dd if=/dev/hda of=mbr.backup</antwort>
+	<antwort zuFrage='Frage 82' richtig='nein'> dump /dev/hda</antwort>
+	<antwort zuFrage='Frage 82' richtig='nein'> dd if=/dev/hdb of=mbr.backup ibs=512 count=1</antwort>
+	
+	
+	<fragetitel>Frage 83</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 83 im Buch.
+	</erklaerung>
+	<fragetext>Sie finden auf Ihrem System eine Datei mit dem Namen doku.ods. Sie erinnern sich leider nicht mehr, mit welchem Programm Sie diese Datei erstellt haben. Sie wollen herausfinden, um was für einen Dateitypen es sich hier handelt.
+ Welches Kommando können Sie hierfür verwenden?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 83' richtig='nein'> touch doku.ods</antwort>
+	<antwort zuFrage='Frage 83' richtig='nein'> stat doku.ods</antwort>
+	<antwort zuFrage='Frage 83' richtig='ja'> file doku.ods</antwort>
+	<antwort zuFrage='Frage 83' richtig='nein'> rm doku.ods</antwort>
+	<antwort zuFrage='Frage 83' richtig='nein'> stat -f doku.ods</antwort>
+	
+	
+	<fragetitel>Frage 84</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 84 im Buch.
+	</erklaerung>
+	<fragetext>Sie haben die Ausgabe des Kommandos netsat -an in eine Datei mit dem Namen ports.txt umgeleitet. Sie wollen diesen Vorgang nun wiederholen und die neuerliche Ausgabe an die bereits vorhandene Textdatei anhängen. Wie muss das Kommando ausgeführt werden, damit die alte Aufzeichnung nicht überschrieben wird?
+
+	</fragetext>
+	<antwort zuFrage='Frage 84' richtig='nein'> netstat -an > ports.txt</antwort>
+	<antwort zuFrage='Frage 84' richtig='nein'> netstat -an | ports.txt</antwort>
+	<antwort zuFrage='Frage 84' richtig='nein'> netstat -an > ports2.txt</antwort>
+	<antwort zuFrage='Frage 84' richtig='nein'> netstat -an ||ports.txt</antwort>
+	<antwort zuFrage='Frage 84' richtig='ja'> netstat -an >> ports.txt</antwort>
+	
+	
+	<fragetitel>Frage 85</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 85 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen die Ausgabe eines Programms in eine Textdatei umleiten. Hierbei sollen sowohl die normalen Meldungen als auch Fehlermeldungen erfasst werden.
+ Welche Optionen werden Sie an die Ausführung des Programms anhängen, wenn es die benötigte Textdatei noch nicht gibt? Wählen Sie die kürzest mögliche Option!
+
+	</fragetext>
+	<antwort zuFrage='Frage 85' richtig='nein'> >> textdatei 2>&amp;1</antwort>
+	<antwort zuFrage='Frage 85' richtig='nein'> > textdatei 1>&amp;2</antwort>
+	<antwort zuFrage='Frage 85' richtig='nein'> >> textdatei 1>&amp;2</antwort>
+	<antwort zuFrage='Frage 85' richtig='ja'> > textdatei 2>&amp;1</antwort>
+	<antwort zuFrage='Frage 85' richtig='nein'> > textdatei 2>/1</antwort>
+	
+	
+	<fragetitel>Frage 86</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 86 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen den Inhalt einer Datei per E-Mail an die Adresse exp@example.net versenden. Mit welchen Kommandos können Sie diese Aufgabe vom Terminal aus lösen? (Wählen Sie zwei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 86' richtig='nein'> cat datei > mail -s "eine Datei" exp@example.net</antwort>
+	<antwort zuFrage='Frage 86' richtig='ja'> cat datei | mail -s "eine Datei" exp@example.net</antwort>
+	<antwort zuFrage='Frage 86' richtig='ja'> mail -s "eine Datei" exp@example.net &lt; datei</antwort>
+	<antwort zuFrage='Frage 86' richtig='nein'> mail -s "eine Datei" exp@example.net > datei</antwort>
+	<antwort zuFrage='Frage 86' richtig='nein'> sendmail -s "eine Datei" exp@example.net &lt; datei</antwort>
+	
+	
+	<fragetitel>Frage 87</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 87 im Buch.
+	</erklaerung>
+	<fragetext>Sie durchsuchen die Datei /var/log/messages nach dhcp-Meldungen, indem Sie das Kommando grep dhcp /var/log/messages verwenden. Sie wollen das Kommando wiederholen, aber diesmal soll die Ausgabe des Kommandos sowohl auf dem Bildschirm erscheinen als auch in einer Textdatei abgespeichert werden. Wie werden Sie den Befehl vervollständigen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 87' richtig='ja'> grep dhcp /var/log/messages | tee dhcpmessages</antwort>
+	<antwort zuFrage='Frage 87' richtig='nein'> grep dhcp /var/log/messages > tee dhcpmessages</antwort>
+	<antwort zuFrage='Frage 87' richtig='nein'> grep dhcp /var/log/messages &lt; tee dhcpmessages</antwort>
+	<antwort zuFrage='Frage 87' richtig='nein'> tee grep dhcp /var/log/messages</antwort>
+	<antwort zuFrage='Frage 87' richtig='nein'> tee | grep dhcp /var/log/messages</antwort>
+	
+	
+	<fragetitel>Frage 88</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 88 im Buch.
+	</erklaerung>
+	<fragetext>Sie führen mithilfe eines Skripts eine Abfrage aus. Das Ergebnis der Abfrage umfasst mehrere Zeile. Sie müssen jede einzelne Zeile der Antwort an ein anderes Programm zur Auswertung übergeben. Leider kann dieses Programm immer nur eine Zeile gleichzeitig verarbeiten. Sie müssen ein Tool zwischenschalten, das die Antwortzeilen des Skriptes einzeln an das Programm übergibt.
+ Welches Werkzeug können Sie hier einsetzen?
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 88' richtig='ja'>xargs</antwort>
+	
+	
+	<fragetitel>Frage 89</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 89 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen einen Prozess beenden, der nicht mehr reagiert. Sie wollen das Kommando kill einsetzen, kennen aber nicht die Prozess-ID des zu beendenden Prozesses.
+ Welche der folgenden Programme können Sie verwenden, um die PID zu ermitteln? (Wählen Sie zwei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 89' richtig='ja'> ps</antwort>
+	<antwort zuFrage='Frage 89' richtig='nein'> free</antwort>
+	<antwort zuFrage='Frage 89' richtig='ja'> top</antwort>
+	<antwort zuFrage='Frage 89' richtig='nein'> df</antwort>
+	<antwort zuFrage='Frage 89' richtig='nein'> jobs</antwort>
+	
+	
+	<fragetitel>Frage 90</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 90 im Buch.
+	</erklaerung>
+	<fragetext>Sie benötigen eine grafische Darstellung der Prozesse eines laufenden Systems. In dieser Darstellung sollten zusätzlich auch die PIDs angezeigt werden.
+ Welches Kommando werden Sie verwenden?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 90' richtig='nein'> pstree -a</antwort>
+	<antwort zuFrage='Frage 90' richtig='nein'> ps -aux</antwort>
+	<antwort zuFrage='Frage 90' richtig='nein'> top</antwort>
+	<antwort zuFrage='Frage 90' richtig='nein'> uptime</antwort>
+	<antwort zuFrage='Frage 90' richtig='ja'> pstree -p</antwort>
+	
+	
+	<fragetitel>Frage 91</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 91 im Buch.
+	</erklaerung>
+	<fragetext>Welche der folgenden Programme können Sie verwenden, wenn Sie einen laufenden Prozess beenden wollen? (Wählen Sie drei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 91' richtig='nein'> jobs</antwort>
+	<antwort zuFrage='Frage 91' richtig='ja'> kill</antwort>
+	<antwort zuFrage='Frage 91' richtig='nein'> bg</antwort>
+	<antwort zuFrage='Frage 91' richtig='ja'> killall</antwort>
+	<antwort zuFrage='Frage 91' richtig='ja'> top</antwort>
+	
+	
+	<fragetitel>Frage 92</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 92 im Buch.
+	</erklaerung>
+	<fragetext>Sie haben versucht die Anwendung mc durch Eingabe des Kommandos  killall mc zu beenden. Die Anwendung reagiert jedoch nicht auf diesen Befehl. Durch Eingabe des Kommandos ps aux haben Sie ermittelt, dass der Prozess die PID 18456 verwendet.
+ Welche Befehle sind geeignet, den nicht mehr reagierenden Prozess zu beenden? (Wählen Sie drei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 92' richtig='ja'> killall -9 mc</antwort>
+	<antwort zuFrage='Frage 92' richtig='ja'> kill -s 9 18456</antwort>
+	<antwort zuFrage='Frage 92' richtig='nein'> kill -SIGHUP 18456</antwort>
+	<antwort zuFrage='Frage 92' richtig='nein'> kill -sigterm 18456</antwort>
+	<antwort zuFrage='Frage 92' richtig='ja'> kill -SIGKILL 18456</antwort>
+	
+	
+	<fragetitel>Frage 93</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 93 im Buch.
+	</erklaerung>
+	<fragetext>Sie sind via ssh mit einem Server verbunden und beabsichtigen die Ausführung eines Programms, dessen Ablauf mehrere Stunden in Anspruch nehmen kann. Das Programm soll deshalb weiterlaufen, auch wenn Sie die ssh-Verbindung trennen.
+ Welchen Befehl können Sie der Ausführung des Programms voranstellen, um diese Aufgabe zu lösen?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 93' richtig='nein'> bg</antwort>
+	<antwort zuFrage='Frage 93' richtig='ja'> nohup</antwort>
+	<antwort zuFrage='Frage 93' richtig='nein'> jobs</antwort>
+	<antwort zuFrage='Frage 93' richtig='nein'> fg</antwort>
+	<antwort zuFrage='Frage 93' richtig='nein'> tee</antwort>
+	
+	
+	<fragetitel>Frage 94</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 94 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen ermitteln, wann das System, an dem Sie gerade arbeiten, zuletzt neu gestartet wurde.
+ Welches Programm zeigt ihnen an, wie lange das System bereits läuft, ohne zusätzliche, nicht benötigte Informationen auszugeben?
+&lt;br /> 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 94' richtig='ja'>uptime</antwort>
+	
+	
+	<fragetitel>Frage 95</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 95 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen ermitteln, wie viel Arbeitsspeicher in einem System noch verfügbar ist und wie viel belegt.
+ Welches Kommando können Sie verwenden, um eine entsprechende Information in Megabyte zu erhalten?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 95' richtig='nein'> free -h</antwort>
+	<antwort zuFrage='Frage 95' richtig='nein'> df -h</antwort>
+	<antwort zuFrage='Frage 95' richtig='ja'> free -m</antwort>
+	<antwort zuFrage='Frage 95' richtig='nein'> df -m</antwort>
+	<antwort zuFrage='Frage 95' richtig='nein'> mem</antwort>
+	
+	
+	<fragetitel>Frage 96</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 96 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen in einer ssh-Sitzung ein Programm, dessen Ausführung lange Zeit in Anspruch nimmt, in den Hintergrund schicken, damit Sie die Konsole anderweitig verwenden können. Das Programm soll seine Arbeit im Hintergrund fortsetzen. Was tun Sie?
+
+	</fragetext>
+	<antwort zuFrage='Frage 96' richtig='nein'> Strg+C</antwort>
+	<antwort zuFrage='Frage 96' richtig='nein'> Strg+Z anschließend jobs</antwort>
+	<antwort zuFrage='Frage 96' richtig='nein'> Strg+Z anschließend fg</antwort>
+	<antwort zuFrage='Frage 96' richtig='ja'> Strg+Z anschließend bg</antwort>
+	<antwort zuFrage='Frage 96' richtig='nein'> Strg+Z</antwort>
+	
+	
+	<fragetitel>Frage 97</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 97 im Buch.
+	</erklaerung>
+	<fragetext>Sie verwenden das Kommando jobs und erhalten folgende Ausgabe:&lt;br />
+ harald@archangel:~$ jobs&lt;br />
+ [1]-  Angehalten      lynx&lt;br />
+ [2]   Angehalten      dd if=/dev/hda of=/dev/hdb&lt;br />
+ [3]+  Angehalten      wget http://www.kernel.org&lt;br />
+ Welches Kommando können Sie verwenden, damit die Duplizierung der Festplatte im Hintergrund fortgesetzt wird?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 97' richtig='nein'> fg 2</antwort>
+	<antwort zuFrage='Frage 97' richtig='nein'> jobs</antwort>
+	<antwort zuFrage='Frage 97' richtig='nein'> bg 3</antwort>
+	<antwort zuFrage='Frage 97' richtig='ja'> bg 2</antwort>
+	<antwort zuFrage='Frage 97' richtig='nein'> fg</antwort>
+	
+	
+	<fragetitel>Frage 98</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 98 im Buch.
+	</erklaerung>
+	<fragetext>Sie planen apt-get upgrade auszuführen, um ihr System auf den neuesten Stand zu bringen. Da dieses Kommando erfahrungsgemäß eine hohe Systemlast verursacht, wollen Sie ihm eine geringere Prozesspriorität zuweisen.
+ Welchen Befehl werden Sie apt-get voranstellen, damit andere Prozesse durch die Aktualisierung nicht negativ beeinflusst werden? (Wählen Sie zwei Antwortmöglichkeiten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 98' richtig='ja'> nice -14</antwort>
+	<antwort zuFrage='Frage 98' richtig='ja'> nice -n 14</antwort>
+	<antwort zuFrage='Frage 98' richtig='nein'> renice -n 14</antwort>
+	<antwort zuFrage='Frage 98' richtig='nein'> nice -n -14</antwort>
+	<antwort zuFrage='Frage 98' richtig='nein'> nice --14</antwort>
+	
+	
+	<fragetitel>Frage 99</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 99 im Buch.
+	</erklaerung>
+	<fragetext>Sie stellen fest, dass das System an dem Sie arbeiten sehr träge reagiert. Eine Überprüfung ergibt, dass ein Backupskript einen großen Teil der Systemressourcen verbraucht. Die zugehörige Prozess ID ist 8490.
+ Welches Kommando können Sie verwenden, um die Ausführungspriorität der Datensicherung im laufenden Betrieb zu senken?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 99' richtig='nein'> nice --12 8490</antwort>
+	<antwort zuFrage='Frage 99' richtig='nein'> bg</antwort>
+	<antwort zuFrage='Frage 99' richtig='nein'> renice -n 15 8490</antwort>
+	<antwort zuFrage='Frage 99' richtig='ja'> renice -15 8490</antwort>
+	<antwort zuFrage='Frage 99' richtig='nein'> nice -n 12 8490</antwort>
+	
+	
+	<fragetitel>Frage 100</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 100 im Buch.
+	</erklaerung>
+	<fragetext>Welche der folgenden Programme können Einfluss auf die Ausführungspriorität eines Prozesses nehmen? (Wählen Sie drei Programme aus!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 100' richtig='nein'> bg</antwort>
+	<antwort zuFrage='Frage 100' richtig='ja'> nice</antwort>
+	<antwort zuFrage='Frage 100' richtig='ja'> renice</antwort>
+	<antwort zuFrage='Frage 100' richtig='nein'> fg</antwort>
+	<antwort zuFrage='Frage 100' richtig='ja'> top</antwort>
+	
+	
+	<fragetitel>Frage 101</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 101 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen aus einer Protokolldatei alle Leerzeilen entfernen und das Ergebnis in einer neuen Textdatei abspeichern.
+ Welche beiden der folgenden Kommandos erfüllen diesen Zweck?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 101' richtig='nein'> grep ^$ logdatei > textdatei.txt</antwort>
+	<antwort zuFrage='Frage 101' richtig='nein'> cat logdatei |grep ^$ > textdatei.txt</antwort>
+	<antwort zuFrage='Frage 101' richtig='nein'> grep -v ^[#] logdatei > textdatei.txt</antwort>
+	<antwort zuFrage='Frage 101' richtig='ja'> grep -v ^$ logdatei > textdatei.txt</antwort>
+	<antwort zuFrage='Frage 101' richtig='ja'> cat logdatei |grep -v ^$ > textdatei.txt</antwort>
+	
+	
+	<fragetitel>Frage 102</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 102 im Buch.
+	</erklaerung>
+	<fragetext>Sie analysieren die Katalogdatei eines Backups. In dieser Datei müssen Sie alle Einträge finden, die den Pfad /home/meier/Dokumente enthalten. Wie beginnen Sie das Suchkommando? (Wählen Sie zwei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 102' richtig='ja'> grep "/home/meier/Dokumente"</antwort>
+	<antwort zuFrage='Frage 102' richtig='nein'> find \/home\/meier\/Dokumente</antwort>
+	<antwort zuFrage='Frage 102' richtig='nein'> grep //home//meier//Dokumente</antwort>
+	<antwort zuFrage='Frage 102' richtig='nein'> grep /home/meier/Dokumente</antwort>
+	<antwort zuFrage='Frage 102' richtig='ja'> grep \/home\/meier\/Dokumente</antwort>
+	
+	
+	<fragetitel>Frage 103</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 103 im Buch.
+	</erklaerung>
+	<fragetext>"Sie müssen in einem Textfile alle Zeilen auffinden, in denen die Zeichenkette Galileocomputing vorkommt. Es sollen auch die Zeilen gefunden werden, in denen die Zeichenkette mit einem kleinen "g" beginnt. Wie beginnen Sie das Kommando?
+
+	</fragetext>
+	<antwort zuFrage='Frage 103' richtig='nein'> grep -v [g]alileocomputing</antwort>
+	<antwort zuFrage='Frage 103' richtig='nein'> grep ?alileocomputing</antwort>
+	<antwort zuFrage='Frage 103' richtig='nein'> grep *alileocomputing</antwort>
+	<antwort zuFrage='Frage 103' richtig='nein'> grep -v [Gg]alileocomputing</antwort>
+	<antwort zuFrage='Frage 103' richtig='ja'> grep [Gg]alileocomputing</antwort>
+	
+	
+	<fragetitel>Frage 104</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 104 im Buch.
+	</erklaerung>
+	<fragetext>Sie bearbeiten eine Konfigurationsdatei mit dem Editor vi. Da Sie alle gewünschten Änderungen vorgenommen haben, wollen Sie die Datei nun speichern und schließen. Sie haben bereits durch betätigen der Esc-Taste in den Kommandomodus gewechselt. Welche Tastaturkommandos schließen den Editor und speichern die Änderungen in der Datei? (Wählen Sie drei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 104' richtig='ja'> :x</antwort>
+	<antwort zuFrage='Frage 104' richtig='nein'> :q!</antwort>
+	<antwort zuFrage='Frage 104' richtig='ja'> :wq</antwort>
+	<antwort zuFrage='Frage 104' richtig='nein'> :w</antwort>
+	<antwort zuFrage='Frage 104' richtig='ja'> ZZ</antwort>
+	
+	
+	<fragetitel>Frage 105</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 105 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen in einer Konfigurationsdatei einige Zeilen löschen. Damit es schnell geht, wollen Sie nicht jedes Mal sicherstellen, dass sich der Cursor am Anfang der Zeile befindet.
+ Welches Tastaturkommando löscht eine komplette Textzeile unabhängig von der Cursorposition, wenn Sie den vi als Editor verwenden?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 105' richtig='nein'> p</antwort>
+	<antwort zuFrage='Frage 105' richtig='nein'> P</antwort>
+	<antwort zuFrage='Frage 105' richtig='ja'> dd</antwort>
+	<antwort zuFrage='Frage 105' richtig='nein'> D</antwort>
+	<antwort zuFrage='Frage 105' richtig='nein'> yy</antwort>
+	
+	
+	<fragetitel>Frage 106</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 106 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen eine Datei mit dem Editor vi bearbeiten. Damit Sie die Textposition nicht erst suchen müssen, wollen Sie ein Befehlszeilenoption verwenden, so dass der Cursor direkt in Zeile 87 steht, wenn Sie den Editor gestartet haben.
+ Welches Kommando geben Sie ein?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 106' richtig='ja'> vi +87 datei</antwort>
+	<antwort zuFrage='Frage 106' richtig='nein'> vi 87 datei</antwort>
+	<antwort zuFrage='Frage 106' richtig='nein'> vi -87 datei</antwort>
+	<antwort zuFrage='Frage 106' richtig='nein'> eine solche Option gibt es nicht.</antwort>
+	<antwort zuFrage='Frage 106' richtig='nein'> vi +/87 datei</antwort>
+	
+	
+	<fragetitel>Frage 107</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 107 im Buch.
+	</erklaerung>
+	<fragetext>Sie beabsichtigen das Dateisystem des Datenträgers /dev/sdb1 von ext2 nach ext3 zu aktualisieren. Die Daten wurden bereits gesichert, aber Sie wollen dennoch eine Konvertierung ohne Datenverlust durchführen.
+ Welches Kommando können Sie verwenden?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 107' richtig='nein'> mkfs -t ext3 /dev/sdb1</antwort>
+	<antwort zuFrage='Frage 107' richtig='ja'> tune2fs -j /dev/sdb1</antwort>
+	<antwort zuFrage='Frage 107' richtig='nein'> mkfs -t ext2 -j /dev/sdb1</antwort>
+	<antwort zuFrage='Frage 107' richtig='nein'> mkfs.ext3 /dev/sdb1</antwort>
+	<antwort zuFrage='Frage 107' richtig='nein'> fdisk /dev/sdb1</antwort>
+	
+	
+	<fragetitel>Frage 108</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 108 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen zu Wartungszwecken alle vorhandenen Swappartitionen eines Systems deaktivieren.
+ Welches Kommando (ggf. mit Optionen) werden Sie am Terminal eingeben?
+&lt;br /> 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 108' richtig='ja'>swapoff -a</antwort>
+	
+	
+	<fragetitel>Frage 109</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 109 im Buch.
+	</erklaerung>
+	<fragetext>Sie stellen fest, dass die Festplatte eines Systems, an dem unterschiedliche Benutzer arbeiten, annähernd voll ist. Sie wollen ermitteln, welcher Benutzer besonders große Datenmengen in seinem Heimatverzeichnis vorhält.
+ Welches Kommando können Sie hierfür verwenden?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 109' richtig='nein'> df</antwort>
+	<antwort zuFrage='Frage 109' richtig='ja'> du</antwort>
+	<antwort zuFrage='Frage 109' richtig='nein'> free</antwort>
+	<antwort zuFrage='Frage 109' richtig='nein'> ps</antwort>
+	<antwort zuFrage='Frage 109' richtig='nein'> ls</antwort>
+	
+	
+	<fragetitel>Frage 110</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 110 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen, dass alle momentan nicht gemounteten Dateisysteme, die in der Datei /etc/fstab gelistet sind, automatisch eingehängt werden.
+ Welches Kommando (ggf. mit Optionen) werden Sie verwenden?
+&lt;br /> 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 110' richtig='ja'>mount -a</antwort>
+	
+	
+	<fragetitel>Frage 111</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 111 im Buch.
+	</erklaerung>
+	<fragetext>Sie haben ein System von einem Kollegen übernommen und wollen sich nun ansehen, welche Dateisysteme aktuell eingehängt sind. Wo können Sie das nachsehen? (Wählen Sie drei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 111' richtig='ja'> /etc/mtab</antwort>
+	<antwort zuFrage='Frage 111' richtig='ja'> /proc/mounts</antwort>
+	<antwort zuFrage='Frage 111' richtig='nein'> /etc/fstab</antwort>
+	<antwort zuFrage='Frage 111' richtig='ja'> durch Eingabe von mount</antwort>
+	<antwort zuFrage='Frage 111' richtig='nein'> durch Eingabe von du</antwort>
+	
+	
+	<fragetitel>Frage 112</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 112 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen das Dateisystem /dev/sdd2 aushängen. Der Mountpoint ist ihnen nicht bekannt. Mit welchem Kommando können Sie das Dateisystem aushängen, ohne den Mountpoint vorher zu ermitteln? (Geben Sie das Kommando mit Parametern ein!)
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 112' richtig='ja'>umount /dev/sdd2</antwort>
+	
+	
+	<fragetitel>Frage 113</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 113 im Buch.
+	</erklaerung>
+	<fragetext>Sie haben Quotas auf den Festplatten eines Systems eingerichtet. Ein Benutzer fragt Sie, wie er herausbekommen kann, wie viel Speicherplatz für ihn auf der Festplatte zur Verfügung steht.
+ Welches Programm werden Sie dem Benutzer empfehlen?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 113' richtig='nein'> edquota</antwort>
+	<antwort zuFrage='Frage 113' richtig='nein'> repquota</antwort>
+	<antwort zuFrage='Frage 113' richtig='ja'> quota</antwort>
+	<antwort zuFrage='Frage 113' richtig='nein'> df</antwort>
+	<antwort zuFrage='Frage 113' richtig='nein'> quotaon</antwort>
+	
+	
+	<fragetitel>Frage 114</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 114 im Buch.
+	</erklaerung>
+	<fragetext>Nachdem Sie Quotas auf einem System eingerichtet haben, beschwert sich ein Benutzer, dass er keine Dateien mehr abspeichern kann. Sie stellen fest, dass der Benutzer für Videoschnitt zuständig ist und deshalb einen erhöhten Bedarf an Speicherkapazität hat. Mit welchem Programm können Sie die Einstellungen für de Benutzer ändern?
+
+	</fragetext>
+	<antwort zuFrage='Frage 114' richtig='ja'> edquota</antwort>
+	<antwort zuFrage='Frage 114' richtig='nein'> repquota</antwort>
+	<antwort zuFrage='Frage 114' richtig='nein'> quota</antwort>
+	<antwort zuFrage='Frage 114' richtig='nein'> useradd</antwort>
+	<antwort zuFrage='Frage 114' richtig='nein'> free</antwort>
+	
+	
+	<fragetitel>Frage 115</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 115 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen die Besitzrechte einiger Dateien an einen anderen Benutzer übertragen. Die Besitzergruppe soll durch Ihren Eingriff nicht beeinträchtigt werden.
+ Welches Programm werden Sie verwenden?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 115' richtig='nein'> chmod</antwort>
+	<antwort zuFrage='Frage 115' richtig='nein'> chgrp</antwort>
+	<antwort zuFrage='Frage 115' richtig='nein'> newgrp</antwort>
+	<antwort zuFrage='Frage 115' richtig='ja'> chown</antwort>
+	<antwort zuFrage='Frage 115' richtig='nein'> umask</antwort>
+	
+	
+	<fragetitel>Frage 116</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 116 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen auf einem Dateiserver die Berechtigungen aller Dateien und Unterverzeichnisse unterhalb von /Dokumente so ändern, dass nur die Besitzer und Besitzergruppen die Rechte zum lesen, schreiben und ausführen erhalten. Allen anderen Benutzern soll der Zugriff auf diese Dateien verweigert werden.
+ Welche Kommandos können Sie hier verwenden? (Wählen Sie zwei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 116' richtig='nein'> chmod 660 /Dokumente -R</antwort>
+	<antwort zuFrage='Frage 116' richtig='nein'> chmod 770 /Dokumente</antwort>
+	<antwort zuFrage='Frage 116' richtig='ja'> chmod u=rwx,g=rwx /Dokumente -R</antwort>
+	<antwort zuFrage='Frage 116' richtig='nein'> chmod u=rwx,g=rwx /Dokumente</antwort>
+	<antwort zuFrage='Frage 116' richtig='ja'> chmod 770 /Dokumente -R</antwort>
+	
+	
+	<fragetitel>Frage 117</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 117 im Buch.
+	</erklaerung>
+	<fragetext>Ein Programm benötigt zur Ausführung erhöhte Rechte. Sie müssen dafür sorgen, dass das Programm mit root-Rechten ausgeführt wird, auch wenn es durch einen normalen Benutzer ausgeführt wird. Der Besitzer des Programms und auch die Besitzergruppe sind jeweils root.
+ Welches Kommando werden Sie verwenden?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 117' richtig='nein'> chmod 755 Programm</antwort>
+	<antwort zuFrage='Frage 117' richtig='nein'> chown Programm</antwort>
+	<antwort zuFrage='Frage 117' richtig='nein'> chown root:root Programm</antwort>
+	<antwort zuFrage='Frage 117' richtig='nein'> chmod 1755 Programm</antwort>
+	<antwort zuFrage='Frage 117' richtig='ja'> chmod 4755 Programm</antwort>
+	
+	
+	<fragetitel>Frage 118</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 118 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen Dokumente, die sich im Verzeichnis /Dokumente befinden, für alle Benutzer in ihren jeweiligen Heimatverzeichnissen bereitstellen. Um die Datenmenge durch Kopieren nicht unnötig zu vergrößern, entscheiden Sie sich mit Links zu arbeiten.
+ Welches Kommando wird den benötigten Link für den Benutzer Franz anlegen?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 118' richtig='nein'> ln /Dokumente /home/franz/Doku</antwort>
+	<antwort zuFrage='Frage 118' richtig='ja'> ln -s /Dokumente /home/franz/Doku</antwort>
+	<antwort zuFrage='Frage 118' richtig='nein'> ln -s /home/franz/Doku /Dokumente</antwort>
+	<antwort zuFrage='Frage 118' richtig='nein'> ln /home/franz/Doku /Dokumente</antwort>
+	<antwort zuFrage='Frage 118' richtig='nein'> cp /Dokumente/* /home/franz/Doku -R</antwort>
+	
+	
+	<fragetitel>Frage 119</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 119 im Buch.
+	</erklaerung>
+	<fragetext>Sie konfigurieren einen neuen Webserver, der einen relativ statischen Inhalt bereitstellen wird. Damit das root-Dateisystem nicht durch jahrelang unbeachtete Protokollierung voll läuft, wollen Sie eine sinnvolle Partitionierung der Festplatte des Systems vornehmen.
+ Welches Verzeichnis sollte im vorliegenden Falle eine eigene Partition erhalten?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 119' richtig='nein'> /etc</antwort>
+	<antwort zuFrage='Frage 119' richtig='nein'> /usr</antwort>
+	<antwort zuFrage='Frage 119' richtig='ja'> /var</antwort>
+	<antwort zuFrage='Frage 119' richtig='nein'> /bin</antwort>
+	<antwort zuFrage='Frage 119' richtig='nein'> /home</antwort>
+	
+	
+	<fragetitel>Frage 120</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 120 im Buch.
+	</erklaerung>
+	<fragetext>Sie planen die Partitionierung eines neuen Systems. Damit Sie zur Datensicherung das Programm dump einsetzen können, wollen Sie den Verzeichnissen, die besonders oft gesichert werden müssen, eine eigene Partition zuteilen.
+ Welchen beiden der folgenden Verzeichnisse sollte unter diesen Gesichtspunkten möglichst eine eigene Partition zugewiesen werden?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 120' richtig='nein'> /etc</antwort>
+	<antwort zuFrage='Frage 120' richtig='ja'> /home</antwort>
+	<antwort zuFrage='Frage 120' richtig='ja'> /var</antwort>
+	<antwort zuFrage='Frage 120' richtig='nein'> /boot</antwort>
+	<antwort zuFrage='Frage 120' richtig='nein'> /proc</antwort>
+</rootnode>

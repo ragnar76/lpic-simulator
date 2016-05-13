@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="de">
+<html>
+  <head>
+    <title>Prüfung LPIC 117-101</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="default.css"></link>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"></link>
+    <script type="text/javascript" src="startvorgang.js"></script>
+    <script type="text/javascript" src="teststeuerung.js"></script>
+    <script type="text/javascript" src="zeit.js"></script>
+    <script type="text/javascript">
+      function xmlError(e) {
+        //there was an error, show the user
+        alert(e);
+      } //end function xmlError
+    </script>
+  </head>
+  <body class="hintergrund" onload="javascript:startvorgang('1')">
+  <div class="container">
+  <div class="row">
+    <div id="Ladeanzeige" align="center" class="layout_basis" style="visibility:visible;">
+      <div id="ladebalken" class="layout_box rahmen_dick hintergrund_box">
+        <div class="schrift g14 dick hintergrund_box" align="center" style="height:40px;">
+          Pr&uuml;fung: LPIC 117-101
+        </div>
+        <p id="rahmenbalken" class="rahmen_dick hintergrund_blau" style="text-align:center;">
+          Fragenkatalog zur Prüfung LPIC 117-101 wird geladen. Bitte warten...
+          <p id="balken" class="rahmen_duenn" style="width:1%;height:25px;background-color:#191970;" valign="bottom">
+          </p>
+          <p align="center" width="100%">
+            <img border="0" alt="ladeanimation" src="ladeanimation.gif">
+          </p>
+        </p>
+      </div>
+    </div>
+    <div id="Einstellungen" align="center" class="layout_basis" style="visibility:hidden;">
+      <div class="layout_box rahmen_dick hintergrund_box">
+        <div class="schrift g14 dick hintergrund_box" align="center" style="height:40px;">
+          Pr&uuml;fungseinstellungen f&uuml;r LPIC 117-101
+        </div>
+        <div class="schrift g12 dick hintergrund_box rahmen_duenn hintergrund_blau" align="center">
+          Anzahl der Fragen:
+        </div>
+        <div class="schrift g12 hintergrund_box" align="left" style="padding:4px;">
+          Bitte legen Sie die Anzahl der Fragen fest,
+          die Sie in ihrer Pr&uuml;fung beantworten
+          m&ouml;chten:<br />
+          <form name="Fragenanzahl" action="">
+            <table border="0" align="center">
+              <tr>
+                <td>
+                  <input name="EingabeAnzahlPlus10" onclick="javascript:AnzahlFragenPlus10()" type="button" value="+10" class="layout_toggle_button10 g12 dick">
+                  <br />
+                  <input name="EingabeAnzahlMinus10" onclick="javascript:AnzahlFragenMinus10()" type="button" value="-10" class="layout_toggle_button10 g12 dick">
+                </td>
+                <td>
+                  <input id="EingabeAnzahl" type="text" readonly="true" value="1" class="layout_toggle_feld dick hintergrund">
+                </td>
+                <td>
+                  <input name="EingabeAnzahlPlus" onclick="javascript:AnzahlFragenPlus()" type="button" value="&uarr;" class="layout_toggle_button g12 dick">
+                  <br />
+                  <input name="EingabeAnzahlMinus" onclick="javascript:AnzahlFragenMinus()" type="button" value="&darr;" class="layout_toggle_button g12 dick">
+                </td>
+                <td>&nbsp;von &nbsp;</td>
+                <td>
+                  <input name="VerfuegbarAnzahl" type="text" readonly="true" class="layout_toggle_feld dick hintergrund">
+                </td>
+                <td>&nbsp;verf&uuml;gbaren Fragen &nbsp;</td>
+              </tr>
+            </table>
+          </form>
+        </div>
+        <div class="schrift g12 dick hintergrund_box rahmen_duenn hintergrund_blau" align="center">
+          Zeiteinstellungen:
+        </div>
+        <div class="schrift g12 hintergrund_box" align="left" style="padding:4px;">
+          Bitte geben Sie an, ob Sie eine Zeitbegrenzung
+          verwenden möchten. Die Pr&uuml;fungszeit k&ouml;nnen Sie
+          anhand der Anzahl der Fragen durch das Programm errechnen lassen. Alternativ können Sie selbst eine Pr&uuml;fungszeit vorgeben.<br />
+          Außerdem k&ouml;nnen Sie festlegen, ob Sie eine Schaltfläche zur Sofortkorrektur bei jeder Aufgabe w&uuml;nschen.
+        </div>
+        <div class="schrift g12 hintergrund_box col-lg-1 col-centered" align="left" style="padding:4px;">
+          <form name="Zeitangabe" action="">
+            <input name="Zeit" type="checkbox" value="Zeit" checked="true"><i><b>Zeitbegrenzung soll verwendet werden</b></i>
+            <br />
+            <input id="AutoZeit" type="checkbox" onclick="javascript:ZeitErrechnen()" value="AutoZeit" checked="true"><i><b>Zeit wird anhand der Anzahl der Fragen automatisch errechnet</b></i>
+            <br />
+            <input id="DirekteAntwort" type="checkbox" value="DirekteAntwort"><i><b>Ich m&ouml;chte einen Knopf zur Sofortkorrektur</b></i>
+            <br />
+            <table border="0" align="center">
+            <tr>
+              <td>
+                <table border="0">
+                  <tr>
+                    <td colspan="2" class="schrift g12 dick" align="center">Std.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input id="EingabeStunde" type="text" readonly="true" value="1" class="layout_toggle_feld dick hintergrund">
+                    </td>
+                    <td>
+                      <input name="EingabeStundePlus" onclick="javascript:StundePlus()" type="button" value="&uarr;" class="layout_toggle_button g12 dick">
+                      <br />
+                      <input name="EingabeStundeMinus" onclick="javascript:StundeMinus()" type="button" value="&darr;" class="layout_toggle_button g12 dick">
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table border="0">
+                  <tr>
+                    <td colspan="2" class="schrift g12 dick" align="center">Min.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input id="EingabeMinute" type="text" readonly="true" value="30" class="layout_toggle_feld dick hintergrund">
+                    </td>
+                    <td>
+                      <input name="EingabeMinutePlus" onclick="javascript:MinutePlus()" type="button" value="&uarr;" class="layout_toggle_button g12 dick">
+                      <br />
+                      <input name="EingabeMinuteMinus" onclick="javascript:MinuteMinus()" type="button" value="&darr;" class="layout_toggle_button g12 dick">
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table border="0">
+                  <tr>
+                    <td colspan="2" class="schrift g12 dick" align="center">Sek.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input id="EingabeSekunde" type="text" readonly="true" value="0" class="layout_toggle_feld dick hintergrund">
+                    </td>
+                    <td>
+                      <input name="EingabeSekundePlus" onclick="javascript:SekundePlus()" type="button" value="&uarr;" class="layout_toggle_button g12 dick">
+                      <br />
+                      <input name="EingabeSekundeMinus" onclick="javascript:SekundeMinus()" type="button" value="&darr;" class="layout_toggle_button g12 dick">
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            </table>
+          </form>
+        </div>
+        <div class="schrift g12 dick hintergrund_box rahmen_duenn hintergrund_blau" align="center">
+          So geht es weiter:
+        </div>
+        <div class="schrift g12 hintergrund_box" align="center">
+          <br />
+          <input class="schrift g14" type="button" value="Zurück zum Hauptmenü" style="float:left;width:350px;" onclick="location.href='../pruefungssimulator_starten.html'">
+          <input class="schrift g14" type="button" value="Prüfung beginnen" onclick="javascript:PruefungStarten(10)" style="float:right;width:350px;">
+        </div>
+      </div>
+    </div>
+    <!-- Hier folgt ein eingebetteter Frame, der die HTML-Datei steuert-->
+    <div id="Ergebnis" align="center" class="layout_basis" style="visibility:hidden;">
+      <div class="layout_box rahmen_dick hintergrund_box" align="center">
+        <div class="schrift g16 dick" align="center" style="height:30px;">
+          Pr&uuml;fungsergebnis f&uuml;r LPIC 117-101
+        </div>
+        <div class="hintergrund_erg rahmen_duenn">
+          <div class="schrift g14 dick" align="center" style="height:40px;">
+            Gesamtergebnis:
+          </div>
+          <div class="schrift g12 dick" align="center">
+            Sie haben
+            <input id="RichtigeFragen" type="text" maxlength="3" size="3" class="schrift g12 dick layout_ergebnisfeld hintergrund_eingabefeld">
+            von
+            <input id="GesamtFragen" type="text" maxlength="3" size="3" class="schrift g12 dick layout_ergebnisfeld hintergrund_eingabefeld">
+            Aufgaben richtig beantwortet.
+          </div>
+          <div class="schrift g12 dick" align="center">
+            Dabei haben Sie
+            <input id="Endpunkte" type="text" maxlength="3" size="3" class="schrift g12 dick layout_ergebnisfeld hintergrund_eingabefeld">
+            von
+            <input id="Gesamtpunkte" type="text" maxlength="3" size="3" class="schrift g12 dick layout_ergebnisfeld hintergrund_eingabefeld">
+            m&ouml;glichen Punkten erreicht.
+          </div>
+          <div class="schrift g12 dick" align="center" style="position:relative;top:10px;">
+            <input id="Gesamtprozent" type="text" maxlength="3" size="3" class="schrift g12 dick layout_ergebnisfeld hintergrund_eingabefeld">
+            % der m&ouml;glichen Punkte wurden erreicht.<br />
+          </div>
+        </div>
+        <div class="hintergrund_list rahmen_duenn">
+          <div class="schrift g14 dick" align="center">
+            Detaillierte Pr&uuml;fungsauswertung:
+          </div>
+          <div style="width:98%;padding:4px;height:20px;overflow:hidden;background-color:#9FB6CD;">
+            <table id="titel_korrekturliste" border="0" cellpadding="4" style="font-family:Verdana;font-size:8pt;font-weight:bold;">
+              <tr>
+                <td style="height:10px;background-color:yellow;" class="kl_nummer">Nr.</td>
+                <td style="height:10px;background-color:yellow;" class="kl_text">Aufgabe</td>
+                <td style="height:10px;background-color:yellow;" class="kl_punkte">Pkt.</td>
+                <td style="height:10px;" class="kl_richtig"></td>
+                <td style="height:10px;" class="kl_details"></td>
+              </tr>
+            </table>
+          </div>
+          <div class="korrekturliste">
+            <!-- Aufbau der korrekturliste erfolgt im Programm teststeuerung.js-->
+            <table class="layout_korrekturliste" id="tabelle_korrekturliste" border="0">
+            </table>
+          </div>
+          <div class="schrift g12 dick korrekturnavigation" align="center">
+            <input type="button" onclick="javasript:location.href='../pruefungssimulator_starten.html'" value="Zur&uuml;ck zum Hauptmen&uuml;" style="height:30px;">
+            <input type="button" onclick="javasript:location.href='lpic1.html'" value="Zurück zu den Prüfungseinstellungen" style="height:30px;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div name="teststeuerung" class="layout_monitor" style="visibility:hidden;">
+      <form name="listen" action="">
+        <select id="fragetitel" size="5" style="height:0px;width:100px;visibility:hidden;">  </select>
+        <select id="fragetyp" size="5" style="height:0px;width:100px;visibility:hidden;">  </select>
+        <select id="punkte" size="5" style="height:0px;width:100px;visibility:hidden;">  </select>
+        <select id="hinweis" size="5" style="height:0px;width:100px;visibility:hidden;">  </select>
+        <select id="erklaerung" size="5" style="height:0px;width:100px;visibility:hidden;">  </select>
+        <select id="fragetext" size="5" style="height:0px;width:300px;visibility:hidden;">  </select>
+
+        <select id="mustermatrix" size="5" style="height:0px;width:150px;visibility:hidden;">  </select>
+        <select id="antwortmatrix" size="5" style="height:0px;width:150px;visibility:hidden;">  </select>
+        <select id="antworteingabe" size="5" style="height:0px;width:100px;visibility:hidden;">  </select>
+        <select id="wiedervorlage" size="5" style="height:0px;width:40px;visibility:hidden;">  </select>
+        <br />
+        <select id="antworttext" size="5" style="height:0px;width:400px;visibility:hidden;">  </select>
+        <select id="zufrage" size="5">  </select>
+        <select id="richtig" size="5">  </select>
+      </form>
+      <form name="listen_choice" action="">
+        <select id="fragetitel_choice" size="5" style="height:0px;width:100px;visibility:hidden;">  </select>
+        <select id="fragetyp_choice" size="5" style="height:0px;width:100px;visibility:hidden;">  </select>
+        <select id="punkte_choice" size="5" style="height:0px;width:100px;visibility:hidden;">  </select>
+        <select id="hinweis_choice" size="5" style="height:0px;width:100px;visibility:hidden;">  </select>
+        <select id="erklaerung_choice" size="5" style="height:0px;width:100px;visibility:hidden;">  </select>
+        <select id="fragetext_choice" size="5" style="height:0px;width:300px;visibility:hidden;">  </select>
+        <select id="mustermatrix_choice" size="5" style="height:0px;width:150px;visibility:hidden;">  </select>
+        <select id="antwortmatrix_choice" size="5" style="height:0px;width:150px;visibility:hidden;">  </select>
+        <select id="antworteingabe_choice" size="5" style="height:0px;width:100px;visibility:hidden;">  </select>
+        <select id="wiedervorlage_choice" size="5" style="height:0px;width:40px;visibility:hidden;">  </select>
+        <br />
+        <select id="antworttext_choice" size="5" style="height:0px;width:400px;visibility:hidden;">  </select>
+        <select id="zufrage_choice" size="5" style="height:0px;visibility:hidden;">  </select>
+        <select id="richtig_choice" size="5" style="height:0px;visibility:hidden;">  </select>
+        <select id="korrigiert_choice" size="5" style="height:0px;visibility:hidden;">  </select>
+        <input id="ErreichtePunkte" type="text" maxlength="5" style="height:0px;visibility:hidden;">
+        <input id="ZuErreichendePunkte" type="text" maxlength="5" style="height:0px;visibility:hidden;">
+        <input id="RichtigBeantworteteFragen" type="text" maxlength="5" style="height:0px;visibility:hidden;">
+        <br />
+        <input id="pause_stunde" type="text" maxlength="2" style="height:0px;visibility:hidden;">
+        <input id="pause_minute" type="text" maxlength="2" style="height:0px;visibility:hidden;">
+        <input id="pause_sekunde" type="text" maxlength="2" style="height:0px;visibility:hidden;">
+
+      </form>
+    </div>
+    <div id="Korrekturansicht" align="center" class="layout_basis" style="visibility:hidden;">
+      <div class="layout_box rahmen_dick hintergrund_box">
+        <div id="Zeitanzeige_ka" class="line" style="float:right;">Verbleibende Zeit: &nbsp;<input id="Pauseknopf_ka" type="button" value="Pause" onclick="javascript:Pausieren()"></div>
+        <div class="layout_box_antworten rahmen_duenn schrift g12" style="background-color:white;">
+           <!-- 2011.03.06 MK 1 Zeile neu eingefügt -->
+          <p id="Fragehtml_ka" class="layout_frage" align="left">&nbsp;</p>
+          <div id="Fragetext_ka" class="dick" align="left">
+          </div>
+          <div id="AntwortChoice_ka" align="left">
+          </div>
+          <div id="AntwortText_ka" align="center">
+            Ihre Eingabe war: <input id="Eingabefeld_ka" type="text" readonly size="70" maxlength="255" onchange="javascript:Antwortmatrix_Change()">
+          </div>
+          <div id="MusterAntworttext_ka" align="left" class="layout_richtig">
+          </div>
+           <!-- 2011.03.06 MK 1 Zeile neu eingefügt -->
+          <p id="Erklaerungshtml" align="left" class="layout_erklaerung">&nbsp;</p>
+          <div id="Erklaerungstext" align="left" class="layout_erklaerung">
+          </div>
+        </div>
+        <div class="subline">
+          <div id="Anweisung_ka" class="links">W&auml;hlen Sie aus/Geben Sie ein</div>
+          <div id="Fragenanzahl_ka" class="rechts" >Frage X von Y</div>
+        </div>
+        <div class="layout_navigation rahmen_duenn links">
+          <div class="links">
+            <input id="Voriger_ka" onclick="javascript:Vorige()" class="layout_button" type="button" value="Vorige">
+            <input id="Naechster_ka" onclick="javascript:Naechste()" class="layout_button" type="button" value="N&auml;chste">
+            <input id="ZurKorrekturliste" onclick="javascript:ZurKorrekturliste()" class="layout_button" type="button" value="Zurück zur Korrekturliste" style="visibility:hidden;">
+          </div>
+          <input id="PruefungEnde_ka" class="layout_button rechts" type="button" onclick="javascript:PruefungBeenden('selbst')" value="Pr&uuml;fung beenden">
+        </div>
+      </div>
+    </div>
+    <div id="Test" align="center" class="layout_basis" style="visibility:hidden;">
+      <div class="layout_box rahmen_dick hintergrund_box">
+        <div class="line" style="float:left;">
+          <input id="Wiedervorlage" type="checkbox" checked="false" onclick="javascript:Selbe()">Wiedervorlage
+        </div>
+        <div id="Zeitanzeige" class="line" style="float:right;">Verbleibende Zeit: &nbsp;<input id="Pauseknopf" type="button" value="Pause" onclick="javascript:Pausieren()"></div>
+        <div class="layout_box_antworten rahmen_duenn schrift g12" style="background-color:white;">
+           <!-- 2011.03.06 MK 1 Zeile neu eingefügt -->
+          <p id="Fragehtml" class="layout_frage" align="left">&nbsp;</p>
+          <div id="Fragetext" class="dick" align="left">
+          </div>
+          <div id="AntwortChoice" align="left">
+          </div>
+          <div id="AntwortText" align="center">
+            Ihre Eingabe: <input id="Eingabefeld" type="text" size="70" maxlength="255" onchange="javascript:Antwortmatrix_Change()">
+          </div>
+          <div>
+          <input id="korrekturknopf" onclick="javascript:Sofortantwort()" type="button" value="Diese Aufgabe jetzt korrigieren" style="visibility:hidden;">
+          </div>
+        </div>
+        <div class="subline">
+          <div id="Anweisung" class="links">W&auml;hlen Sie aus/Geben Sie ein</div>
+          <div id="Fragenanzahl_test" class="rechts" >Frage X von Y</div>
+        </div>
+        <div class="layout_navigation rahmen_duenn links">
+          <div class="links">
+            <input id="Voriger" onclick="javascript:Vorige()" class="layout_button" type="button" value="Vorige">
+            <input id="Naechster" onclick="javascript:Naechste()" class="layout_button" type="button" value="N&auml;chste">
+          </div>
+          <input class="layout_button rechts" type="button" onclick="javascript:PruefungBeenden('selbst')" value="Pr&uuml;fung beenden">
+        </div>
+      </div>
+     </div>
+     </div>
+     </div>
+  </body>
+</html>

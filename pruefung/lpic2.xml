@@ -1,0 +1,1771 @@
+﻿<rootnode>
+	<aufgabenanzahl>112</aufgabenanzahl>
+	
+	
+	<fragetitel>Frage 1</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 1 im Buch.
+	</erklaerung>
+	<fragetext>Während ihrer täglichen administrativen Arbeit verwenden Sie häufig das Kommando ps -aux. Sie bemerken, dass Sie das Programm ps eigentlich nie ohne diese Schalter verwenden. Wie können Sie erreichen, dass in Zukunft durch die einfache Eingabe von ps automatisch das Kommando ps -aux ausgeführt wird?
+
+	</fragetext>
+	<antwort zuFrage='Frage 1' richtig='nein'> ps = "ps -aux"</antwort>
+	<antwort zuFrage='Frage 1' richtig='nein'> let ps = "ps -aux"</antwort>
+	<antwort zuFrage='Frage 1' richtig='ja'> alias ps = "ps -aux"</antwort>
+	<antwort zuFrage='Frage 1' richtig='nein'> set ps = "ps -aux"</antwort>
+	<antwort zuFrage='Frage 1' richtig='nein'> alias ps -aux = ps</antwort>
+	
+	
+	<fragetitel>Frage 2</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 2 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen ein Programm ausführen und dabei verhindern, dass dieses Programm auf ihre gesetzten Umgebungsvariablen zurückgreift. Welches Kommando können Sie dem Programm voranstellen, damit es in einer "leeren Umgebung" läuft.
+
+	</fragetext>
+	<antwort zuFrage='Frage 2' richtig='nein'> export</antwort>
+	<antwort zuFrage='Frage 2' richtig='ja'> env -i</antwort>
+	<antwort zuFrage='Frage 2' richtig='nein'> set -i</antwort>
+	<antwort zuFrage='Frage 2' richtig='nein'> unset</antwort>
+	<antwort zuFrage='Frage 2' richtig='nein'> clear</antwort>
+	
+	
+	<fragetitel>Frage 3</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 3 im Buch.
+	</erklaerung>
+	<fragetext>Sie haben die Variable http_proxy gesetzt. Während der Arbeit in einer Subshell stellen Sie fest, dass ihnen die Variable nicht zur Verfügung steht. Welches Kommando können Sie auf der übergeordneten Shell ausführen, damit die Variable und ihr Inhalt für Subshells verfügbar wird?
+
+	</fragetext>
+	<antwort zuFrage='Frage 3' richtig='nein'> set http_proxy</antwort>
+	<antwort zuFrage='Frage 3' richtig='nein'> env -u http_proxy</antwort>
+	<antwort zuFrage='Frage 3' richtig='nein'> let http_proxy</antwort>
+	<antwort zuFrage='Frage 3' richtig='ja'> export http_proxy</antwort>
+	<antwort zuFrage='Frage 3' richtig='nein'> unset http_proxy</antwort>
+	
+	
+	<fragetitel>Frage 4</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 4 im Buch.
+	</erklaerung>
+	<fragetext>Die Variablen a und b enthalten jeweils einen numerischen Wert. Sie wollen die beiden Werte addieren und in der Variablen c zusammenführen. Welches Kommando können Sie verwenden?
+
+	</fragetext>
+	<antwort zuFrage='Frage 4' richtig='ja'> let c=$a+$b</antwort>
+	<antwort zuFrage='Frage 4' richtig='nein'> c=$a+$b</antwort>
+	<antwort zuFrage='Frage 4' richtig='nein'> $c=$a+$b</antwort>
+	<antwort zuFrage='Frage 4' richtig='nein'> let $c=$a+$b</antwort>
+	<antwort zuFrage='Frage 4' richtig='nein'> let c=a$+b$</antwort>
+	
+	
+	<fragetitel>Frage 5</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 5 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen der Variablen a den Wert 102 zuordnen und für Subshells verfügbar machen. Welches Kommando werden Sie verwenden?
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 5' richtig='ja'>export a=102</antwort>
+	
+	
+	<fragetitel>Frage 6</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 6 im Buch.
+	</erklaerung>
+	<fragetext>Sie haben zu ihrer Arbeitserleichterung durch die Eingabe des folgenden Kommandos einen Alias erstellt:
+&lt;br /> alias ps="ps -aux"
+&lt;br /> Nun benötigen Sie den Befehl ps in seiner ursprünglichen Form. Aber immer wenn Sie ps eingeben, wird der Alias anstatt des Originalbefehls ausgeführt. Wie können Sie das Originalkommando ausführen?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 6' richtig='nein'> set ps</antwort>
+	<antwort zuFrage='Frage 6' richtig='nein'> let ps</antwort>
+	<antwort zuFrage='Frage 6' richtig='nein'> do ps</antwort>
+	<antwort zuFrage='Frage 6' richtig='nein'> sudo ps</antwort>
+	<antwort zuFrage='Frage 6' richtig='ja'> builtin ps</antwort>
+	
+	
+	<fragetitel>Frage 7</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 7 im Buch.
+	</erklaerung>
+	<fragetext>Während Ihrer täglichen Arbeit kommt es häufiger vor, dass Sie bestimmte Kommandos in immer der gleichen Reihenfolge ausführen müssen. Sie wollen diese Kommandos zusammenfassen, ohne ein Skript zu schreiben. Welchen Befehl können Sie hier zum Einsatz bringen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 7' richtig='nein'> alias</antwort>
+	<antwort zuFrage='Frage 7' richtig='nein'> env</antwort>
+	<antwort zuFrage='Frage 7' richtig='nein'> set</antwort>
+	<antwort zuFrage='Frage 7' richtig='ja'> function</antwort>
+	<antwort zuFrage='Frage 7' richtig='nein'> unset</antwort>
+	
+	
+	<fragetitel>Frage 8</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 8 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen der PATH-Variablen einen weiteren Pfad hinzufügen. Es ist erforderlich, dass dieser zusätzliche Pfad Gültigkeit für alle Benutzer hat, die sich neu am System anmelden. Welcher Konfigurationsdatei werden Sie den Pfad hinzufügen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 8' richtig='nein'> ~/.bashrc</antwort>
+	<antwort zuFrage='Frage 8' richtig='ja'> /etc/profile</antwort>
+	<antwort zuFrage='Frage 8' richtig='nein'> ~/.inputrc</antwort>
+	<antwort zuFrage='Frage 8' richtig='nein'> /etc/bashrc</antwort>
+	<antwort zuFrage='Frage 8' richtig='nein'> ~/.bash_logout</antwort>
+	
+	
+	<fragetitel>Frage 9</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 9 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen für Kommandos, die sie häufig benutzen, Hotkeys konfigurieren. In welcher Konfigurationsdatei werden Sie die entsprechenden Eintragungen vornehmen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 9' richtig='ja'> ~/.inputrc</antwort>
+	<antwort zuFrage='Frage 9' richtig='nein'> /etc/profile</antwort>
+	<antwort zuFrage='Frage 9' richtig='nein'> /etc/bashrc</antwort>
+	<antwort zuFrage='Frage 9' richtig='nein'> ~/.bashrc</antwort>
+	<antwort zuFrage='Frage 9' richtig='nein'> ~/.bash_logout</antwort>
+	
+	
+	<fragetitel>Frage 10</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 10 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen dafür Sorge tragen, dass Benutzer, die auf einem System neu angelegt werden, automatisch ein zusätzliches Verzeichnis unterhalb ihres Heimatverzeichnisses bekommen. An welcher Stelle im Verzeichnisbaum werden Sie das Verzeichnis anlegen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 10' richtig='nein'> /skel</antwort>
+	<antwort zuFrage='Frage 10' richtig='nein'> /skeleton</antwort>
+	<antwort zuFrage='Frage 10' richtig='ja'> /etc/skel</antwort>
+	<antwort zuFrage='Frage 10' richtig='nein'> /root/skel</antwort>
+	<antwort zuFrage='Frage 10' richtig='nein'> /home</antwort>
+	
+	
+	<fragetitel>Frage 11</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 11 im Buch.
+	</erklaerung>
+	<fragetext>Zur Vereinfachung ihrer täglichen Arbeit beabsichtigen Sie ein Skript zu schreiben, das zur Ausführung die Shell bash benötigt. Mit welcher Zeile werden Sie das Skript beginnen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 11' richtig='nein'> #/bin/sh</antwort>
+	<antwort zuFrage='Frage 11' richtig='nein'> !#/bin/bash</antwort>
+	<antwort zuFrage='Frage 11' richtig='nein'> !#/bin/sh</antwort>
+	<antwort zuFrage='Frage 11' richtig='nein'> #!/bin/ksh</antwort>
+	<antwort zuFrage='Frage 11' richtig='ja'> #!/bin/bash</antwort>
+	
+	
+	<fragetitel>Frage 12</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 12 im Buch.
+	</erklaerung>
+	<fragetext>Sie haben ein neues Skript mit der Bezeichnung testskript geschrieben und abgespeichert. Als Sie versuchen das Skript auszuführen, erhalten Sie eine Fehlermeldung, die besagt, dass Sie keine Berechtigung hätten, dieses Skript auszuführen. Was werden Sie tun, damit das Skript funktioniert?
+
+	</fragetext>
+	<antwort zuFrage='Frage 12' richtig='nein'> starten Sie das Skript mit einer absoluten Pfadangabe</antwort>
+	<antwort zuFrage='Frage 12' richtig='nein'> starten Sie das Skript mit ./testskript</antwort>
+	<antwort zuFrage='Frage 12' richtig='ja'> chmod a+x testskript</antwort>
+	<antwort zuFrage='Frage 12' richtig='ja'> chmod 755 testskript</antwort>
+	<antwort zuFrage='Frage 12' richtig='nein'> ändern Sie die She Bang Zeile</antwort>
+	
+	
+	<fragetitel>Frage 13</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 13 im Buch.
+	</erklaerung>
+	<fragetext>Welche der folgenden Variablen enthält den ersten Übergabewert eines Kommandos?
+
+	</fragetext>
+	<antwort zuFrage='Frage 13' richtig='nein'> $0</antwort>
+	<antwort zuFrage='Frage 13' richtig='ja'> $1</antwort>
+	<antwort zuFrage='Frage 13' richtig='nein'> $2</antwort>
+	<antwort zuFrage='Frage 13' richtig='nein'> $?</antwort>
+	<antwort zuFrage='Frage 13' richtig='nein'> $#</antwort>
+	
+	
+	<fragetitel>Frage 14</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 14 im Buch.
+	</erklaerung>
+	<fragetext>Sie haben ein Skript ausgeführt, das keine Ausgaben zum Terminal hin macht. Weil Sie nicht sicher sind, ob der Ablauf des Skripts erfolgreich war, wollen Sie den Errorlevel überprüfen. Welches Kommando können Sie hier verwenden?
+
+	</fragetext>
+	<antwort zuFrage='Frage 14' richtig='nein'> echo $1</antwort>
+	<antwort zuFrage='Frage 14' richtig='nein'> echo $#</antwort>
+	<antwort zuFrage='Frage 14' richtig='ja'> echo $?</antwort>
+	<antwort zuFrage='Frage 14' richtig='nein'> cat $?</antwort>
+	<antwort zuFrage='Frage 14' richtig='nein'> echo $errorlevel</antwort>
+	
+	
+	<fragetitel>Frage 15</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 15 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen während der Ausführung eines Skriptes den zweiten Übergabewert dieses Skriptes an die erste Position verschieben. Welches Kommando werden Sie verwenden?
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 15' richtig='ja'>shift</antwort>
+	
+	
+	<fragetitel>Frage 16</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 16 im Buch.
+	</erklaerung>
+	<fragetext>Sie benötigen auf einem MySQL-Server eine Kundendatenbank. Der Datenbankserver enthält bisher keine Daten und Sie wollen nun die Datenbank "kunden" erzeugen. Welches Kommando werden Sie dem Server geben?
+
+	</fragetext>
+	<antwort zuFrage='Frage 16' richtig='nein'> CREATE DATABASE kunden</antwort>
+	<antwort zuFrage='Frage 16' richtig='nein'> MAKE DATABASE kunden;</antwort>
+	<antwort zuFrage='Frage 16' richtig='nein'> CREATE TABLE kunden;</antwort>
+	<antwort zuFrage='Frage 16' richtig='ja'> CREATE DATABASE kunden;</antwort>
+	<antwort zuFrage='Frage 16' richtig='nein'> INSERT kunden;</antwort>
+	
+	
+	<fragetitel>Frage 17</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 17 im Buch.
+	</erklaerung>
+	<fragetext>Auf einem MySQL-Server befindet sich eine Datenbank mit der Bezeichnung "kunden". Sie haben sich mit dieser Datenbank verbunden und möchten jetzt alle Datensätze aus der Tabelle "adressen" auslesen. Die Adressen sollen aufsteigend nach Postleitzahl sortiert ausgegeben werden. Wählen Sie das geeignete Kommando aus!
+
+	</fragetext>
+	<antwort zuFrage='Frage 17' richtig='ja'> SELECT * FROM adressen ORDER BY plz;</antwort>
+	<antwort zuFrage='Frage 17' richtig='nein'> SELECT * FROM kunden ORDER BY plz;</antwort>
+	<antwort zuFrage='Frage 17' richtig='nein'> SELECT * FROM adressen ORDER BY name;</antwort>
+	<antwort zuFrage='Frage 17' richtig='nein'> SELECT plz FROM adressen ORDER BY plz;</antwort>
+	<antwort zuFrage='Frage 17' richtig='nein'> SELECT * FROM plz;</antwort>
+	
+	
+	<fragetitel>Frage 18</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 18 im Buch.
+	</erklaerung>
+	<fragetext>Sie arbeiten an einer MySQL-Datenbank. Weil Sie sich nicht mehr erinnern, welche Datentypen der Server unterstützt, wollen Sie eine Hilfe zu diesem Thema anzeigen. Welche beiden Kommandos könnten Sie hier wahlweise verwenden?
+
+	</fragetext>
+	<antwort zuFrage='Frage 18' richtig='nein'> man datatypes</antwort>
+	<antwort zuFrage='Frage 18' richtig='ja'> \h data types</antwort>
+	<antwort zuFrage='Frage 18' richtig='nein'> status;</antwort>
+	<antwort zuFrage='Frage 18' richtig='ja'> help data types;</antwort>
+	<antwort zuFrage='Frage 18' richtig='nein'> \s</antwort>
+	
+	
+	<fragetitel>Frage 19</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 19 im Buch.
+	</erklaerung>
+	<fragetext>Sie sind erstmalig an einem SQL-Server angemeldet, der schon längere Zeit in der Produktion genutzt wird und wollen sich einen ersten Überblick über das System verschaffen. Mit welchem Kommando erhalten Sie eine Liste der auf dem Server vorhandenen Datenbanken ?
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 19' richtig='ja'>show databases;</antwort>
+	
+	
+	<fragetitel>Frage 20</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 20 im Buch.
+	</erklaerung>
+	<fragetext>Sie haben auf einem MySQL-Server zu Testzwecken eine Datenbank angelegt. Diese Datenbank wird nicht länger benötigt und soll nun wieder gelöscht werden. Welches Kommando werden Sie auf dem MySQL-Server eingeben, nachdem Sie sich verbunden haben?
+
+	</fragetext>
+	<antwort zuFrage='Frage 20' richtig='nein'> DEL DATABASE testdatenbank;</antwort>
+	<antwort zuFrage='Frage 20' richtig='nein'> REMOVE DATABASE testdatenbank;</antwort>
+	<antwort zuFrage='Frage 20' richtig='nein'> DROP testdatenbank;</antwort>
+	<antwort zuFrage='Frage 20' richtig='nein'> REMOVE testdatenbank;</antwort>
+	<antwort zuFrage='Frage 20' richtig='ja'> DROP DATABASE testdatenbank;</antwort>
+	
+	
+	<fragetitel>Frage 21</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 21 im Buch.
+	</erklaerung>
+	<fragetext>Bei welchen der folgenden Komponenten handelt es sich um X-Window Clients? (Wählen Sie zwei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 21' richtig='nein'> gdm</antwort>
+	<antwort zuFrage='Frage 21' richtig='ja'> firefox</antwort>
+	<antwort zuFrage='Frage 21' richtig='nein'> kdm</antwort>
+	<antwort zuFrage='Frage 21' richtig='nein'> gnome</antwort>
+	<antwort zuFrage='Frage 21' richtig='ja'> evolution</antwort>
+	
+	
+	<fragetitel>Frage 22</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 22 im Buch.
+	</erklaerung>
+	<fragetext>Sie starten einen Computer, auf dem Fedora installiert ist. Nachdem der Startvorgang abgeschlossen ist, stellen Sie fest, dass der Computer per default keine grafische Anmeldung zeigt, sondern nur einen Konsolenlogin. Welches Kommando werden Sie nach der Anmeldung eingeben, um die grafische Umgebung zu starten?
+
+	</fragetext>
+	<antwort zuFrage='Frage 22' richtig='nein'> xinitrc</antwort>
+	<antwort zuFrage='Frage 22' richtig='nein'> xserverrc</antwort>
+	<antwort zuFrage='Frage 22' richtig='ja'> startx</antwort>
+	<antwort zuFrage='Frage 22' richtig='nein'> .xinitrc</antwort>
+	<antwort zuFrage='Frage 22' richtig='nein'> .xserverrc</antwort>
+	
+	
+	<fragetitel>Frage 23</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 23 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen einem System einen weiteren FontPath hinzufügen. Nach welchen Konfigurationsdateien werden Sie Ausschau halten? Wählen Sie zwei Möglichkeiten!
+
+	</fragetext>
+	<antwort zuFrage='Frage 23' richtig='nein'> XF86Setup</antwort>
+	<antwort zuFrage='Frage 23' richtig='ja'> xorg.conf</antwort>
+	<antwort zuFrage='Frage 23' richtig='ja'> XF86Config</antwort>
+	<antwort zuFrage='Frage 23' richtig='nein'> xf86config</antwort>
+	<antwort zuFrage='Frage 23' richtig='nein'> xvidtune</antwort>
+	
+	
+	<fragetitel>Frage 24</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 24 im Buch.
+	</erklaerung>
+	<fragetext>An welchem Port lauscht standardmäßig ein X-Font Server?
+
+	</fragetext>
+	<antwort zuFrage='Frage 24' richtig='ja'> TCP Port 7100</antwort>
+	<antwort zuFrage='Frage 24' richtig='nein'> TCP Port 443</antwort>
+	<antwort zuFrage='Frage 24' richtig='nein'> UDP Port 7100</antwort>
+	<antwort zuFrage='Frage 24' richtig='nein'> TCP Port 21</antwort>
+	<antwort zuFrage='Frage 24' richtig='nein'> UDP Port 53</antwort>
+	
+	
+	<fragetitel>Frage 25</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 25 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen einen zentralen X-Font Server bereitstellen. Wo finden Sie die Konfigurationsdatei für diesen Dienst?
+
+	</fragetext>
+	<antwort zuFrage='Frage 25' richtig='nein'> /etc/X11/xorg.conf</antwort>
+	<antwort zuFrage='Frage 25' richtig='ja'> /etc/X11/fs/config</antwort>
+	<antwort zuFrage='Frage 25' richtig='nein'> /etc/X11/XF86Config</antwort>
+	<antwort zuFrage='Frage 25' richtig='nein'> /etc/gdm/gdm.conf</antwort>
+	<antwort zuFrage='Frage 25' richtig='nein'> /etc/fs.config</antwort>
+	
+	
+	<fragetitel>Frage 26</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 26 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen die Ein- und Ausgabe eines Programms, das auf einem X-Window System installiert ist, an einen anderen Host umleiten. Welches Kommando müssen Sie auf welchem der beiden Computer verwenden, um die Umleitung zu genehmigen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 26' richtig='nein'> xhost + auf dem X-Client</antwort>
+	<antwort zuFrage='Frage 26' richtig='nein'> xhost - auf dem X-Client</antwort>
+	<antwort zuFrage='Frage 26' richtig='nein'> export DISPLAY auf dem X-Server</antwort>
+	<antwort zuFrage='Frage 26' richtig='ja'> xhost + auf dem X-Server</antwort>
+	<antwort zuFrage='Frage 26' richtig='nein'> xhost - auf dem X-Server</antwort>
+	
+	
+	<fragetitel>Frage 27</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 27 im Buch.
+	</erklaerung>
+	<fragetext>Während Sie in einer X-Window Umgebung arbeiten, benötigen Sie Informationen über die Eigenschaften eines Fensters. Hierbei interessieren Sie besonders die absolute Position, die Breite und die Höhe des Fensters. Welches Programm wird Ihnen hierbei helfen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 27' richtig='nein'> xdpyinfo</antwort>
+	<antwort zuFrage='Frage 27' richtig='nein'> xf86config</antwort>
+	<antwort zuFrage='Frage 27' richtig='nein'> xf86setup</antwort>
+	<antwort zuFrage='Frage 27' richtig='nein'> nvidia-xconfig</antwort>
+	<antwort zuFrage='Frage 27' richtig='ja'> xwininfo</antwort>
+	
+	
+	<fragetitel>Frage 28</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 28 im Buch.
+	</erklaerung>
+	<fragetext>Bei welchen der folgenden Komponenten handelt es sich um Displaymanager? (Wählen Sie zwei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 28' richtig='ja'> xdm</antwort>
+	<antwort zuFrage='Frage 28' richtig='nein'> kde</antwort>
+	<antwort zuFrage='Frage 28' richtig='nein'> xterm</antwort>
+	<antwort zuFrage='Frage 28' richtig='nein'> gnome</antwort>
+	<antwort zuFrage='Frage 28' richtig='ja'> gdm</antwort>
+	
+	
+	<fragetitel>Frage 29</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 29 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen ein Braille-Display auf seine Funktionstüchtigkeit hin überprüfen. Welches Programm können Sie verwenden, damit die Braille-Zeile angesprochen wird?
+
+	</fragetext>
+	<antwort zuFrage='Frage 29' richtig='nein'> GOK</antwort>
+	<antwort zuFrage='Frage 29' richtig='nein'> emacspeak</antwort>
+	<antwort zuFrage='Frage 29' richtig='ja'> Orca</antwort>
+	<antwort zuFrage='Frage 29' richtig='nein'> einen Screenreader</antwort>
+	<antwort zuFrage='Frage 29' richtig='nein'> Maustatsten</antwort>
+	
+	
+	<fragetitel>Frage 30</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 30 im Buch.
+	</erklaerung>
+	<fragetext>Sie starten einen Computer, auf dem CentOS installiert ist. Der Computer ist so konfiguriert, dass nur ein Konsolenlogin angezeigt wird, nachdem das System gestartet wurde. Sie müssen einem neuen Benutzer zeigen, wie der grafische Login des Systems aussieht. Welches Kommando werden Sie nach der Anmeldung eingeben, um den Gnome Display Manager zu starten? (Verwenden Sie das einfache Kommando ohne Pfadangabe!)
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 30' richtig='ja'>gdm</antwort>
+	
+	
+	<fragetitel>Frage 31</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 31 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen auf einem neuen Server Benutzerkonten anlegen, die ausschließlich für die Abholung von E-Mail bestimmt sind. Sie müssen verhindern, dass sich die Benutzer an der Konsole des Systems oder per ssh anmelden können. Welche Shell werden Sie den Benutzern zuordnen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 31' richtig='nein'> /bin/bash</antwort>
+	<antwort zuFrage='Frage 31' richtig='nein'> /bin/sh</antwort>
+	<antwort zuFrage='Frage 31' richtig='nein'> /bin/fault</antwort>
+	<antwort zuFrage='Frage 31' richtig='ja'> /bin/false</antwort>
+	<antwort zuFrage='Frage 31' richtig='nein'> /bin/noauth</antwort>
+	
+	
+	<fragetitel>Frage 32</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 32 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen auf einem neuen Server Benutzerkonten anlegen, die ausschließlich für die Abholung von E-Mail bestimmt sind. Die Benutzer sollen sich nicht an der Konsole des Systems oder per ssh anmelden können. Weiterhin sollen die Benutzer aber in der Lage sein, unter Verwendung der Programms putty ihr Passwort zu ändern. Was werden Sie den Benutzern als Shell zur Verfügung stellen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 32' richtig='ja'> /usr/bin/passwd</antwort>
+	<antwort zuFrage='Frage 32' richtig='nein'> /bin/sh</antwort>
+	<antwort zuFrage='Frage 32' richtig='nein'> /bin/fault</antwort>
+	<antwort zuFrage='Frage 32' richtig='nein'> /bin/false</antwort>
+	<antwort zuFrage='Frage 32' richtig='nein'> /bin/noauth</antwort>
+	
+	
+	<fragetitel>Frage 33</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 33 im Buch.
+	</erklaerung>
+	<fragetext>Ein Benutzer ist für mehrere Wochen in Urlaub. Da dieser Benutzer über weitreichende Rechte auf einem System verfügt, wollen Sie sein Benutzerkonto vorübergehend deaktivieren. Was werden Sie für das Benutzerkonto eintragen und wo werden Sie es eintragen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 33' richtig='nein'> ein * in das erste Feld der Datei /etc/passwd</antwort>
+	<antwort zuFrage='Frage 33' richtig='ja'> ein * in das zweite Feld der Datei /etc/passwd</antwort>
+	<antwort zuFrage='Frage 33' richtig='nein'> ein x in das erste Feld der Datei /etc/passwd</antwort>
+	<antwort zuFrage='Frage 33' richtig='nein'> ein x in das zweite Feld der Datei /etc/passwd</antwort>
+	<antwort zuFrage='Frage 33' richtig='nein'> ein * in das erste Feld der Datei /etc/shadow</antwort>
+	
+	
+	<fragetitel>Frage 34</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 34 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen auf möglichst komfortable Art das GECOS Feld eines Benutzers modifizieren. Welches Programm sollten Sie verwenden?
+
+	</fragetext>
+	<antwort zuFrage='Frage 34' richtig='nein'> finger</antwort>
+	<antwort zuFrage='Frage 34' richtig='nein'> vi</antwort>
+	<antwort zuFrage='Frage 34' richtig='nein'> nano</antwort>
+	<antwort zuFrage='Frage 34' richtig='nein'> usermod -c</antwort>
+	<antwort zuFrage='Frage 34' richtig='ja'> chfn</antwort>
+	
+	
+	<fragetitel>Frage 35</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 35 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen die initiale Gruppe eines Benutzers ändern. In welcher Konfigurationsdatei werden Sie die Änderung vornehmen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 35' richtig='nein'> /etc/default/useradd</antwort>
+	<antwort zuFrage='Frage 35' richtig='nein'> /etc/init</antwort>
+	<antwort zuFrage='Frage 35' richtig='nein'> /etc/shadow</antwort>
+	<antwort zuFrage='Frage 35' richtig='nein'> /etc/group</antwort>
+	<antwort zuFrage='Frage 35' richtig='ja'> /etc/passwd</antwort>
+	
+	
+	<fragetitel>Frage 36</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 36 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen für einen neuen Mitarbeiter ein Benutzerkonto anlegen. Das Heimatverzeichnis des neuen Mitarbeiters soll so angelegt werden, dass es dem Verzeichnis /etc/skel entspricht. Welches der folgenden Kommandos werden Sie dem Benutzernamen voranstellen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 36' richtig='nein'> useradd -M</antwort>
+	<antwort zuFrage='Frage 36' richtig='nein'> useradd -d</antwort>
+	<antwort zuFrage='Frage 36' richtig='ja'> useradd -m</antwort>
+	<antwort zuFrage='Frage 36' richtig='nein'> useradd -c</antwort>
+	<antwort zuFrage='Frage 36' richtig='nein'> useradd -g</antwort>
+	
+	
+	<fragetitel>Frage 37</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 37 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen das Konto eines Benutzers löschen, der schon vor Jahren das Unternehmen verlassen hat. Um Speicherplatz zurückzugewinnen, soll auch das Heimatverzeichnis des Benutzers gelöscht werden. Welches Kommando sollten Sie dem Benutzernamen voranstellen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 37' richtig='nein'> userdel -f</antwort>
+	<antwort zuFrage='Frage 37' richtig='ja'> userdel -r</antwort>
+	<antwort zuFrage='Frage 37' richtig='nein'> rmuser -r</antwort>
+	<antwort zuFrage='Frage 37' richtig='nein'> userdel</antwort>
+	<antwort zuFrage='Frage 37' richtig='nein'> userdel -h</antwort>
+	
+	
+	<fragetitel>Frage 38</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 38 im Buch.
+	</erklaerung>
+	<fragetext>Ein Benutzer ist für mehrere Wochen in Urlaub. Da dieser Benutzer über weitreichende Rechte auf einem System verfügt, wollen Sie sein Benutzerkonto vorübergehend deaktivieren. Welches der folgenden Kommandos können Sie dem Benutzernamen voranstellen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 38' richtig='nein'> usermod -U</antwort>
+	<antwort zuFrage='Frage 38' richtig='nein'> usermod -G</antwort>
+	<antwort zuFrage='Frage 38' richtig='nein'> userdel</antwort>
+	<antwort zuFrage='Frage 38' richtig='ja'> usermod -L</antwort>
+	<antwort zuFrage='Frage 38' richtig='nein'> userdel -rf</antwort>
+	
+	
+	<fragetitel>Frage 39</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 39 im Buch.
+	</erklaerung>
+	<fragetext>Ein Benutzer, dessen Konto Sie gesperrt haben, ist aus dem Urlaub zurückgekehrt. Damit er seine Arbeit wieder aufnehmen kann wollen Sie das Konto jetzt wieder entsperren. Wählen Sie das geeignete Kommando!
+
+	</fragetext>
+	<antwort zuFrage='Frage 39' richtig='ja'> usermod -U</antwort>
+	<antwort zuFrage='Frage 39' richtig='nein'> usermod -L</antwort>
+	<antwort zuFrage='Frage 39' richtig='nein'> Setzen Sie ein x in das zweite Feld des Kontos in /etc/passwd.</antwort>
+	<antwort zuFrage='Frage 39' richtig='nein'> Setzen Sie ein * in das zweite Feld des Kontos in /etc/passwd.</antwort>
+	<antwort zuFrage='Frage 39' richtig='nein'> usermod -G</antwort>
+	
+	
+	<fragetitel>Frage 40</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 40 im Buch.
+	</erklaerung>
+	<fragetext>Während einer Sicherheitsüberprüfung wollen Sie bei einigen Benutzern überprüfen, wann diese ihr Passwort zum letzten Mal geändert haben. Welchen Befehl werden Sie den Benutzernamen voranstellen, um an die benötigten Informationen heranzukommen.
+
+	</fragetext>
+	<antwort zuFrage='Frage 40' richtig='ja'> chage -l</antwort>
+	<antwort zuFrage='Frage 40' richtig='nein'> chage -m</antwort>
+	<antwort zuFrage='Frage 40' richtig='nein'> chage -M</antwort>
+	<antwort zuFrage='Frage 40' richtig='nein'> cat /etc/passwd</antwort>
+	<antwort zuFrage='Frage 40' richtig='nein'> usermod</antwort>
+	
+	
+	<fragetitel>Frage 41</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 41 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen für einige Benutzerkonten den Zeitraum ändern, innerhalb dessen diese Benutzer mindestens ihr Passwort geändert haben müssen. Welches Kommando können Sie hierfür verwenden? (Geben Sie nur das einfache Kommando ohne Optionen oder Parameter an!)
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 41' richtig='ja'>chage</antwort>
+	
+	
+	<fragetitel>Frage 42</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 42 im Buch.
+	</erklaerung>
+	<fragetext>Für ein Projekt wird eine neue Benutzergruppe benötigt. Es gibt keine besonderen Anforderungen an diese Gruppe. Welches Kommando wird zur Erstellung der Gruppe verwendet?
+
+	</fragetext>
+	<antwort zuFrage='Frage 42' richtig='nein'> newgrp</antwort>
+	<antwort zuFrage='Frage 42' richtig='nein'> groupmod</antwort>
+	<antwort zuFrage='Frage 42' richtig='nein'> groupdel</antwort>
+	<antwort zuFrage='Frage 42' richtig='ja'> groupadd</antwort>
+	<antwort zuFrage='Frage 42' richtig='nein'> grpconv</antwort>
+	
+	
+	<fragetitel>Frage 43</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 43 im Buch.
+	</erklaerung>
+	<fragetext>Das Passwort für eine Benutzergruppe ist kompromittiert worden. Sie müssen diese Passwort sofort ändern. Welche Kommandos sollten Sie für diese Aufgabe verwenden? (Wählen Sie zwei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 43' richtig='ja'> gpasswd</antwort>
+	<antwort zuFrage='Frage 43' richtig='ja'> groupmod -p</antwort>
+	<antwort zuFrage='Frage 43' richtig='nein'> passwd</antwort>
+	<antwort zuFrage='Frage 43' richtig='nein'> vi /etc/group</antwort>
+	<antwort zuFrage='Frage 43' richtig='nein'> vi /etc/gshadow</antwort>
+	
+	
+	<fragetitel>Frage 44</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 44 im Buch.
+	</erklaerung>
+	<fragetext>Bei einer Sicherheitsüberprüfung stellen Sie bei einem älteren Server fest, dass die Passworte der Benutzer alle in der Datei /etc/passwd enthalten sind. Die Kennworte sind zwar verschlüsselt, aber Sie befürchten, dass besonders versierte Benutzer sich diese Sicherheitslücke zunutze machen könnten. Welches Kommando löst dieses Problem am besten?
+
+	</fragetext>
+	<antwort zuFrage='Frage 44' richtig='ja'> pwconv</antwort>
+	<antwort zuFrage='Frage 44' richtig='nein'> pwunconv</antwort>
+	<antwort zuFrage='Frage 44' richtig='nein'> pwck</antwort>
+	<antwort zuFrage='Frage 44' richtig='nein'> grpconv</antwort>
+	<antwort zuFrage='Frage 44' richtig='nein'> rm -f /etc/passwd</antwort>
+	
+	
+	<fragetitel>Frage 45</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 45 im Buch.
+	</erklaerung>
+	<fragetext>Während einer Sicherheitsüberprüfung müssen Sie feststellen, ob allen Benutzerkonten eines Systems Heimatverzeichnisse zugeordnet sind und ob die Passworte der Benutzer ordnungsgemäß in der Datei /etc/shadow verwaltet werden. Welches Kommando werden Sie verwenden?
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 45' richtig='ja'>pwck</antwort>
+	
+	
+	<fragetitel>Frage 46</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 46 im Buch.
+	</erklaerung>
+	<fragetext>Sie haben ein Skript geschrieben, das täglich Wartungsarbeiten durchführen soll. Wohin sollten Sie das Skript kopieren, damit es wie gewünscht ausgeführt wird?
+
+	</fragetext>
+	<antwort zuFrage='Frage 46' richtig='nein'> /etc/cron.weekly</antwort>
+	<antwort zuFrage='Frage 46' richtig='ja'> /etc/cron.daily</antwort>
+	<antwort zuFrage='Frage 46' richtig='nein'> /etc/crontab</antwort>
+	<antwort zuFrage='Frage 46' richtig='nein'> /bin</antwort>
+	<antwort zuFrage='Frage 46' richtig='nein'> /sbin</antwort>
+	
+	
+	<fragetitel>Frage 47</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 47 im Buch.
+	</erklaerung>
+	<fragetext>Sie bearbeiten die Datei /etc/crontab und sehen u.a. die folgende Zeile:
+ 10 5 * * 1 root /root/bin/backup
+ Wann wird das Backup laut diesen Angaben jeweils ausgeführt?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 47' richtig='nein'> am 1. eines jeden Monats um 5:10 Uhr</antwort>
+	<antwort zuFrage='Frage 47' richtig='nein'> am 1. eines jeden Monats um 10:05 Uhr</antwort>
+	<antwort zuFrage='Frage 47' richtig='ja'> jeden Montag um 5:10 Uhr</antwort>
+	<antwort zuFrage='Frage 47' richtig='nein'> jeden Samstag um 5:10 Uhr</antwort>
+	<antwort zuFrage='Frage 47' richtig='nein'> am 10. Mai im 1:00 Uhr am Morgen</antwort>
+	
+	
+	<fragetitel>Frage 48</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 48 im Buch.
+	</erklaerung>
+	<fragetext>Ein Benutzer möchte einen sehr ressourcenintensiven Job nachts von Cron starten lassen. Welches Kommando muss der Benutzer zunächst eingeben, damit er den Job an Cron übergeben kann?
+
+	</fragetext>
+	<antwort zuFrage='Frage 48' richtig='nein'> cron</antwort>
+	<antwort zuFrage='Frage 48' richtig='nein'> vi /etc/crontab</antwort>
+	<antwort zuFrage='Frage 48' richtig='nein'> vi ~/crontab</antwort>
+	<antwort zuFrage='Frage 48' richtig='nein'> at</antwort>
+	<antwort zuFrage='Frage 48' richtig='ja'> crontab</antwort>
+	
+	
+	<fragetitel>Frage 49</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 49 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen ein Programm einmalig zeitgesteuert ausführen. Welches Tool ist auf diese Aufgabe spezialisiert?
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 49' richtig='ja'>at</antwort>
+	
+	
+	<fragetitel>Frage 50</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 50 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen herausfinden, welche Cronjobs der User willi in seiner crontab-Datei eingetragen hat. Welches Kommando (mit Optionen und Parametern) werden Sie ausführen?
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 50' richtig='ja'>crontab -l -u willi</antwort>
+	
+	
+	<fragetitel>Frage 51</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 51 im Buch.
+	</erklaerung>
+	<fragetext>Sie haben einen Job geplant, indem Sie ihn an at übergeben haben. Die Zeitplanung wurde vom System bestätigt wie folgt:
+ job 2 at Tue Apr  5 18:00:00 2011
+&lt;br /> Sie wollen den Job nun doch nicht ausführen. Mit welchen Kommandos können Sie die Ausführung des Jobs verhindern? (Wählen Sie zwei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 51' richtig='ja'> at -d 2</antwort>
+	<antwort zuFrage='Frage 51' richtig='nein'> kill -s 15 2</antwort>
+	<antwort zuFrage='Frage 51' richtig='nein'> atq</antwort>
+	<antwort zuFrage='Frage 51' richtig='ja'> atrm 2</antwort>
+	<antwort zuFrage='Frage 51' richtig='nein'> killall 2</antwort>
+	
+	
+	<fragetitel>Frage 52</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 52 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen die Zeitzone eines aus dem Ausland importierten Computers anpassen. Welches Kommando werden Sie verwenden?
+
+	</fragetext>
+	<antwort zuFrage='Frage 52' richtig='nein'> watch</antwort>
+	<antwort zuFrage='Frage 52' richtig='nein'> hwclock</antwort>
+	<antwort zuFrage='Frage 52' richtig='nein'> time</antwort>
+	<antwort zuFrage='Frage 52' richtig='nein'> date</antwort>
+	<antwort zuFrage='Frage 52' richtig='ja'> tzselect</antwort>
+	
+	
+	<fragetitel>Frage 53</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 53 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen überprüfen, wie die Variablen eines Systems in Bezug auf die Lokalisation eingestellt sind. Welches Kommando können Sie hierfür verwenden?
+
+	</fragetext>
+	<antwort zuFrage='Frage 53' richtig='nein'> locale -a</antwort>
+	<antwort zuFrage='Frage 53' richtig='nein'> locale -m</antwort>
+	<antwort zuFrage='Frage 53' richtig='ja'> locale</antwort>
+	<antwort zuFrage='Frage 53' richtig='nein'> echo $LOCALE</antwort>
+	<antwort zuFrage='Frage 53' richtig='nein'> echo $LC_ALL</antwort>
+	
+	
+	<fragetitel>Frage 54</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 54 im Buch.
+	</erklaerung>
+	<fragetext>Bei welchen der folgenden Kodierungen handelt es sich in seiner ursprünglichen Form um einen 7 Bit-Zeichencode?
+
+	</fragetext>
+	<antwort zuFrage='Frage 54' richtig='ja'> ASCII-Code</antwort>
+	<antwort zuFrage='Frage 54' richtig='nein'> UTF8</antwort>
+	<antwort zuFrage='Frage 54' richtig='nein'> Baudot-Code</antwort>
+	<antwort zuFrage='Frage 54' richtig='nein'> Unicode</antwort>
+	<antwort zuFrage='Frage 54' richtig='nein'> Latin 9</antwort>
+	
+	
+	<fragetitel>Frage 55</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 55 im Buch.
+	</erklaerung>
+	<fragetext>Geben Sie die Konfigurationsdatei an, in der die Zeitzone eines Systems hinterlegt ist. (Geben Sie den kompletten Pfad an!)
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 55' richtig='ja'>/etc/timezone</antwort>
+	
+	
+	<fragetitel>Frage 56</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 56 im Buch.
+	</erklaerung>
+	<fragetext>Sie haben die Systemzeit eines Computers mithilfe des Programms date aktualisiert. Sie wollen diese Zeit jetzt an den RTC-Chip des Systems übertragen. Welche Kommandos können Sie hierfür verwenden? (Wählen Sie zwei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 56' richtig='nein'> ntpdate</antwort>
+	<antwort zuFrage='Frage 56' richtig='nein'> date</antwort>
+	<antwort zuFrage='Frage 56' richtig='ja'> hwclock --systohc</antwort>
+	<antwort zuFrage='Frage 56' richtig='nein'> hwclock --hctosys</antwort>
+	<antwort zuFrage='Frage 56' richtig='ja'> hwclock -w</antwort>
+	
+	
+	<fragetitel>Frage 57</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 57 im Buch.
+	</erklaerung>
+	<fragetext>Sie haben eine relativ geringfügige Zeitabweichung einer Systemuhr festgestellt. Es ist tatsächlich 11:55 Uhr. Mit welchem Kommando stellen Sie diese Zeit ein, wenn das aktuelle Datum nicht beeinflusst werden soll?
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 57' richtig='ja'>date -s 1155</antwort>
+	
+	
+	<fragetitel>Frage 58</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 58 im Buch.
+	</erklaerung>
+	<fragetext>Welche Mechanismen stehen Ihnen zur Verfügung, wenn Sie die Systemzeit eines Rechners mit Zeitservern synchronisieren wollen? (Wählen Sie zwei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 58' richtig='nein'> hwclock --systohc</antwort>
+	<antwort zuFrage='Frage 58' richtig='nein'> date</antwort>
+	<antwort zuFrage='Frage 58' richtig='nein'> hwclock --hctosys</antwort>
+	<antwort zuFrage='Frage 58' richtig='ja'> ntpdate</antwort>
+	<antwort zuFrage='Frage 58' richtig='ja'> ntpd</antwort>
+	
+	
+	<fragetitel>Frage 59</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 59 im Buch.
+	</erklaerung>
+	<fragetext>Welches der folgenden Programme ist für die Protokollierung verschiedener Systemereignisse verantwortlich?
+
+	</fragetext>
+	<antwort zuFrage='Frage 59' richtig='nein'> klogd</antwort>
+	<antwort zuFrage='Frage 59' richtig='ja'> syslogd</antwort>
+	<antwort zuFrage='Frage 59' richtig='nein'> logger</antwort>
+	<antwort zuFrage='Frage 59' richtig='nein'> logrotate</antwort>
+	<antwort zuFrage='Frage 59' richtig='nein'> logresolve</antwort>
+	
+	
+	<fragetitel>Frage 60</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 60 im Buch.
+	</erklaerung>
+	<fragetext>Sie schreiben ein Skript, das regelmäßig Sicherungen der wichtigsten Dateien eines Systems vornimmt. Sie wollen, dass zum Ende jedes Backups automatisch ein Eintrag in der Datei /var/log/messages vorgenommen wird, damit Sie bei Bedarf prüfen können, ob das Skript erfolgreich ausgeführt wurde. Welches Programm werden Sie zum Ende des Skripts hin verwenden, um den Eintrag auf dem Syslog zu generieren?
+
+	</fragetext>
+	<antwort zuFrage='Frage 60' richtig='nein'> syslogd</antwort>
+	<antwort zuFrage='Frage 60' richtig='nein'> klogd</antwort>
+	<antwort zuFrage='Frage 60' richtig='nein'> logrotate</antwort>
+	<antwort zuFrage='Frage 60' richtig='ja'> logger</antwort>
+	<antwort zuFrage='Frage 60' richtig='nein'> wall</antwort>
+	
+	
+	<fragetitel>Frage 61</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 61 im Buch.
+	</erklaerung>
+	<fragetext>Einige ihrer Benutzer haben Probleme beim Versand von E-Mail. Sie vermuten ein SMTP-Problem. Um möglichst viele Informationen während des Mail-Versandes zu bekommen, beschließen Sie den Protokollierungsgrad bezüglich Mail zu maximieren. Was werden Sie zu diesem Zweck in die Datei /etc/syslog.conf eintragen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 61' richtig='nein'> mail.info      /var/log/mail.info</antwort>
+	<antwort zuFrage='Frage 61' richtig='nein'> mail.err       /var/log/mail.err</antwort>
+	<antwort zuFrage='Frage 61' richtig='ja'> mail.debug     /var/log/mail.debug</antwort>
+	<antwort zuFrage='Frage 61' richtig='nein'> user.debug     /var/log/user.debug</antwort>
+	<antwort zuFrage='Frage 61' richtig='nein'> user.err       /var/log/user.err</antwort>
+	
+	
+	<fragetitel>Frage 62</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 62 im Buch.
+	</erklaerung>
+	<fragetext>Das Unternehmen, in dem Sie arbeiten, sieht für die Protokolle, die ein System generiert, eine Aufbewahrungsdauer von einem Jahr vor. Sie müssen verhindern, dass Protokolldateien vor Ablauf dieses Zeitraums automatisch gelöscht oder überschrieben werden. Welche Konfigurationsdatei sollten Sie ggf. bearbeiten?
+
+	</fragetext>
+	<antwort zuFrage='Frage 62' richtig='ja'> /etc/logrotate.conf</antwort>
+	<antwort zuFrage='Frage 62' richtig='nein'> /etc/syslog.conf</antwort>
+	<antwort zuFrage='Frage 62' richtig='nein'> /etc/rc.local</antwort>
+	<antwort zuFrage='Frage 62' richtig='nein'> /etc/crontab</antwort>
+	<antwort zuFrage='Frage 62' richtig='nein'> /etc/sysctl.conf</antwort>
+	
+	
+	<fragetitel>Frage 63</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 63 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen den Syslog "live" beobachten. Zu diesem Zweck wollen Sie die Datei /var/log/messages öffnen. Beim Eintreten eines neuen Ereignisses in dieser Datei soll die Ausgabe am Bildschirm automatisch aktualisiert werden. Welches Kommando werden Sie verwenden?
+
+	</fragetext>
+	<antwort zuFrage='Frage 63' richtig='nein'> tail /var/log/messages -n 25</antwort>
+	<antwort zuFrage='Frage 63' richtig='ja'> tail /var/log/messages -f</antwort>
+	<antwort zuFrage='Frage 63' richtig='nein'> watch /var/log/messages</antwort>
+	<antwort zuFrage='Frage 63' richtig='nein'> less /var/log/messages</antwort>
+	<antwort zuFrage='Frage 63' richtig='nein'> head /var/log/messages</antwort>
+	
+	
+	<fragetitel>Frage 64</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 64 im Buch.
+	</erklaerung>
+	<fragetext>Damit die Protokollierung eines Systems nicht die Festplatte füllt, gibt es ein Programm, das regelmäßig alle Logfiles komprimiert und rotiert. Welches Programm übernimmt diese Aufgabe?
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 64' richtig='ja'>logrotate</antwort>
+	
+	
+	<fragetitel>Frage 65</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 65 im Buch.
+	</erklaerung>
+	<fragetext>Ein Benutzer ihres Unternehmens plant für eine Woche Urlaub zu machen und muss seine Mail für diese Zeit an einen Kollegen weiterleiten. In welche Datei kann der Benutzer die Weiterleitung an den Kollegen eintragen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 65' richtig='nein'> /etc/aliases</antwort>
+	<antwort zuFrage='Frage 65' richtig='nein'> ~/.bashrc</antwort>
+	<antwort zuFrage='Frage 65' richtig='nein'> ~/.profile</antwort>
+	<antwort zuFrage='Frage 65' richtig='nein'> /etc/postfix/main.cf</antwort>
+	<antwort zuFrage='Frage 65' richtig='ja'> ~/.forward</antwort>
+	
+	
+	<fragetitel>Frage 66</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 66 im Buch.
+	</erklaerung>
+	<fragetext>Sie beabsichtigen einen Mail-Server, auf dem Sendmail installiert ist, zu Wartungszwecken herunterzufahren. Vorher wollen Sie überprüfen, ob noch E-Mails in der Warteschlange liegen. Auf welche Arten können Sie das prüfen? (Wählen Sie zwei Kommandos!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 66' richtig='nein'> qmail</antwort>
+	<antwort zuFrage='Frage 66' richtig='ja'> mailq</antwort>
+	<antwort zuFrage='Frage 66' richtig='ja'> ls -la /var/spool/mqueue</antwort>
+	<antwort zuFrage='Frage 66' richtig='nein'> ls /var/spool/mail</antwort>
+	<antwort zuFrage='Frage 66' richtig='nein'> mail</antwort>
+	
+	
+	<fragetitel>Frage 67</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 67 im Buch.
+	</erklaerung>
+	<fragetext>Ihr Vorgesetzter möchte, dass er zusätzlich zu seiner bestehenden E-Mail Adresse unter seinem Vornamen erreichbar wird. Es sollen keine zusätzlichen Einstellungen an seinem E-Mail Clientprogramm erforderlich werden. In welche Konfigurationsdatei werden Sie den hierfür nötigen Eintrag schreiben?
+
+	</fragetext>
+	<antwort zuFrage='Frage 67' richtig='nein'> ~/.forward</antwort>
+	<antwort zuFrage='Frage 67' richtig='nein'> /etc/postfix/main.cf</antwort>
+	<antwort zuFrage='Frage 67' richtig='nein'> /etc/postfix/master.cf</antwort>
+	<antwort zuFrage='Frage 67' richtig='ja'> /etc/aliases</antwort>
+	<antwort zuFrage='Frage 67' richtig='nein'> /etc/passwd</antwort>
+	
+	
+	<fragetitel>Frage 68</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 68 im Buch.
+	</erklaerung>
+	<fragetext>Sie konfigurieren einen SMTP-Server, auf dem Postfix als Mail Transfer Agent (MTA) ausgeführt wird. Um den Versand von E-Mails über das Internet zu unterstützen, müssen Sie als Smarthost den SMTP-Server ihres Internetserviceproviders angeben. In welcher Konfigurationsdatei tragen Sie den Relayhost ein?
+
+	</fragetext>
+	<antwort zuFrage='Frage 68' richtig='nein'> /etc/aliases</antwort>
+	<antwort zuFrage='Frage 68' richtig='nein'> /etc/hosts</antwort>
+	<antwort zuFrage='Frage 68' richtig='nein'> /etc/postfix/master.cf</antwort>
+	<antwort zuFrage='Frage 68' richtig='ja'> /etc/postfix/main.cf</antwort>
+	<antwort zuFrage='Frage 68' richtig='nein'> /etc/sendmail.cf</antwort>
+	
+	
+	<fragetitel>Frage 69</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 69 im Buch.
+	</erklaerung>
+	<fragetext>Bei welchen der folgenden Produkte handelt es sich um einen Mailtransferagenten (MTA)? (Wählen Sie zwei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 69' richtig='nein'> Thunderbird</antwort>
+	<antwort zuFrage='Frage 69' richtig='ja'> Sendmail</antwort>
+	<antwort zuFrage='Frage 69' richtig='nein'> Evolution</antwort>
+	<antwort zuFrage='Frage 69' richtig='ja'> Postfix</antwort>
+	<antwort zuFrage='Frage 69' richtig='nein'> Kmail</antwort>
+	
+	
+	<fragetitel>Frage 70</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 70 im Buch.
+	</erklaerung>
+	<fragetext>Ihr Vorgesetzter gibt ihnen ein Textdokument, in dem E-Mailadressen diverser Kunden gespeichert sind. Die Datei heißt kunden.txt. Er möchte, dass immer, wenn er eine Mail an kunden@mexample.netsendet, diese E-Mail an alle Kunden gesendet wird, die in der Textdatei gelistet sind. Was tragen Sie in die Datei /etc/aliases ein, nachdem Sie die Datei kunden.txt in das Verzeichnis /etc kopiert haben?
+
+	</fragetext>
+	<antwort zuFrage='Frage 70' richtig='nein'> kunden:      /etc/kunden.txt</antwort>
+	<antwort zuFrage='Frage 70' richtig='nein'> kunden:      |/etc/kunden.txt</antwort>
+	<antwort zuFrage='Frage 70' richtig='ja'> kunden:      :include:/etc/kunden.txt</antwort>
+	<antwort zuFrage='Frage 70' richtig='nein'> kunden      :include:/etc/kunden.txt</antwort>
+	<antwort zuFrage='Frage 70' richtig='nein'> kunden:       kunden@example.net</antwort>
+	
+	
+	<fragetitel>Frage 71</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 71 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen die Warteschlange eines lokal installierten Druckers überprüfen. Zunächst reicht ihnen die Information, wie viele Aufträge sich in der Warteschlange befinden aus. Welche Kommandos können Sie verwenden? (Wählen Sie drei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 71' richtig='ja'> lpq</antwort>
+	<antwort zuFrage='Frage 71' richtig='nein'> lprm</antwort>
+	<antwort zuFrage='Frage 71' richtig='ja'> lpstat -W not-completed</antwort>
+	<antwort zuFrage='Frage 71' richtig='nein'> lpd</antwort>
+	<antwort zuFrage='Frage 71' richtig='ja'> lpc status</antwort>
+	
+	
+	<fragetitel>Frage 72</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 72 im Buch.
+	</erklaerung>
+	<fragetext>Ein Drucker, den Sie verwenden, wird von vielen Personen konkurrierend genutzt. Sie haben einen wichtigen Druckauftrag abgesendet und müssen diesen nun in der Warteschlange an die erste Position schieben. Welches Kommando können Sie hierfür verwenden?
+
+	</fragetext>
+	<antwort zuFrage='Frage 72' richtig='ja'> lpc topq</antwort>
+	<antwort zuFrage='Frage 72' richtig='nein'> lpc up</antwort>
+	<antwort zuFrage='Frage 72' richtig='nein'> lpc down</antwort>
+	<antwort zuFrage='Frage 72' richtig='nein'> lprm</antwort>
+	<antwort zuFrage='Frage 72' richtig='nein'> lpq</antwort>
+	
+	
+	<fragetitel>Frage 73</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 73 im Buch.
+	</erklaerung>
+	<fragetext>Ein Techniker muss einen Drucker in Ihrem Büro überprüfen. Es befinden sich diverse Druckaufträge in der Warteschlange des Druckservers. Sie wollen den Druckvorgang unterbrechen, aber keine Aufträge in der Warteschlange verlieren. Der Druckserver soll während der Überprüfung auch weiterhin Aufträge von anderen Benutzern entgegennehmen. Welches Kommando werden Sie auf dem Druckserver verwenden?
+
+	</fragetext>
+	<antwort zuFrage='Frage 73' richtig='nein'> lpc down</antwort>
+	<antwort zuFrage='Frage 73' richtig='ja'> lpc stop</antwort>
+	<antwort zuFrage='Frage 73' richtig='nein'> lpc disable</antwort>
+	<antwort zuFrage='Frage 73' richtig='nein'> lprm</antwort>
+	<antwort zuFrage='Frage 73' richtig='nein'> /etc/init.d/cups stop</antwort>
+	
+	
+	<fragetitel>Frage 74</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 74 im Buch.
+	</erklaerung>
+	<fragetext>Sie drucken ein Dokument, das mehrere hundert Seiten umfasst. Nach wenigen Seiten stellen Sie fest, dass Sie die falsche Datei drucken. Sie müssen den Auftrag sofort abbrechen. Welches Kommando werden Sie verwenden?
+
+	</fragetext>
+	<antwort zuFrage='Frage 74' richtig='nein'> lpc stop</antwort>
+	<antwort zuFrage='Frage 74' richtig='nein'> lpc disable</antwort>
+	<antwort zuFrage='Frage 74' richtig='nein'> lpc down</antwort>
+	<antwort zuFrage='Frage 74' richtig='nein'> lprm</antwort>
+	<antwort zuFrage='Frage 74' richtig='ja'> lpc abort</antwort>
+	
+	
+	<fragetitel>Frage 75</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 75 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen einen Computer, der u.a. als Druckserver fungiert, herunterfahren. Vorher wollen Sie überprüfen, ob es noch Druckaufträge in der Warteschlange gibt. Mit welchen Kommando können Sie das am schnellten feststellen? (Geben Sie nur das Kommando ohne Optionen oder Parameter an!)
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 75' richtig='ja'>lpq</antwort>
+	
+	
+	<fragetitel>Frage 76</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 76 im Buch.
+	</erklaerung>
+	<fragetext>Sie haben einen SMTP-Server in Ihrem Unternehmen installiert. Damit auch E-Mail aus dem Internet zugestellt werden kann, müssen Sie die Firewall umkonfigurieren, um diesen Zugriff zu gestatten. Was werden Sie auf der Firewall zulassen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 76' richtig='nein'> UDP Port 53</antwort>
+	<antwort zuFrage='Frage 76' richtig='nein'> TCP Port 80</antwort>
+	<antwort zuFrage='Frage 76' richtig='ja'> TCP Port 25</antwort>
+	<antwort zuFrage='Frage 76' richtig='nein'> TCP Port 22</antwort>
+	<antwort zuFrage='Frage 76' richtig='nein'> TCP Port 110</antwort>
+	
+	
+	<fragetitel>Frage 77</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 77 im Buch.
+	</erklaerung>
+	<fragetext>Bei einer Durchsicht diverser Protokolldateien haben Sie festgestellt, dass Benutzer aus dem Internet ihren Squid-Proxy missbrauchen, um ihre Herkunft gegenüber Webservern bei Angriffen zu verschleiern. Sie müssen diese Sicherheitslücke so schnell wie möglich schließen. Was werden Sie auf der Firewall blocken, wenn der Standardport des Proxy nicht verändert wurde?
+
+	</fragetext>
+	<antwort zuFrage='Frage 77' richtig='ja'> Port 3128 auf der externen Netzwerkschnittstelle</antwort>
+	<antwort zuFrage='Frage 77' richtig='nein'> Port 80 auf der externen Netzwerkschnittstelle</antwort>
+	<antwort zuFrage='Frage 77' richtig='nein'> Port 3128 auf der internen Netzwerkschnittstelle</antwort>
+	<antwort zuFrage='Frage 77' richtig='nein'> Port 443 auf der externen Netzwerkschnittstelle</antwort>
+	<antwort zuFrage='Frage 77' richtig='nein'> Port 8080 auf der externen Netzwerkschnittstelle</antwort>
+	
+	
+	<fragetitel>Frage 78</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 78 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen von Ihrem Arbeitsplatz aus einen Server darauf überprüfen, an welchen Ports er lauscht. Mit welchem Werkzeug können Sie diese Sicherheitsüberprüfung durchführen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 78' richtig='nein'> ping</antwort>
+	<antwort zuFrage='Frage 78' richtig='ja'> nmap</antwort>
+	<antwort zuFrage='Frage 78' richtig='nein'> netstat</antwort>
+	<antwort zuFrage='Frage 78' richtig='nein'> traceroute</antwort>
+	<antwort zuFrage='Frage 78' richtig='nein'> tracepath</antwort>
+	
+	
+	<fragetitel>Frage 79</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 79 im Buch.
+	</erklaerung>
+	<fragetext>Sie benötigen eine Liste, in der sowohl TCP als auch UDP-Ports ihren jeweiligen Serverdiensten zugeordnet sind. Welche der folgenden Dateien enthält diese Informationen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 79' richtig='nein'> /etc/hosts</antwort>
+	<antwort zuFrage='Frage 79' richtig='nein'> /etc/nsswitch.conf</antwort>
+	<antwort zuFrage='Frage 79' richtig='nein'> /etc/network/interfaces</antwort>
+	<antwort zuFrage='Frage 79' richtig='ja'> /etc/services</antwort>
+	<antwort zuFrage='Frage 79' richtig='nein'> /etc/resolv.vonf</antwort>
+	
+	
+	<fragetitel>Frage 80</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 80 im Buch.
+	</erklaerung>
+	<fragetext>Bei welchen der folgenden IP-Adressen handelt es sich nicht um private Adressen? (Wählen Sie zwei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 80' richtig='ja'> 192.109.78.205</antwort>
+	<antwort zuFrage='Frage 80' richtig='nein'> 172.29.47.5</antwort>
+	<antwort zuFrage='Frage 80' richtig='nein'> 169.254.87.65</antwort>
+	<antwort zuFrage='Frage 80' richtig='nein'> 192.168.50.1</antwort>
+	<antwort zuFrage='Frage 80' richtig='ja'> 171.18.55.4</antwort>
+	
+	
+	<fragetitel>Frage 81</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 81 im Buch.
+	</erklaerung>
+	<fragetext>Sie sind via ssh mit einem Server verbunden, den Sie einer Sicherheitsüberprüfung unterziehen müssen. Mit welchen Werkzeugen können Sie feststellen, welche Ports der Server derzeit abhört? (Wählen Sie zwei Werkzeuge aus!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 81' richtig='nein'> ping</antwort>
+	<antwort zuFrage='Frage 81' richtig='ja'> netstat</antwort>
+	<antwort zuFrage='Frage 81' richtig='nein'> nslookup</antwort>
+	<antwort zuFrage='Frage 81' richtig='nein'> traceroute</antwort>
+	<antwort zuFrage='Frage 81' richtig='ja'> nmap</antwort>
+	
+	
+	<fragetitel>Frage 82</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 82 im Buch.
+	</erklaerung>
+	<fragetext>In einem komplexen, gerouteten Netzwerk gibt es Performanceprobleme, wenn Clientcomputer auf Server zugreifen, die sich an einem entfernten Standort befinden. Sie müssen herausfinden, welcher Streckenabschnitt auf der Route zu den Servern zum begrenzenden Faktor wird. Welches Diagnosemittel werden Sie einsetzen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 82' richtig='nein'> iptraf</antwort>
+	<antwort zuFrage='Frage 82' richtig='nein'> nmap</antwort>
+	<antwort zuFrage='Frage 82' richtig='nein'> netstat</antwort>
+	<antwort zuFrage='Frage 82' richtig='nein'> wireshark</antwort>
+	<antwort zuFrage='Frage 82' richtig='ja'> traceroute</antwort>
+	
+	
+	<fragetitel>Frage 83</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 83 im Buch.
+	</erklaerung>
+	<fragetext>Sie verwenden einen Host, der mit den folgenden Netzwerkeinstellungen konfiguriert wurde:
+&lt;br /> &lt;br /> IP-Adresse     : 192.168.50.244
+&lt;br /> Netzwerkmaske  : 255.255.255.0
+&lt;br /> Standardgateway: 192.168.0.1
+&lt;br /> DNS            : 192.168.0.1
+&lt;br /> &lt;br /> Der Computer ist nicht in der Lage mit anderen Systemen zu kommunizieren. Wenn Sie IP-Adressen verwenden, können Sie einen Ping auf Systeme in demselben Netzwerksegment senden und erhalten eine Antwort.
+&lt;br /> &lt;br /> root@archangel:/# ping 192.168.50.2
+&lt;br /> PING 192.168.50.2 (192.168.50.2) 56(84) bytes of data.
+&lt;br /> 64 bytes from 192.168.50.2: icmpseq=1 ttl=64 time=6.39 ms
+&lt;br /> 64 bytes from 192.168.50.2: icmpseq=2 ttl=64 time=0.685 ms
+&lt;br /> &lt;br /> Was ist ihrer Meinung nach wahrscheinlich falsch konfiguriert?
+	</fragetext>
+	<antwort zuFrage='Frage 83' richtig='nein'> die IP-Adresse</antwort>
+	<antwort zuFrage='Frage 83' richtig='nein'> die Netzwerkmaske</antwort>
+	<antwort zuFrage='Frage 83' richtig='ja'> der Standardgateway</antwort>
+	<antwort zuFrage='Frage 83' richtig='nein'> der DNS Eintrag</antwort>
+	<antwort zuFrage='Frage 83' richtig='nein'> WINS</antwort>
+	
+	
+	<fragetitel>Frage 84</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 84 im Buch.
+	</erklaerung>
+	<fragetext>Welche der folgenden Protokolle werden auf unterschiedlichsten Plattformen für dynamisches Routing verwendet? (Wählen Sie zwei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 84' richtig='nein'> ICMP</antwort>
+	<antwort zuFrage='Frage 84' richtig='nein'> IGMP</antwort>
+	<antwort zuFrage='Frage 84' richtig='ja'> RIP</antwort>
+	<antwort zuFrage='Frage 84' richtig='ja'> OSPF</antwort>
+	<antwort zuFrage='Frage 84' richtig='nein'> ARP</antwort>
+	
+	
+	<fragetitel>Frage 85</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 85 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen sich auf einem entfernten Computer einloggen, um ein paar Wartungsarbeiten durchzuführen. Mit welchen Programmen ist das möglich? (Wählen Sie zwei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 85' richtig='ja'> ssh</antwort>
+	<antwort zuFrage='Frage 85' richtig='nein'> ftp</antwort>
+	<antwort zuFrage='Frage 85' richtig='nein'> scp</antwort>
+	<antwort zuFrage='Frage 85' richtig='ja'> telnet</antwort>
+	<antwort zuFrage='Frage 85' richtig='nein'> rsync</antwort>
+	
+	
+	<fragetitel>Frage 86</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 86 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen in einem neuen privaten Netzwerksegment 120 Clientcomputer unterstützen. Wählen Sie aus den Folgenden zwei mögliche Adresspools für das neue Netzwerksegment aus.
+
+	</fragetext>
+	<antwort zuFrage='Frage 86' richtig='ja'> 172.16.47.0/25</antwort>
+	<antwort zuFrage='Frage 86' richtig='nein'> 172.18.95.128/26</antwort>
+	<antwort zuFrage='Frage 86' richtig='ja'> 172.18.95.128/25</antwort>
+	<antwort zuFrage='Frage 86' richtig='nein'> 172.16.47.0/26</antwort>
+	<antwort zuFrage='Frage 86' richtig='nein'> 194.68.12.0/25</antwort>
+	
+	
+	<fragetitel>Frage 87</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 87 im Buch.
+	</erklaerung>
+	<fragetext>Wie laute die korrekte IP-Adresse für das Loopbackdevice des IPv4 Protokolls? Geben Sie nur die IP-Adresse ohne Subnetzmaske an!
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 87' richtig='ja'>127.0.0.1</antwort>
+	
+	
+	<fragetitel>Frage 88</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 88 im Buch.
+	</erklaerung>
+	<fragetext>Bei welchen der folgenden Adressen handelt es sich um global gültige IPv6 Hostadressen? (Wählen Sie zwei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 88' richtig='ja'> 2a01:6f8:1d2d::7</antwort>
+	<antwort zuFrage='Frage 88' richtig='ja'> 2001:198:5dd1:34f2:0000:0000:0000:0242</antwort>
+	<antwort zuFrage='Frage 88' richtig='nein'> 00:19:66:de:38:51</antwort>
+	<antwort zuFrage='Frage 88' richtig='nein'> fe80::219:66ff:fede:3851</antwort>
+	<antwort zuFrage='Frage 88' richtig='nein'> 92.48.168.5</antwort>
+	
+	
+	<fragetitel>Frage 89</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 89 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen einen DNS-Server überprüfen. Zu diesem Zweck wollen Sie einige Abfragen an den Server senden. Welche der folgenden Programme sind für diese Aufgabe am geeignetsten? (Wählen Sie drei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 89' richtig='nein'> traceroute</antwort>
+	<antwort zuFrage='Frage 89' richtig='ja'> nslookup</antwort>
+	<antwort zuFrage='Frage 89' richtig='nein'> tracepath</antwort>
+	<antwort zuFrage='Frage 89' richtig='ja'> host</antwort>
+	<antwort zuFrage='Frage 89' richtig='ja'> dig</antwort>
+	
+	
+	<fragetitel>Frage 90</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 90 im Buch.
+	</erklaerung>
+	<fragetext>Ihr Vorgesetzter hat Sie beauftragt, die Organisation zu ermitteln, die sich hinter einer bestimmten Internetdomäne verbirgt. Welches Werkzeug kann ihnen hierbei schnell helfen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 90' richtig='nein'> nslookup</antwort>
+	<antwort zuFrage='Frage 90' richtig='ja'> whois</antwort>
+	<antwort zuFrage='Frage 90' richtig='nein'> dig</antwort>
+	<antwort zuFrage='Frage 90' richtig='nein'> host</antwort>
+	<antwort zuFrage='Frage 90' richtig='nein'> whatis</antwort>
+	
+	
+	<fragetitel>Frage 91</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 91 im Buch.
+	</erklaerung>
+	<fragetext>Ein Mitarbeiter ist mitsamt seinem Computer in eine andere Abteilung umgezogen. Um dieser Tatsache Rechnung zu tragen, muss dass System nun in sales-wks47 umbenannt werden. In welchen Konfigurationsdateien werden Sie den Namen des Computers ändern? (Wählen Sie zwei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 91' richtig='nein'> /etc/resolv.conf</antwort>
+	<antwort zuFrage='Frage 91' richtig='nein'> /etc/nsswitch.conf</antwort>
+	<antwort zuFrage='Frage 91' richtig='ja'> /etc/hosts</antwort>
+	<antwort zuFrage='Frage 91' richtig='nein'> /etc/computename</antwort>
+	<antwort zuFrage='Frage 91' richtig='ja'> /etc/hostname</antwort>
+	
+	
+	<fragetitel>Frage 92</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 92 im Buch.
+	</erklaerung>
+	<fragetext>Ein Kollege hat an ihrem System Änderungen in der Datei resolv.conf vorgenommen. Jetzt haben Sie Probleme bei der Auflösung von Hostnamen. Welche der folgenden Einträge sind in der Datei resolv.conf falsch und müssen entfernt werden? (Wählen Sie zwei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 92' richtig='nein'> nameserver 192.168.50.1</antwort>
+	<antwort zuFrage='Frage 92' richtig='nein'> domain example.org</antwort>
+	<antwort zuFrage='Frage 92' richtig='nein'> search example.net</antwort>
+	<antwort zuFrage='Frage 92' richtig='ja'> nameserver=192.168.50.1</antwort>
+	<antwort zuFrage='Frage 92' richtig='ja'> domain=example.org</antwort>
+	
+	
+	<fragetitel>Frage 93</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 93 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen die Netzwerkschnittstelle eth1 eines Computers vorübergehend deaktivieren. Welches Kommando werden Sie hierfür verwenden?
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 93' richtig='ja'>ifconfig eth1 down</antwort>
+	
+	
+	<fragetitel>Frage 94</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 94 im Buch.
+	</erklaerung>
+	<fragetext>Ein Computer, der als Proxy fungiert, verfügt über die beiden Netzwerkschnittstellen eth0 und eth1. Die Schnittstelle eth0 ist dem Internet zugewandt. Der Internetzugang ist gestört und Sie vermuten ein Problem mit dem Routing. Welches Kommando werden Sie verwenden, um den Eintrag für das Standardgateway zu überprüfen?
+
+	</fragetext>
+	<antwort zuFrage='Frage 94' richtig='ja'> route -n</antwort>
+	<antwort zuFrage='Frage 94' richtig='nein'> ifconfig eth1</antwort>
+	<antwort zuFrage='Frage 94' richtig='nein'> ifconfig eth0</antwort>
+	<antwort zuFrage='Frage 94' richtig='nein'> route add default gw</antwort>
+	<antwort zuFrage='Frage 94' richtig='nein'> route del default gw</antwort>
+	
+	
+	<fragetitel>Frage 95</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 95 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen mithilfe von aptitude ein Programm auf einem Fileserver nachinstallieren. Aus Sicherheitsgründen wurde auf diesem System kein Eintrag für das Standardgateway vorgenommen. Auf diese Weise soll verhindert werden, dass dieser Server mit dem Internet kommunizieren kann. Sie müssen nun vorübergehend das Standardgateway konfigurieren. Welche Kommandos kommen hier in Frage? (Wählen Sie zwei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 95' richtig='nein'> ifconfig eth0 up</antwort>
+	<antwort zuFrage='Frage 95' richtig='nein'> export http_proxy=http://192.168.50.1:3128</antwort>
+	<antwort zuFrage='Frage 95' richtig='ja'> route add default gw 192.168.50.1</antwort>
+	<antwort zuFrage='Frage 95' richtig='nein'> route add 0.0.0.0/0 gw 192.168.50.1</antwort>
+	<antwort zuFrage='Frage 95' richtig='ja'> route add -net 0.0.0.0/0 gw 192.168.50.1</antwort>
+	
+	
+	<fragetitel>Frage 96</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 96 im Buch.
+	</erklaerung>
+	<fragetext>Sie führen eine Sicherheitsüberprüfung an einem System durch. Mit welchem Kommando können Sie feststellen, ob sich auf dem Computer Programme befinden, bei denen das SUID-Bit gesetzt wurde?
+
+	</fragetext>
+	<antwort zuFrage='Frage 96' richtig='nein'> find / -name passwd</antwort>
+	<antwort zuFrage='Frage 96' richtig='nein'> find /sbin -perm -u+s</antwort>
+	<antwort zuFrage='Frage 96' richtig='nein'> locate</antwort>
+	<antwort zuFrage='Frage 96' richtig='ja'> find / -perm -u+s</antwort>
+	<antwort zuFrage='Frage 96' richtig='nein'> find / -perm -g+s</antwort>
+	
+	
+	<fragetitel>Frage 97</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 97 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen den Webbrowser eines Clientcomputers überprüfen. Der Browser zeigt keine Seiten mehr an. Um festzustellen, ob der Browser überhaupt Anfragen an einen Webserver senden kann, wollen Sie auf einem anderen Computer ein Programm verwenden, das den Webserver simuliert und die Anfragen des Clients auf dem Bildschirm ausgibt. Welches Programm werden Sie verwenden?
+
+	</fragetext>
+	<antwort zuFrage='Frage 97' richtig='nein'> iptraf</antwort>
+	<antwort zuFrage='Frage 97' richtig='nein'> apache</antwort>
+	<antwort zuFrage='Frage 97' richtig='nein'> netstat</antwort>
+	<antwort zuFrage='Frage 97' richtig='nein'> nmap</antwort>
+	<antwort zuFrage='Frage 97' richtig='ja'> socket</antwort>
+	
+	
+	<fragetitel>Frage 98</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 98 im Buch.
+	</erklaerung>
+	<fragetext>Einige Benutzer eines Servers den Sie administrieren, starten regelmäßig Anwendungen, die einen übermäßigen Bedarf an Arbeitsspeicher haben. Das sorgt für Performanceeinbrüche bei allen anderen Benutzern des Systems. Womit lösen Sie das Problem?
+
+	</fragetext>
+	<antwort zuFrage='Frage 98' richtig='nein'> quotas</antwort>
+	<antwort zuFrage='Frage 98' richtig='ja'> ulimit</antwort>
+	<antwort zuFrage='Frage 98' richtig='nein'> uname</antwort>
+	<antwort zuFrage='Frage 98' richtig='nein'> free -m</antwort>
+	<antwort zuFrage='Frage 98' richtig='nein'> ps aux</antwort>
+	
+	
+	<fragetitel>Frage 99</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 99 im Buch.
+	</erklaerung>
+	<fragetext>Sie versuchen das USB-Medium /dev/sdc1 auszuwerfen, erhalten aber lediglich eine Fehlermeldung, wie folgt:
+ umount: /media/usb-disk1: device is busy.
+&lt;br /> Sie müssen den Prozess ermitteln, der auf das Medium zugreift, damit Sie diesen beenden können. Welches Kommando werden Sie verwenden?
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 99' richtig='nein'> du /media/usb-disk1</antwort>
+	<antwort zuFrage='Frage 99' richtig='nein'> df /dev/sdc1</antwort>
+	<antwort zuFrage='Frage 99' richtig='ja'> lsof /media/usb-disk1</antwort>
+	<antwort zuFrage='Frage 99' richtig='nein'> lsof /dev/sdc1</antwort>
+	<antwort zuFrage='Frage 99' richtig='nein'> umount /dev/sdc1</antwort>
+	
+	
+	<fragetitel>Frage 100</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 100 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen alle Dateien auflisten, die von Benutzern unterhalb des Verzeichnisses /home geöffnet sind. Welches Kommando werden Sie auf dem Terminal eingeben?
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 100' richtig='ja'>lsof /home</antwort>
+	
+	
+	<fragetitel>Frage 101</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 101 im Buch.
+	</erklaerung>
+	<fragetext>Sie müssen einen Computer so konfigurieren, dass er bei Namensauflösungsprozessen zunächst einen DNS-Server kontaktiert. Nur wenn der DNS-Server eine Anfrage nicht auflösen kann, soll im Notfall die lokale Datei /etc/hosts verwendet werden. Welche Konfigurationsdatei müssen Sie bearbeiten?
+
+	</fragetext>
+	<antwort zuFrage='Frage 101' richtig='nein'> /etc/resolv.conf</antwort>
+	<antwort zuFrage='Frage 101' richtig='nein'> /etc/hostname</antwort>
+	<antwort zuFrage='Frage 101' richtig='ja'> /etc/nsswitch.conf</antwort>
+	<antwort zuFrage='Frage 101' richtig='nein'> /etc/hosts.deny</antwort>
+	<antwort zuFrage='Frage 101' richtig='nein'> /etc/hosts.allow</antwort>
+	
+	
+	<fragetitel>Frage 102</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 102 im Buch.
+	</erklaerung>
+	<fragetext>Ein Anwender ihres Unternehmens greift häufig auf Ressourcen eines Partnerunternehmens zu. Sie müssen dafür sorgen, dass der Benutzer nicht bei jeden Zugriff auf einen Server des Partnerunternehmens den vollqualifizierten Namen des Zielcomputers angeben muss. Welche Datei werden Sie auf dem Computer des Mitarbeiters bearbeiten? Geben Sie den gesamten Pfad der Datei an!
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 102' richtig='ja'>/etc/resolv.conf</antwort>
+	
+	
+	<fragetitel>Frage 103</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 103 im Buch.
+	</erklaerung>
+	<fragetext>Ein Benutzer soll auf seinem Arbeitsplatzcomputer selbst Anwendungsprogramme installieren. Leider fehlen ihm hierfür die Berechtigungen und Sie dürfen das root-Passwort nicht herausgeben. In welche Datei werden Sie den Benutzer eintragen, damit er die Softwareinstallationen trotzdem ausführen kann? (Geben Sie den Pfad und die Datei an!)
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 103' richtig='ja'>/etc/sudoers</antwort>
+	
+	
+	<fragetitel>Frage 104</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 104 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen für Netzwerkdienste, die auf einem Server nur sporadisch angesprochen werden, einen Superdämon installieren. Welche der folgenden Programme kommen hierfür in Frage? (Wählen Sie zwei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 104' richtig='nein'> hosts.allow</antwort>
+	<antwort zuFrage='Frage 104' richtig='nein'> hosts.deny</antwort>
+	<antwort zuFrage='Frage 104' richtig='nein'> init</antwort>
+	<antwort zuFrage='Frage 104' richtig='ja'> inetd</antwort>
+	<antwort zuFrage='Frage 104' richtig='ja'> xinetd</antwort>
+	
+	
+	<fragetitel>Frage 105</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 105 im Buch.
+	</erklaerung>
+	<fragetext>Sie wollen verhindern, dass sich Benutzer mittels Putty auf ihrem Mailserver einloggen können. In welche Datei sollten Sie diese Benutzer aufnehmen, um den Login zu verhindern? Ihre Lösung darf nicht verhindern, dass die Benutzer E-Mails über diesen Server senden und empfangen können. (Geben Sie bitte die Datei und den Pfad an!)
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 105' richtig='ja'>/etc/nologin</antwort>
+	
+	
+	<fragetitel>Frage 106</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 106 im Buch.
+	</erklaerung>
+	<fragetext>Welche der folgenden Konfigurationsdateien steuern das Verhalten der TCP-Wrapper in Bezug auf die Zugriffssteuerung? (Wählen Sie zwei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 106' richtig='nein'> /etc/hosts</antwort>
+	<antwort zuFrage='Frage 106' richtig='ja'> /etc/hosts.allow</antwort>
+	<antwort zuFrage='Frage 106' richtig='nein'> /etc/inetd.conf</antwort>
+	<antwort zuFrage='Frage 106' richtig='nein'> /etc/passwd</antwort>
+	<antwort zuFrage='Frage 106' richtig='ja'> /etc/hosts.deny</antwort>
+	
+	
+	<fragetitel>Frage 107</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 107 im Buch.
+	</erklaerung>
+	<fragetext>Sie haben einen defekten Server durch ein neues Gerät ersetzt. Beim ersten Versuch den neuen Server über ssh zu kontaktieren, erhalten Sie eine Warnmeldung über einen mögliche Man-In-The-Middle-Angriff und der Verbindungsaufbau schlägt fehl. Welche Datei(en) müssen Sie auf ihrem Computer modifizieren, damit der Verbindungsaufbau gelingt? (Wählen Sie zwei Antworten!)
+
+	</fragetext>
+	<antwort zuFrage='Frage 107' richtig='nein'> /etc/ssh/ssh_config</antwort>
+	<antwort zuFrage='Frage 107' richtig='ja'> /etc/ssh_known_hosts</antwort>
+	<antwort zuFrage='Frage 107' richtig='nein'> /etc/ssh/sshd_config</antwort>
+	<antwort zuFrage='Frage 107' richtig='ja'> ~ /.ssh/known_hosts</antwort>
+	<antwort zuFrage='Frage 107' richtig='nein'> /etc/services</antwort>
+	
+	
+	<fragetitel>Frage 108</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 108 im Buch.
+	</erklaerung>
+	<fragetext>Ein Benutzer, der sich häufiger via ssh auf unterschiedlichen Systemen anmelden muss, hat mittels ssh-keygen Schlüsselpaare generiert. Mit den Schlüsseln möchte er sich ohne die Eingabe eines Passwortes an unterschiedlichen Systemen authentifizieren. In welche Dateien oder in welche Verzeichnisse müssen die Schlüsselpaare auf den Zielsystemen aufgenommen werden?
+
+	</fragetext>
+	<antwort zuFrage='Frage 108' richtig='nein'> /etc/ssh_known_hosts</antwort>
+	<antwort zuFrage='Frage 108' richtig='nein'> ~/.ssh/known_hosts</antwort>
+	<antwort zuFrage='Frage 108' richtig='nein'> ~/.ssh</antwort>
+	<antwort zuFrage='Frage 108' richtig='ja'> ~/.ssh/authorized_keys</antwort>
+	<antwort zuFrage='Frage 108' richtig='nein'> /etc/ssh</antwort>
+	
+	
+	<fragetitel>Frage 109</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 109 im Buch.
+	</erklaerung>
+	<fragetext>Bei einer Sicherheitsüberprüfung stellen Sie fest, dass bei einem Server sehr viele fehlgeschlagene Authentifizierungsversuche mittels ssh protokolliert wurden. Um den Server von diesen Versuchen zu entlasten, wollen Sie den ssh-Port ändern. Welche Datei werden Sie bearbeiten?
+
+	</fragetext>
+	<antwort zuFrage='Frage 109' richtig='nein'> /etc/hosts.allow</antwort>
+	<antwort zuFrage='Frage 109' richtig='nein'> /etc/hosts.deny</antwort>
+	<antwort zuFrage='Frage 109' richtig='nein'> /etc/ssh_known_hosts</antwort>
+	<antwort zuFrage='Frage 109' richtig='nein'> /etc/ssh/ssh_config</antwort>
+	<antwort zuFrage='Frage 109' richtig='ja'> /etc/ssh/sshd_config</antwort>
+	
+	
+	<fragetitel>Frage 110</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 110 im Buch.
+	</erklaerung>
+	<fragetext>Sie verwenden ein Skript, das nachts unbeaufsichtigt Datensicherungen mithilfe von scp über das Netzwerk durchführen soll. Für die Authentifizierung wollen Sie Schlüssel verwenden. Mit welchem Programm können Sie die nötigen Schlüssel generieren, die dann den Zielsystemen bekannt gemacht werden? (Geben Sie nur das Programm ohne Optionen und Parameter an!)
+ 
+ 
+&lt;br />
+	</fragetext>
+	<antwort zuFrage='Frage 110' richtig='ja'>ssh-keygen</antwort>
+	
+	
+	<fragetitel>Frage 111</fragetitel>
+	<fragetyp>auswahl</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 111 im Buch.
+	</erklaerung>
+	<fragetext>Sie haben in ihrem Unternehmen die Verwendung von GnuPG eingeführt und wollen jetzt einem Benutzer ihren öffentlichen Schlüssel zur Verfügung stellen. Sie öffnen das Verzeichnis ~/ .gnupg und finden verschiedene Dateien vor. Welche der Datei werden Sie an den Benutzer übermitteln, damit dieser Ihnen dann verschlüsselte E-Mails senden kann?
+
+	</fragetext>
+	<antwort zuFrage='Frage 111' richtig='ja'> pubring.gpg</antwort>
+	<antwort zuFrage='Frage 111' richtig='nein'> secring.gpg</antwort>
+	<antwort zuFrage='Frage 111' richtig='nein'> gpg.conf</antwort>
+	<antwort zuFrage='Frage 111' richtig='nein'> trustdb.gpg</antwort>
+	<antwort zuFrage='Frage 111' richtig='nein'> random_seed</antwort>
+	
+	
+	<fragetitel>Frage 112</fragetitel>
+	<fragetyp>text</fragetyp>
+	<punkte>1</punkte>
+	<hinweis>keiner</hinweis>
+	<erklaerung>Entspricht Frage 112 im Buch.
+	</erklaerung>
+	<fragetext>Ein Benutzer möchte GnuPG einsetzen, besitzt aber noch nicht die dafür benötigten Schlüssel. Welches Kommando soll der Benutzer ausführen, damit ein geeignetes Schlüsselpaar generiert wird?
+ 
+
+	</fragetext>
+	<antwort zuFrage='Frage 112' richtig='ja'>gpg --gen-key</antwort>
+</rootnode>

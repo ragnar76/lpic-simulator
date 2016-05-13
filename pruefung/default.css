@@ -1,0 +1,326 @@
+.hintergrund
+{
+	background-color:#ccc;
+}
+.hintergrund_box
+{
+	background-color:#eee;
+}
+.hintergrund_eingabefeld
+{
+	background-color:#9FB6CD;
+}
+.hintergrund_blau
+{
+	background-color:#9FB6CD;
+}
+.hintergrund_erg
+{
+	position:absolute;
+	background-color:#9FB6CD;
+	width:90%;
+	top:30px;
+	height:125px;
+	left:5%;
+	padding:4px;
+}
+.hintergrund_list
+{
+	position:absolute;
+	background-color:#9FB6CD;
+	width:90%;
+	height:360px;
+	top:175px;
+	left:5%;
+	padding:4px;	
+}
+.korrekturliste
+{
+	overflow:scroll;
+	position:absolute;
+	background-color:#F5F5DC;
+	width:98%;
+	height:285px;
+	/*top:235px;
+	left:2%;*/
+	padding:4px;	
+}
+.korrekturnavigation
+{
+	position:absolute;
+	background-color:#9FB6CD;
+	width:98%;
+	height:25px;
+	top:330px;
+	padding:4px;	
+}
+.rahmen_duenn
+{
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+}
+.rahmen_dick
+{
+	border-style:solid;
+	border-width:2px;
+	border-color:black;
+}
+.layout_basis
+{
+	position:absolute;
+	top:2px;
+	left:2px;
+	width:100%;
+	height:600px;
+	margin:4px;
+	vertical-align:top;
+}
+.layout_box
+{
+	position:absolute;
+	text-align:left;
+	vertical-align:middle;
+	left:4px;
+	top:4px;
+	width:855px;
+	height:555px;	
+	margin:4px;
+}
+.layout_hauptmenue
+{
+	position:relative;
+	height:400px;
+	width:600px;
+	color:black;
+	padding:4px;
+	left:120px;
+}
+.menuebutton
+{
+	height:40px;
+	width:400px;
+	font-family:Verdana,sans-serif;
+	font-size:12pt;
+	font-weight:bold;
+}
+.layout_monitor
+{
+	overflow:auto;
+	position:absolute;
+	text-align:left;
+	vertical-align:middle;
+	left:4px;
+	top:0px;/*700px;*/
+	width:0px;
+	height:0px;	
+	margin:4px;
+}
+.layout_box_antworten
+{
+	overflow:auto;
+	position:absolute;
+	
+	top:25px;
+	left:6px; /*musste so wg. scrolling eingestellt werden*/
+	text-align:left;
+	vertical-align:bottom;
+	width:825px;
+	height:450px;	
+	margin:4px;		
+	padding:5px;
+}
+.layout_box_frage
+{
+	position:relative;
+	top:25px;
+	text-align:left;
+	vertical-align:top;
+	width:830px;
+	min-height:150px;	
+	margin:4px;		
+}
+
+.layout_frage {
+
+}
+.layout_navigation
+{
+	background-color:#eee;
+	vertical-align:middle;
+	position:absolute;
+	top:510px;
+	left:0px;
+	width:845px;
+	height:35px;	
+	margin:4px;		
+}
+.layout_toggle_feld
+{
+	height:50px;
+	width:70px;
+	border-style:none;
+	text-align:center;
+	vertical-align:middle;
+	font-size:24pt;
+}
+.layout_toggle_button
+{
+	height:25px;
+	width:25px;	
+}
+.layout_toggle_button10
+{
+	height:25px;
+	width:60px;	
+}
+.layout_ergebnisfeld
+{
+	text-align:center;
+	background-color:#F5F5DC;
+	border-style:none;
+}
+.layout_button
+{
+	width:200px;
+	height:35px;
+}
+.layout_richtig
+{
+	position:relative;
+	top:20px;
+	width:650px;
+	padding:4px;
+	font-weight:bold;
+	border-style:solid;
+	border-width:2px;
+	background-color:green;
+	color:white;
+}
+.layout_erklaerung
+{
+	position:relative;
+	top:50px;
+/* 2011.03.06 MK 	
+	width:650px;
+*/	
+	width:99%;	
+	padding:4px;
+	border-style:solid;
+	border-width:2px;
+	background-color:darkred;
+	color:white;
+/* 2011.03.06 MK 	
+	font-weight:bold;
+*/	
+/* 2011.03.06 MK */
+		color:#000000; 
+		background-color:#E8FFE8; 
+		border-width:1px; 
+		border-style:solid; 
+		border-color:#008000; 
+		padding:4px; 
+		margin-top:10px;
+/* 2011.03.06 MK */
+	
+	
+}
+.subline
+{
+	position:absolute;
+	top:490px;
+	left:10px;
+	width:825px;
+	height:25px;
+	/*border-style:solid;*/
+	/*border-color:green;*/
+	margin:4px;
+}
+.gruen
+{
+	color:green;
+	font-weight:bold;
+}
+.links
+{
+	float:left;
+}
+.rechts
+{
+	float:right;
+}
+.schrift
+{
+	font-family:Verdana,sans-serif;
+}
+.dick
+{
+	font-weight:bold;
+}
+.g8
+{
+	font-size:8pt;
+}
+
+.g10
+{
+	font-size:10pt;
+}
+
+.g12
+{
+	font-size:12pt;
+}
+.g14
+{
+	font-size:14pt;
+}
+.g16
+{
+	font-size:16pt;
+}
+.unterstrichen
+{
+	text-decoration:underline;
+}
+.line
+{
+	position:relative;
+	margin:4px;
+}
+.layout_korrekturliste
+{
+	font-family:Verdana,Arial;
+	font-size:10pt;
+	width:747px;
+	border-color:black;
+	padding:4px;
+}
+.kl_nummer
+{
+	width:20px;
+	border-style:solid;
+	border-width:1px;
+}
+.kl_text
+{
+	width:555px;
+	border-style:solid;
+	border-width:1px;
+}
+.kl_punkte
+{
+	width:20px;
+	border-style:solid;
+	border-width:1px;
+}
+.kl_richtig
+{
+	width:30px;
+	border-style:solid;
+	border-width:1px;
+}
+.kl_details
+{
+	width:120px;
+}

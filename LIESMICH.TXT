@@ -1,0 +1,9 @@
+﻿Um den Prüfungssimulator zu verwenden, starten Sie die Datei
+pruefungssimulator_starten.html mit einem Webbrowser. Sie finden dann eine vollständige Dokumentation des Programms vor.
+
+Sie können den mitgelieferte Webbrowser Mozilla Firefox 2.0.0.12 verwenden, welcher in den Versionen für Windows, Mac und Linux auf der CD zu finden ist. 
+
+Benutzern eines Macintosh-Systems empfehle ich dennoch derzeit den Einsatz des Webbrowsers Opera in einer aktuellen Version.
+
+Webbrowser bei denen mir bekannt ist, dass sie mit der Software in der vorliegenden Version noch nicht funktionieren sind (Stand 28.2.2008): - Internet Explorer 6.0
+- Safari 
