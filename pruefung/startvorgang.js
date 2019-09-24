@@ -1,6 +1,9 @@
 // XML Datei Laden und weiter zur initialisierung
 // 
 // 19.12.2007 ah
+
+xmlDoc = null;
+
 function startvorgang(lpic) {
 
   xmlDatei="lpic" + lpic + ".xml";
@@ -19,8 +22,17 @@ function startvorgang(lpic) {
 	// xmlDoc.async = false;
 	PruefungBeendet="nein";
 	Modus="test";
-	xmlDoc.load(xmlDatei);
-	initial(10)
+// Fix for "xmlDoc.loadXML is not a function"
+// 10.09.2019 ~ klein 
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            xmlDoc = this.respine;
+        }
+    };
+    xhttp.open("GET", "books.xml", true);
+    xhttp.send();
+    initial(10);
 }
 
 // Initialisierungsvorgang der Testeinstellungen
